@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFFromDocx", "CreatePDFFromDocx\CreatePDFFromDocx.csproj", "{7EF3EB3B-560D-489A-9239-1A30F0A4CCE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportPDFToImage", "ExportPDFToImage\ExportPDFToImage.csproj", "{FC9EF356-4743-4820-B435-DECFE3F6346B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CombinePDF", "CombinePDF\CombinePDF.csproj", "{C8610742-A61A-4155-BDC2-2E3AD8C31E34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFFromHtml", "CreatePDFFromHtml\CreatePDFFromHtml.csproj", "{BACABBA7-B80E-41C7-81FB-69936C363F7F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFFromURL", "CreatePDFFromURL\CreatePDFFromURL.csproj", "{C024BD2A-28FF-43B0-9534-914417C280DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CombinePDFWithPageRanges", "CombinePDFWithPageRanges\CombinePDFWithPageRanges.csproj", "{E38641F1-3D06-4CEC-A062-0A5ABB3BAE22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFFromDocxToOutputStream", "CreatePDFFromDocxToOutputStream\CreatePDFFromDocxToOutputStream.csproj", "{0EB4B289-AE3A-49A9-B803-44105F110903}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFFromPPTX", "CreatePDFFromPPTX\CreatePDFFromPPTX.csproj", "{4756D2D1-9748-4539-9AE1-08FFE34F03D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportPDFToDocx", "ExportPDFToDocx\ExportPDFToDocx.csproj", "{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFWithInMemoryAuthCredentials", "CreatePDFWithInMemoryAuthCredentials\CreatePDFWithInMemoryAuthCredentials.csproj", "{7B19464E-A298-4FF4-8FBD-5B4D52873F48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF3EB3B-560D-489A-9239-1A30F0A4CCE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF3EB3B-560D-489A-9239-1A30F0A4CCE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF3EB3B-560D-489A-9239-1A30F0A4CCE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF3EB3B-560D-489A-9239-1A30F0A4CCE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9EF356-4743-4820-B435-DECFE3F6346B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9EF356-4743-4820-B435-DECFE3F6346B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9EF356-4743-4820-B435-DECFE3F6346B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9EF356-4743-4820-B435-DECFE3F6346B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8610742-A61A-4155-BDC2-2E3AD8C31E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8610742-A61A-4155-BDC2-2E3AD8C31E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8610742-A61A-4155-BDC2-2E3AD8C31E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8610742-A61A-4155-BDC2-2E3AD8C31E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACABBA7-B80E-41C7-81FB-69936C363F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACABBA7-B80E-41C7-81FB-69936C363F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACABBA7-B80E-41C7-81FB-69936C363F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACABBA7-B80E-41C7-81FB-69936C363F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C024BD2A-28FF-43B0-9534-914417C280DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C024BD2A-28FF-43B0-9534-914417C280DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C024BD2A-28FF-43B0-9534-914417C280DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C024BD2A-28FF-43B0-9534-914417C280DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38641F1-3D06-4CEC-A062-0A5ABB3BAE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38641F1-3D06-4CEC-A062-0A5ABB3BAE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38641F1-3D06-4CEC-A062-0A5ABB3BAE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38641F1-3D06-4CEC-A062-0A5ABB3BAE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB4B289-AE3A-49A9-B803-44105F110903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB4B289-AE3A-49A9-B803-44105F110903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB4B289-AE3A-49A9-B803-44105F110903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB4B289-AE3A-49A9-B803-44105F110903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4756D2D1-9748-4539-9AE1-08FFE34F03D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4756D2D1-9748-4539-9AE1-08FFE34F03D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4756D2D1-9748-4539-9AE1-08FFE34F03D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4756D2D1-9748-4539-9AE1-08FFE34F03D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {636C4CE7-763E-4ABF-B655-545459C5AFC9}
+	EndGlobalSection
+EndGlobal
