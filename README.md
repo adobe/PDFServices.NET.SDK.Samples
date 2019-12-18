@@ -48,6 +48,15 @@ cd CreatePDFFromDocx/
 dotnet run CreatePDFFromDocx.csproj
 ```
 
+#### Create a PDF File From a DOCX Input Stream 
+
+The sample project CreatePDFFromDOCXInputStream creates a PDF file from a DOCX input stream.
+
+```$xslt
+cd CreatePDFFromDOCXInputStream/
+dotnet run CreatePDFFromDOCXInputStream.csproj
+```
+
 #### Create a PDF File From a DOCX File (Write to an OutputStream)
 
 The sample project CreatePDFFromDocx creates a PDF file from a DOCX file. Instead of saving the result to a local file, it writes the 

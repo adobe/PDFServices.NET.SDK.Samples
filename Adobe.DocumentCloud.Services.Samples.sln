@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFFromPPTX", "Create
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportPDFToDocx", "ExportPDFToDocx\ExportPDFToDocx.csproj", "{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFWithInMemoryAuthCredentials", "CreatePDFWithInMemoryAuthCredentials\CreatePDFWithInMemoryAuthCredentials.csproj", "{7B19464E-A298-4FF4-8FBD-5B4D52873F48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePDFWithInMemoryAuthCredentials", "CreatePDFWithInMemoryAuthCredentials\CreatePDFWithInMemoryAuthCredentials.csproj", "{7B19464E-A298-4FF4-8FBD-5B4D52873F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromDOCXInputStream", "CreatePDFFromDOCXInputStream\CreatePDFFromDOCXInputStream.csproj", "{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
