@@ -2,13 +2,14 @@
  * Copyright 2019 Adobe
  * All Rights Reserved.
  *
- * NOTICE: Adobe permits you to use, modify, and distribute this file in
- * accordance with the terms of the Adobe license agreement accompanying
- * it. If you have received this file from a source other than Adobe,
- * then your use, modification, or distribution of it requires the prior
+ * NOTICE: Adobe permits you to use, modify, and distribute this file in 
+ * accordance with the terms of the Adobe license agreement accompanying 
+ * it. If you have received this file from a source other than Adobe, 
+ * then your use, modification, or distribution of it requires the prior 
  * written permission of Adobe.
  */
 using Adobe.DocumentCloud.Services;
+using Adobe.DocumentCloud.Services.auth;
 using Adobe.DocumentCloud.Services.exception;
 using Adobe.DocumentCloud.Services.io;
 using Adobe.DocumentCloud.Services.pdfops;
@@ -36,29 +37,37 @@ namespace CreatePDFWithInMemoryAuthCredentials
             ConfigureLogging();
             try
             {
-                // Initial setup, create a ClientContext and a new operation instance.
-                ClientContext clientContext = ClientContext.CreateFromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-config.json");
+                /*
+                Initial setup, create credentials instance.
+                Replace the values of CLIENT_ID, CLIENT_SECRET, ORGANIZATION_ID and ACCOUNT_ID with their corresponding values
+                present in the dc-services-sdk-credentials.json file and PRIVATE_KEY_FILE_CONTENTS with contents of private.key file
+                within the zip file which must have been downloaded at the end of Getting the Credentials workflow.
+                */
+                Credentials credentials = new ServiceAccountCredentials.Builder()
+                                .WithClientId("CLIENT_ID")
+                                .WithClientSecret("CLIENT_SECRET")
+                                .WithPrivateKey("PRIVATE_KEY_FILE_CONTENTS")
+                                .WithOrganizationId("ORGANIZATION_ID")
+                                .WithAccountId("ACCOUNT_ID")
+                                .Build();
+
+                //Create an ExecutionContext using credentials and create a new operation instance.
+                ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 CreatePDFOperation createPdfOperation = CreatePDFOperation.CreateNew();
 
                 // Set operation input from a source file.
                 FileRef source = FileRef.CreateFromLocalFile(@"createPdfInput.docx");
                 createPdfOperation.SetInput(source);
-
-                /*
-                Set this variable to the value of "identity" key in dc-services-sdk-config.json that you received in Adobe
-                Document Cloud Services SDK welcome email
-                */
-                String authenticationJsonString = "";
-
-                // Create a new ClientContext instance with the provided authentication credentials
-                Authentication authentication = Authentication.Create(authenticationJsonString);
-                ClientContext clientContextWithAuth = clientContext.WithAuthentication(authentication);
-
+            
                 // Execute the operation.
-                FileRef result = createPdfOperation.Execute(clientContextWithAuth);
+                FileRef result = createPdfOperation.Execute(executionContext);
 
                 // Save the result to the specified location.
                 result.SaveAs(Directory.GetCurrentDirectory() + "/output/createPdfOutput.pdf");
+            }
+            catch (ServiceUsageException ex)
+            {
+                log.Error("Exception encountered while executing operation", ex);
             }
             catch (ServiceApiException ex)
             {

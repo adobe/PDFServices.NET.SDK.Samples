@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Adobe.DocumentCloud.Services" Version="0.5.0" />
+    <PackageReference Include="Adobe.DocumentCloud.Services" Version="1.0.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
   </ItemGroup>
 
@@ -14,7 +14,10 @@
     <None Update="createPdfInput.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="dc-services-sdk-config.json">
+    <None Update="dc-services-sdk-credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="private.key">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="log4net.config">

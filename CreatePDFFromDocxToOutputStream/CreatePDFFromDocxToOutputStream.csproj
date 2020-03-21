@@ -6,12 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Adobe.DocumentCloud.Services" Version="0.5.0" />
+    <PackageReference Include="Adobe.DocumentCloud.Services" Version="1.0.0" />
     <PackageReference Include="log4net" Version="2.0.8" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="dc-services-sdk-config.json">
+    <None Update="dc-services-sdk-credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="private.key">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="createPdfInput.docx">

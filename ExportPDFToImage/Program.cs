@@ -2,10 +2,10 @@
  * Copyright 2019 Adobe
  * All Rights Reserved.
  *
- * NOTICE: Adobe permits you to use, modify, and distribute this file in
- * accordance with the terms of the Adobe license agreement accompanying
- * it. If you have received this file from a source other than Adobe,
- * then your use, modification, or distribution of it requires the prior
+ * NOTICE: Adobe permits you to use, modify, and distribute this file in 
+ * accordance with the terms of the Adobe license agreement accompanying 
+ * it. If you have received this file from a source other than Adobe, 
+ * then your use, modification, or distribution of it requires the prior 
  * written permission of Adobe.
  */
 using System.IO;
@@ -15,6 +15,7 @@ using log4net.Config;
 using log4net;
 using System.Reflection;
 using Adobe.DocumentCloud.Services;
+using Adobe.DocumentCloud.Services.auth;
 using Adobe.DocumentCloud.Services.pdfops;
 using Adobe.DocumentCloud.Services.options.exportpdf;
 using Adobe.DocumentCloud.Services.io;
@@ -38,8 +39,13 @@ namespace ExportPDFToImage
             ConfigureLogging();
             try
             {
-                // Initial setup, create a ClientContext and a new operation instance by specifying the intended export format.
-                ClientContext clientContext = ClientContext.CreateFromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-config.json");
+                // Initial setup, create credentials instance.
+                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
+                                .FromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-credentials.json")
+                                .Build();
+
+                //Create an ExecutionContext using credentials and create a new operation instance.
+                ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 ExportPDFOperation exportPdfOperation = ExportPDFOperation.CreateNew(ExportPDFTargetFormat.JPEG);
 
                 // Set operation input from a source file.
@@ -47,10 +53,14 @@ namespace ExportPDFToImage
                 exportPdfOperation.SetInput(sourceFileRef);
 
                 // Execute the operation.
-                FileRef result = exportPdfOperation.Execute(clientContext);
+                FileRef result = exportPdfOperation.Execute(executionContext);
 
                 // Save the result to the specified location.
                 result.SaveAs(Directory.GetCurrentDirectory() + "/output/exportPdfToImageOutput.zip");
+            }
+            catch (ServiceUsageException ex)
+            {
+                log.Error("Exception encountered while executing operation", ex);
             }
             catch (ServiceApiException ex)
             {
