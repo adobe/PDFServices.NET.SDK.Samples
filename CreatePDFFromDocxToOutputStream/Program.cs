@@ -56,6 +56,7 @@ namespace CreatePDFFromDocxToOutputStream
                 using (Stream outputStream = PrepareOutputStream())
                 {
                     result.SaveAs(outputStream);
+                    log.Info("Moving this temporary file to output stream.");
                 }
             }
             catch (ServiceUsageException ex)
