@@ -2,7 +2,7 @@
 
 This sample solution helps you get started with the DC services SDK .
 
-The sample projects illustrate how to perform PDF-related actions (such as converting to and from the PDF format) using the DC Services SDK.
+The sample projects illustrate how to perform PDF-related actions (such as converting to and from the PDF format) using the DC Services SDK. **Please note that the DC Services SDK supports only server side use cases**.
 
 ## Prerequisites
 The sample solution has the following requirements:
@@ -10,8 +10,11 @@ The sample solution has the following requirements:
 * Build Tool: The solution requires Visual studio or .NET Core CLI to be installed to be able to run the sample projects.
 
 ## Authentication Setup
-The configuration file for the samples is ```dc-services-sdk-config.json```. Before the samples can be run, replace the 
-contents of this file with config.json that you received in Adobe Document Cloud Services SDK welcome email.
+The credentials file and corresponding private key file for the samples is ```dc-services-sdk-credentials.json``` and ```private.key``` respectively. 
+Before the samples can be run, replace both the files with the ones present in the downloaded zip file at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
+
+## Quota Exhaustion
+If you receive ServiceUsageException during the Samples run, it means that trial credentials have exhausted their quota of 5000 pages. Please contact [here](https://www.adobe.com/go/dcsdk_requestform) to get the paid credentials.
 
 ## Build with .NET Core CLI
 Run the following command to build the project:
@@ -80,6 +83,15 @@ cd CreatePDFWithInMemoryAuthCredentials/
 dotnet run CreatePDFWithInMemoryAuthCredentials.csproj
 ```
 
+#### Create a PDF File From a DOCX File (By providing custom value for timeouts)
+
+The sample project CreatePDFWithCustomTimeouts highlights how to provide the custom value for timeout and read write timeout.
+
+```$xslt
+cd CreatePDFWithCustomTimeouts/
+dotnet run CreatePDFWithCustomTimeouts.csproj
+```
+
 ####  Create a PDF File From a PPTX File 
 
 The sample project CreatePDFFromPPTX creates a PDF file from a PPTX file.
@@ -89,23 +101,26 @@ cd CreatePDFFromPPTX/
 dotnet run CreatePDFFromPPTX.csproj
 ```
 
-#### Create a PDF File From HTML (via Zip Archive)
+#### Create a PDF File From Static HTML (via Zip Archive)
 
-The sample project CreatePDFFromHtml creates a PDF file from a zip file containing the input HTML file and its resources. 
-Please refer the documentation of CreatePDFOperation.cs to see instructions on the structure of the zip file.
+The sample class CreatePDFFromStaticHTML creates a PDF file from a zip file containing the input HTML file and its resources. 
+Please refer the documentation of CreatePDFOperation.java to see instructions on the structure of the zip file.	Please refer the documentation of CreatePDFOperation.java to see instructions on the structure of the zip file.
 
 ```$xslt
-cd CreatePDFFromHtml/
-dotnet run CreatePDFFromHtml.csproj
+cd CreatePDFFromStaticHtml/
+dotnet run CreatePDFFromStaticHtml.csproj
 ```
 
-#### Create a PDF File From HTML (via URL)
+#### Create a PDF File From Dynamic HTML (via Zip Archive)
 
-The sample project CreatePDFFromURL converts an HTML page specified by a URL to a PDF file.
+The sample class CreatePDFFromDynamicHTML converts a zip file, containing the input HTML file and its resources, along 
+with the input data to a PDF file. The input data is used by the javascript in the HTML file to manipulate the HTML DOM, 
+thus effectively updating the source HTML file. This mechanism can be used to provide data to the template HTML 
+dynamically and then, convert it into a PDF file.
 
 ```$xslt
-cd CreatePDFFromURL/
-dotnet run CreatePDFFromURL.csproj 
+cd CreatePDFFromDynamicHtml/
+dotnet run CreatePDFFromDynamicHtml.csproj
 ```
 
 ### Export PDF To Other Formats
@@ -153,6 +168,29 @@ The sample project CombineFilesWithPageOptions combines specific pages of multip
 ```$xslt
 cd CombinePDFWithPageRanges/
 dotnet run CombinePDFWithPageRanges.csproj
+```
+### OCR PDF file
+
+These samples illustrates how to apply OCR(Optical Character Recognition) to a PDF file and convert it to a searchable copy of your PDF. The supported input format is application/pdf.
+
+#### Convert PDF File to a searchable PDF file.
+
+The sample project OcrPDF converts a PDF file into a searchable PDF file.
+
+```$xslt
+cd OcrPDF/
+dotnet run OcrPDF.csproj
+```
+
+#### Convert PDF file into a searchable file while keeping the original image.
+
+The sample project OcrPDFWithOptions converts a PDF file to a searchable PDF file with maximum fidelity to the original 
+image and default en-us locale. Refer to the documentation of OCRSupportedLocale.cs and OCRSupportedType.cs to see 
+the list of supported OCR locales and OCR types.
+
+```$xslt
+cd OcrPDFWithOptions/
+dotnet run OcrPDFWithOptions.csproj
 ```
 
 ## Licensing

@@ -2,10 +2,10 @@
  * Copyright 2019 Adobe
  * All Rights Reserved.
  *
- * NOTICE: Adobe permits you to use, modify, and distribute this file in
- * accordance with the terms of the Adobe license agreement accompanying
- * it. If you have received this file from a source other than Adobe,
- * then your use, modification, or distribution of it requires the prior
+ * NOTICE: Adobe permits you to use, modify, and distribute this file in 
+ * accordance with the terms of the Adobe license agreement accompanying 
+ * it. If you have received this file from a source other than Adobe, 
+ * then your use, modification, or distribution of it requires the prior 
  * written permission of Adobe.
  */
 using System;
@@ -15,6 +15,7 @@ using log4net.Repository;
 using log4net.Config;
 using log4net;
 using Adobe.DocumentCloud.Services;
+using Adobe.DocumentCloud.Services.auth;
 using Adobe.DocumentCloud.Services.pdfops;
 using Adobe.DocumentCloud.Services.io;
 using Adobe.DocumentCloud.Services.exception;
@@ -37,8 +38,13 @@ namespace CreatePDFFromDOCXInputStream
             Stream inputStream = File.OpenRead(@"createPdfInput.docx");
             try
             {
-                // Initial setup, create a ClientContext and a new operation instance.
-                ClientContext clientContext = ClientContext.CreateFromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-config.json");
+                // Initial setup, create credentials instance.
+                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
+                                .FromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-credentials.json")
+                                .Build();
+
+                //Create an ExecutionContext using credentials and create a new operation instance.
+                ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 CreatePDFOperation createPdfOperation = CreatePDFOperation.CreateNew();
 
                 // Set operation input from the source stream by specifying the stream media type.
@@ -46,10 +52,14 @@ namespace CreatePDFFromDOCXInputStream
                 createPdfOperation.SetInput(source);
 
                 // Execute the operation.
-                FileRef result = createPdfOperation.Execute(clientContext);
+                FileRef result = createPdfOperation.Execute(executionContext);
 
                 // Save the result to the specified location.
                 result.SaveAs(Directory.GetCurrentDirectory() + "/output/createPDFFromDOCXStream.pdf");
+            }
+            catch (ServiceUsageException ex)
+            {
+                log.Error("Exception encountered while executing operation", ex);
             }
             catch (ServiceApiException ex)
             {
