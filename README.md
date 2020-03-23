@@ -14,7 +14,7 @@ The credentials file and corresponding private key file for the samples is ```dc
 Before the samples can be run, replace both the files with the ones present in the downloaded zip file at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
 
 ## Quota Exhaustion
-If you receive ServiceUsageException during the Samples run, it means that trial credentials have exhausted their quota of 5000 pages. Please contact [here](https://www.stage.adobe.io/apis/documentcloud/dcsdk31/form.html) to get the paid credentials.
+If you receive ServiceUsageException during the Samples run, it means that trial credentials have exhausted their quota of 5000 pages. Please contact [here](https://www.adobe.com/go/dcsdk_requestform) to get the paid credentials.
 
 ## Build with .NET Core CLI
 Run the following command to build the project:
