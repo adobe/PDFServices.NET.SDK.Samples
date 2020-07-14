@@ -14,12 +14,12 @@ using log4net.Repository;
 using log4net.Config;
 using log4net;
 using System.Reflection;
-using Adobe.DocumentCloud.Services;
-using Adobe.DocumentCloud.Services.auth;
-using Adobe.DocumentCloud.Services.options.ocr;
-using Adobe.DocumentCloud.Services.pdfops;
-using Adobe.DocumentCloud.Services.io;
-using Adobe.DocumentCloud.Services.exception;
+using Adobe.DocumentServices.PDFTools;
+using Adobe.DocumentServices.PDFTools.auth;
+using Adobe.DocumentServices.PDFTools.options.ocr;
+using Adobe.DocumentServices.PDFTools.pdfops;
+using Adobe.DocumentServices.PDFTools.io;
+using Adobe.DocumentServices.PDFTools.exception;
 
 /// <summary>
 /// This sample illustrates how to perform an OCR operation on a PDF file and convert it into an searchable PDF file on
@@ -43,7 +43,7 @@ namespace OcrPDFWithOptions
             {
                 // Initial setup, create credentials instance.
                 Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-credentials.json")
+                                .FromFile(Directory.GetCurrentDirectory() + "/pdftools-api-credentials.json")
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
