@@ -14,14 +14,14 @@ using log4net;
 using log4net.Config;
 using System.Reflection;
 using log4net.Repository;
-using Adobe.DocumentCloud.Services;
-using Adobe.DocumentCloud.Services.auth;
-using Adobe.DocumentCloud.Services.pdfops;
-using Adobe.DocumentCloud.Services.io;
-using Adobe.DocumentCloud.Services.exception;
+using Adobe.DocumentServices.PDFTools;
+using Adobe.DocumentServices.PDFTools.auth;
+using Adobe.DocumentServices.PDFTools.pdfops;
+using Adobe.DocumentServices.PDFTools.io;
+using Adobe.DocumentServices.PDFTools.exception;
 
 /// <summary>
-/// This sample demonstrates how to combine up to 12 PDF files into a single PDF file.
+/// This sample demonstrates how to combine up to 20 PDF files into a single PDF file.
 /// Refer to README.md for instructions on how to run the samples.
 /// </summary>
 namespace CombinePDF
@@ -37,7 +37,7 @@ namespace CombinePDF
             {
                 // Initial setup, create credentials instance.
                 Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-credentials.json")
+                                .FromFile(Directory.GetCurrentDirectory() + "/pdftools-api-credentials.json")
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.

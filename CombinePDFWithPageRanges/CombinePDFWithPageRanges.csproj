@@ -6,12 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Adobe.DocumentCloud.Services" Version="1.0.0" />
 	  <PackageReference Include="log4net" Version="2.0.8" />
+	  <PackageReference Include="Adobe.DocumentServices.PDFTools" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="dc-services-sdk-credentials.json">
+    <None Update="pdftools-api-credentials.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="private.key">

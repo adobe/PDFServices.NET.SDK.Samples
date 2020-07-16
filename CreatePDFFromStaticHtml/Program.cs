@@ -14,12 +14,12 @@ using log4net.Repository;
 using log4net;
 using log4net.Config;
 using System.Reflection;
-using Adobe.DocumentCloud.Services;
-using Adobe.DocumentCloud.Services.auth;
-using Adobe.DocumentCloud.Services.pdfops;
-using Adobe.DocumentCloud.Services.io;
-using Adobe.DocumentCloud.Services.exception;
-using Adobe.DocumentCloud.Services.options.createpdf;
+using Adobe.DocumentServices.PDFTools;
+using Adobe.DocumentServices.PDFTools.auth;
+using Adobe.DocumentServices.PDFTools.pdfops;
+using Adobe.DocumentServices.PDFTools.io;
+using Adobe.DocumentServices.PDFTools.exception;
+using Adobe.DocumentServices.PDFTools.options.createpdf;
 
 /// <summary>
 /// This sample illustrates how to convert an HTML file to PDF. The HTML file and its associated dependencies must be
@@ -42,7 +42,7 @@ namespace CreatePDFFromStaticHtml
             {
                 // Initial setup, create credentials instance.
                 Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-credentials.json")
+                                .FromFile(Directory.GetCurrentDirectory() + "/pdftools-api-credentials.json")
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.

@@ -8,11 +8,11 @@
  * then your use, modification, or distribution of it requires the prior 
  * written permission of Adobe.
  */
-using Adobe.DocumentCloud.Services;
-using Adobe.DocumentCloud.Services.auth;
-using Adobe.DocumentCloud.Services.exception;
-using Adobe.DocumentCloud.Services.io;
-using Adobe.DocumentCloud.Services.pdfops;
+using Adobe.DocumentServices.PDFTools;
+using Adobe.DocumentServices.PDFTools.auth;
+using Adobe.DocumentServices.PDFTools.exception;
+using Adobe.DocumentServices.PDFTools.io;
+using Adobe.DocumentServices.PDFTools.pdfops;
 using log4net;
 using log4net.Config;
 using log4net.Repository;
@@ -40,7 +40,7 @@ namespace CreatePDFWithInMemoryAuthCredentials
                 /*
                 Initial setup, create credentials instance.
                 Replace the values of CLIENT_ID, CLIENT_SECRET, ORGANIZATION_ID and ACCOUNT_ID with their corresponding values
-                present in the dc-services-sdk-credentials.json file and PRIVATE_KEY_FILE_CONTENTS with contents of private.key file
+                present in the pdftools-api-credentials.json file and PRIVATE_KEY_FILE_CONTENTS with contents of private.key file
                 within the zip file which must have been downloaded at the end of Getting the Credentials workflow.
                 */
                 Credentials credentials = new ServiceAccountCredentials.Builder()

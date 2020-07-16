@@ -14,11 +14,11 @@ using log4net.Repository;
 using log4net.Config;
 using log4net;
 using System.Reflection;
-using Adobe.DocumentCloud.Services;
-using Adobe.DocumentCloud.Services.auth;
-using Adobe.DocumentCloud.Services.pdfops;
-using Adobe.DocumentCloud.Services.io;
-using Adobe.DocumentCloud.Services.exception;
+using Adobe.DocumentServices.PDFTools;
+using Adobe.DocumentServices.PDFTools.auth;
+using Adobe.DocumentServices.PDFTools.pdfops;
+using Adobe.DocumentServices.PDFTools.io;
+using Adobe.DocumentServices.PDFTools.exception;
 
 /// <summary>
 /// This sample illustrates how to create a PDF file from a DOCX file.
@@ -38,7 +38,7 @@ namespace CreatePDFFromDocx
             {
                 // Initial setup, create credentials instance.
                 Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/dc-services-sdk-credentials.json")
+                                .FromFile(Directory.GetCurrentDirectory() + "/pdftools-api-credentials.json")
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
