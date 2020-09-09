@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Adobe.DocumentServices.PDFTools.pdfops
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Adobe.DocumentServices.PDFTools.pdfops
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adobe.DocumentServices.PDFTools.pdfops">
+  
+  <h1 id="Adobe_DocumentServices_PDFTools_pdfops" data-uid="Adobe.DocumentServices.PDFTools.pdfops" class="text-break">Namespace Adobe.DocumentServices.PDFTools.pdfops
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CombineFilesOperation.html">CombineFilesOperation</a></h4>
+      <section><p>Combines multiple PDF files into a single PDF file. Allows specifying which pages of the source files to combine.</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CombineFilesOperation.SupportedSourceFormat.html">CombineFilesOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CombineFilesOperation.html">CombineFilesOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CompressPDFOperation.html">CompressPDFOperation</a></h4>
+      <section><p>An operation that reduces the size of a PDF file.</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CompressPDFOperation.SupportedSourceFormat.html">CompressPDFOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CompressPDFOperation.html">CompressPDFOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CreatePDFOperation.html">CreatePDFOperation</a></h4>
+      <section><p>An operation that converts a non-PDF file to a PDF file. Some source formats may have associated conversion parameters
+which can be set in the <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CreatePDFOperation.html#Adobe_DocumentServices_PDFTools_pdfops_CreatePDFOperation_SetOptions_Adobe_DocumentServices_PDFTools_options_createpdf_CreatePDFOptions_">SetOptions(CreatePDFOptions)</a> method.</p>
+<p>
+The supported source media types are listed here. The <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CreatePDFOperation.SupportedSourceFormat.html">CreatePDFOperation.SupportedSourceFormat</a> class can be used to map file
+extensions to their corresponding media types when creating FileRef instances for the source files.
+<ul><li>image/bmp</li><li>application/msword</li><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li>image/gif</li><li>image/jpeg</li><li>image/png</li><li>application/vnd.ms-powerpoint</li><li>application/vnd.openxmlformats-officedocument.presentationml.presentation</li><li>text/rtf</li><li>image/tiff</li><li>text/plain</li><li>application/vnd.ms-excel</li><li>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li>application/zip (see &quot;Special handling for HTML inputs&quot; below)</li></ul>
+</p>
+<p>
+<strong>Special handling for HTML inputs:</strong>
+<p>   </p>
+An HTML input can only be provided as local zip archive.
+<p>   </p>
+When creating the corresponding FileRef instance, the media type must be &quot;application/zip&quot;
+for the local zip archive. Zip archives must have the following structure:
+<ul><li>The main HTML file must be named &quot;index.html&quot;.</li><li>&quot;index.html&quot; must exist at the top level of zip archive, not in a folder.</li></ul>
+</p>
+Sample Layout:
+<pre><code>html_files.zip
+|__index.html
+|__referenced_file_1.css
+|__referenced_file_2.jpeg
+|__subfolder_1
+|_____referenced_file_3.jpeg</code></pre>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CreatePDFOperation.SupportedSourceFormat.html">CreatePDFOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CreatePDFOperation.html">CreatePDFOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.DeletePagesOperation.html">DeletePagesOperation</a></h4>
+      <section><p>An operation to delete pages in a PDF file.</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.DeletePagesOperation.SupportedSourceFormat.html">DeletePagesOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.DeletePagesOperation.html">DeletePagesOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ExportPDFOperation.html">ExportPDFOperation</a></h4>
+      <section><p>An operation which exports a source PDF file to a supported format specified by <a class="xref" href="Adobe.DocumentServices.PDFTools.options.exportpdf.ExportPDFTargetFormat.html">ExportPDFTargetFormat</a></p>
+<p>
+For the image target formats (JPEG and PNG), the resulting file is a ZIP archive containing one image per page of
+the source PDF file. Each image file name ends with &quot;_&lt;unpadded_page_index>&quot;. For example, a PDF file with 15
+pages will generate 15 image files. The first file&apos;s name ends with &quot;_1&quot; and the last file&apos;s name ends with &quot;_15&quot;.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ExportPDFOperation.SupportedSourceFormat.html">ExportPDFOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ExportPDFOperation.html">ExportPDFOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.InsertPagesOperation.html">InsertPagesOperation</a></h4>
+      <section><p>An operation that can be used to insert pages of multiple PDF files into a base PDF file.</p>
+<p>
+For more complex use cases, refer the <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CombineFilesOperation.html">CombineFilesOperation</a>
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.InsertPagesOperation.SupportedSourceFormat.html">InsertPagesOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.InsertPagesOperation.html">InsertPagesOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.LinearizePDFOperation.html">LinearizePDFOperation</a></h4>
+      <section><p>An operation that converts a PDF file into a linearized (also known as “web optimized”) PDF file.
+Such PDF files are optimized for incremental access in network environments.</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.LinearizePDFOperation.SupportedSourceFormat.html">LinearizePDFOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.LinearizePDFOperation.html">LinearizePDFOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.OCROperation.html">OCROperation</a></h4>
+      <section><p>Convert a PDF file into a searchable PDF file. Allows specifying locale(<a class="xref" href="Adobe.DocumentServices.PDFTools.options.ocr.OCRSupportedLocale.html">OCRSupportedLocale</a>) and OCR Type
+(<a class="xref" href="Adobe.DocumentServices.PDFTools.options.ocr.OCRSupportedType.html">OCRSupportedType</a>) for performing OCR(Optical Character Recognition)</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.OCROperation.SupportedSourceFormat.html">OCROperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.OCROperation.html">OCROperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ProtectPDFOperation.html">ProtectPDFOperation</a></h4>
+      <section><p>An operation that converts a PDF file into a password protected PDF file.
+The password is used for encrypting PDF contents and will be required for viewing the PDF file.</p>
+<p>
+The supported algorithm for encrypting the PDF contents are listed here.
+The <a class="xref" href="Adobe.DocumentServices.PDFTools.options.protectpdf.EncryptionAlgorithm.html">EncryptionAlgorithm</a> can be used to set the encryption algorithm.
+</p>
+<ul><li>AES-128</li><li>AES-256</li></ul>
+<p>
+For AES-128 encryption the user password supports ASCII characters only; allowed minimum length of password
+is 6 characters and maximum length of password is 32 characters.
+For AES-256 encryption the user password supports Unicode character set and the maximum length of password is 127 UTF-8 bytes.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ProtectPDFOperation.SupportedSourceFormat.html">ProtectPDFOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ProtectPDFOperation.html">ProtectPDFOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.html">ReorderPagesOperation</a></h4>
+      <section><p>An operation that allows to rearrange pages in a PDF file according to the specified order.</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.SupportedSourceFormat.html">ReorderPagesOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.html">ReorderPagesOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReplacePagesOperation.html">ReplacePagesOperation</a></h4>
+      <section><p>An operation that allows specific pages in a PDF file to be replaced with pages from multiple PDF files.</p>
+<p>
+For more complex use cases, refer the <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.CombineFilesOperation.html">CombineFilesOperation</a>
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReplacePagesOperation.SupportedSourceFormat.html">ReplacePagesOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReplacePagesOperation.html">ReplacePagesOperation</a></p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.RotatePagesOperation.html">RotatePagesOperation</a></h4>
+      <section><p>An operation that allows rotation of specific pages in a PDF file.</p>
+</section>
+      <h4><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.RotatePagesOperation.SupportedSourceFormat.html">RotatePagesOperation.SupportedSourceFormat</a></h4>
+      <section><p>Supported source file formats for <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.RotatePagesOperation.html">RotatePagesOperation</a></p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2020 Adobe. All rights reserved.</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

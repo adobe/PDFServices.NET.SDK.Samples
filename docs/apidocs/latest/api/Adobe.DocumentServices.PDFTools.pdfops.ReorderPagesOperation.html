@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReorderPagesOperation
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReorderPagesOperation
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation">
+  
+  
+  <h1 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation" class="text-break">Class ReorderPagesOperation
+  </h1>
+  <div class="markdown level0 summary"><p>An operation that allows to rearrange pages in a PDF file according to the specified order.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ReorderPagesOperation</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Adobe.DocumentServices.PDFTools.IOperation.html">IOperation</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.html">Adobe.DocumentServices.PDFTools.pdfops</a></h6>
+  <h6><strong>Assembly</strong>: Adobe.DocumentServices.PDFTools.Doc.dll</h6>
+  <h5 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReorderPagesOperation : object, IOperation</code></pre>
+  </div>
+  <h5 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_examples"><strong>Examples</strong></h5>
+  <p>Sample Usage:</p>
+<pre><code>string credentialsFilePath = Directory.GetCurrentDirectory()
+    + Path.DirectorySeparatorChar + &quot;pdftools-api-credentials.json&quot;;
+Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
+    .FromFile(credentialsFilePath).Build();
+ExecutionContext context = ExecutionContext.Create(credentials);
+ReorderPagesOperation reorderPagesOperation = ReorderPagesOperation.CreateNew();
+reorderPagesOperation.SetInput(FileRef.CreateFromLocalFile(&quot;reorderPagesInput.pdf&quot;,
+    ReorderPagesOperation.SupportedSourceFormat.PDF.GetMediaType()));
+PageRanges pageRanges = new PageRanges();
+pageRanges.AddSinglePage(3);
+pageRanges.AddRange(1,2);
+reorderPagesOperation.SetPagesOrder(pageRanges);
+FileRef result = reorderPagesOperation.Execute(context);   
+result.SaveAs(&quot;reorderPagesOutput.pdf&quot;);</code></pre>
+
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_CreateNew_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.CreateNew*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_CreateNew" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.CreateNew">CreateNew()</h4>
+  <div class="markdown level1 summary"><p>Constructs a <code>ReorderPagesOperation</code> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReorderPagesOperation CreateNew()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.html">ReorderPagesOperation</a></td>
+        <td><p>a new <code>ReorderPagesOperation</code> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_Execute_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.Execute*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_Execute_Adobe_DocumentServices_PDFTools_ExecutionContext_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.Execute(Adobe.DocumentServices.PDFTools.ExecutionContext)">Execute(ExecutionContext)</h4>
+  <div class="markdown level1 summary"><p>Executes this operation synchronously using the supplied context and returns a new FileRef instance for the resulting file.</p>
+<p>
+The resulting file may be stored in the system temporary directory.
+See <a class="xref" href="Adobe.DocumentServices.PDFTools.io.FileRef.html">FileRef</a> for how temporary resources are cleaned up.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileRef Execute(ExecutionContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.ExecutionContext.html">ExecutionContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>the context in which to execute the operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.io.FileRef.html">FileRef</a></td>
+        <td><p>the resulting file; see class-level docs for format-specific considerations</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>if an API call results in an error response</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.exception.ServiceUsageException.html">ServiceUsageException</a></td>
+        <td><p>if service usage limits have been reached or credentials quota has been exhausted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.exception.SDKException.html">SDKException</a></td>
+        <td><p>this is thrown for client-side errors</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>if the client config file or the input source does not exist in a specified path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>if there is an error in reading either the input source or the resulting file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>thrown when any of the inputs provided is not valid</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>thrown when operation instance is invoked more than once</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_SetInput_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.SetInput*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_SetInput_Adobe_DocumentServices_PDFTools_io_FileRef_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.SetInput(Adobe.DocumentServices.PDFTools.io.FileRef)">SetInput(FileRef)</h4>
+  <div class="markdown level1 summary"><p>Sets an input PDF file (media type &quot;application/pdf&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInput(FileRef sourceFileRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.io.FileRef.html">FileRef</a></td>
+        <td><span class="parametername">sourceFileRef</span></td>
+        <td><p>an input PDF file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_SetPagesOrder_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.SetPagesOrder*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_pdfops_ReorderPagesOperation_SetPagesOrder_Adobe_DocumentServices_PDFTools_options_PageRanges_" data-uid="Adobe.DocumentServices.PDFTools.pdfops.ReorderPagesOperation.SetPagesOrder(Adobe.DocumentServices.PDFTools.options.PageRanges)">SetPagesOrder(PageRanges)</h4>
+  <div class="markdown level1 summary"><p>Sets the order of the pages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPagesOrder(PageRanges pageRanges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.options.PageRanges.html">PageRanges</a></td>
+        <td><span class="parametername">pageRanges</span></td>
+        <td><p>page ranges for reordering; can not be null or empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Adobe.DocumentServices.PDFTools.IOperation.html">IOperation</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2020 Adobe. All rights reserved.</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
