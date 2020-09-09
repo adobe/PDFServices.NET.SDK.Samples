@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileRef
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileRef
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef">
+  
+  
+  <h1 id="Adobe_DocumentServices_PDFTools_io_FileRef" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef" class="text-break">Class FileRef
+  </h1>
+  <div class="markdown level0 summary"><p>This class represents either a local file or a URL-based web page. It is typically used by <a class="xref" href="Adobe.DocumentServices.PDFTools.IOperation.html">IOperation</a>
+implementations which accept or return files.</p>
+<p>
+If a FileRef instance is created by this SDK and it refers to a temporary file location, calling any of the overloaded
+<code>saveAs</code> methods will delete the temporary file.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileRef</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Adobe.DocumentServices.PDFTools.io.html">Adobe.DocumentServices.PDFTools.io</a></h6>
+  <h6><strong>Assembly</strong>: Adobe.DocumentServices.PDFTools.Doc.dll</h6>
+  <h5 id="Adobe_DocumentServices_PDFTools_io_FileRef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class FileRef : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_io_FileRef_CreateFromLocalFile_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.CreateFromLocalFile*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_io_FileRef_CreateFromLocalFile_String_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.CreateFromLocalFile(String)">CreateFromLocalFile(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a FileRef instance from a local file path where the media type can be inferred from the file extension.</p>
+<p>
+To specify the media type explicitly, use <see cref="!:FileRef.CreateFromLocalFile(string, string)"></see>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileRef CreateFromLocalFile(String localSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">localSource</span></td>
+        <td><p>Local file path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.io.FileRef.html">FileRef</a></td>
+        <td><p>a FileRef instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_io_FileRef_CreateFromLocalFile_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.CreateFromLocalFile*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_io_FileRef_CreateFromLocalFile_String_String_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.CreateFromLocalFile(String,String)">CreateFromLocalFile(String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a FileRef instance from a local file path with an explicitly specified media type.</p>
+<p>
+If the media type can be inferred from the file extension, consider <see cref="!:FileRef.CreateFromLocalFile(string)"></see>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileRef CreateFromLocalFile(String localSource, String mediaType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">localSource</span></td>
+        <td><p>Local file path</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">mediaType</span></td>
+        <td><p>Media type to identify the local file format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.io.FileRef.html">FileRef</a></td>
+        <td><p>a FileRef instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_io_FileRef_CreateFromStream_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.CreateFromStream*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_io_FileRef_CreateFromStream_Stream_String_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.CreateFromStream(Stream,String)">CreateFromStream(Stream, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a FileRef instance from an input stream using the specified media type.</p>
+<p>
+The <code>Stream</code> is not read by this method but by consumers of file content such as
+<a class="xref" href="Adobe.DocumentServices.PDFTools.IOperation.html#Adobe_DocumentServices_PDFTools_IOperation_Execute_Adobe_DocumentServices_PDFTools_ExecutionContext_">Execute(ExecutionContext)</a>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileRef CreateFromStream(Stream inputStream, String mediaType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">inputStream</span></td>
+        <td><p>Stream representing the file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">mediaType</span></td>
+        <td><p>Media type, to identify the file format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.DocumentServices.PDFTools.io.FileRef.html">FileRef</a></td>
+        <td><p>a FileRef instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_io_FileRef_SaveAs_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.SaveAs*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_io_FileRef_SaveAs_Stream_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.SaveAs(Stream)">SaveAs(Stream)</h4>
+  <div class="markdown level1 summary"><p>Writes the contents of this file to <code>outputStream</code>.
+If this FileRef instance refers to a temporary local file created by the SDK, that temporary file is deleted.</p>
+<p>
+Note: This method does not close <code>outputStream</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SaveAs(Stream outputStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">outputStream</span></td>
+        <td><p>the destination output stream</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>An I/O error occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Invalid sourceFile name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UnauthorizedAccessException</span></td>
+        <td><p>Does not have the required permission to delete the source file</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>thrown when method SaveAs called on non operation results</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_DocumentServices_PDFTools_io_FileRef_SaveAs_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.SaveAs*"></a>
+  <h4 id="Adobe_DocumentServices_PDFTools_io_FileRef_SaveAs_String_" data-uid="Adobe.DocumentServices.PDFTools.io.FileRef.SaveAs(String)">SaveAs(String)</h4>
+  <div class="markdown level1 summary"><p>Saves this file to the location specified by <code>targetLocation</code>.
+If this FileRef instance refers to a temporary local file created by the SDK, that temporary file is deleted.</p>
+<p>
+The directory mentioned in <code>targetLocation</code> is created if it does not exist.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SaveAs(String targetLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">targetLocation</span></td>
+        <td><p>Local file path</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>File already exists in the target location</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Invalid sourceFile or destination file name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UnauthorizedAccessException</span></td>
+        <td><p>Does not have the required permission to move the file to a specified location</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>thrown when method SaveAs called on non operation results</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2020 Adobe. All rights reserved.</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
