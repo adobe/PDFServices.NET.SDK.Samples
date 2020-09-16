@@ -49,7 +49,7 @@ namespace ProtectPDF
                 // Build ProtectPDF options by setting a User Password and Encryption
                 // Algorithm (used for encrypting the PDF file).
                 ProtectPDFOptions protectPDFOptions = ProtectPDFOptions.PasswordProtectOptionsBuilder()
-                        .SetUserPassword("encryptPassword")
+                        .SetUserPassword("password")
                         .SetEncryptionAlgorithm(EncryptionAlgorithm.AES_256)
                         .Build();
 
