@@ -62,7 +62,7 @@ dotnet run CreatePDFFromDOCXInputStream.csproj
 
 #### Create a PDF File From a DOCX File (Write to an OutputStream)
 
-The sample project CreatePDFFromDocx creates a PDF file from a DOCX file. Instead of saving the result to a local file, it writes the 
+The sample project CreatePDFFromDocxToOutputStream creates a PDF file from a DOCX file. Instead of saving the result to a local file, it writes the 
 result to an output stream.
 
 ```$xslt
@@ -103,7 +103,7 @@ dotnet run CreatePDFFromPPTX.csproj
 
 #### Create a PDF File From Static HTML (via Zip Archive)
 
-The sample class CreatePDFFromStaticHTML creates a PDF file from a zip file containing the input HTML file and its resources. 
+The sample project CreatePDFFromStaticHTML creates a PDF file from a zip file containing the input HTML file and its resources. 
 Please refer the documentation of CreatePDFOperation.java to see instructions on the structure of the zip file.	Please refer the documentation of CreatePDFOperation.java to see instructions on the structure of the zip file.
 
 ```$xslt
@@ -113,7 +113,7 @@ dotnet run CreatePDFFromStaticHtml.csproj
 
 #### Create a PDF File From Dynamic HTML (via Zip Archive)
 
-The sample class CreatePDFFromDynamicHTML converts a zip file, containing the input HTML file and its resources, along 
+The sample project CreatePDFFromDynamicHTML converts a zip file, containing the input HTML file and its resources, along 
 with the input data to a PDF file. The input data is used by the javascript in the HTML file to manipulate the HTML DOM, 
 thus effectively updating the source HTML file. This mechanism can be used to provide data to the template HTML 
 dynamically and then, convert it into a PDF file.
@@ -222,7 +222,7 @@ dotnet run LinearizePDF.csproj
 
 ### Protect PDF File
 
-The sample illustrates how to secure a PDF file with a password.
+These samples illustrate how to secure a PDF file with a password.
 
 #### Convert a PDF File into a Password Protected PDF File
 
@@ -231,6 +231,28 @@ The sample project ProtectPDF converts a PDF file into a password protected PDF 
 ```$xslt
 cd ProtectPDF/
 dotnet run ProtectPDF.csproj
+```
+
+#### Protect a PDF File with an Owner Password and Permissions
+
+The sample project ProtectPDFWithOwnerPassword secures input PDF file with owner password and allows certain access permissions such as copying and editing the contents, and printing of the document at low resolution.
+
+```$xslt
+cd ProtectPDFWithOwnerPassword/
+dotnet run ProtectPDFWithOwnerPassword.csproj
+```
+
+### Remove Protection
+
+The sample illustrates how to remove a password security from a PDF document.
+
+#### Remove Protection from a PDF File
+
+The sample project RemoveProtection removes a password security from a secured PDF document.
+
+```$xslt
+cd RemoveProtection/
+dotnet run RemoveProtection.csproj
 ```
 
 ### Rotate Pages
@@ -296,6 +318,39 @@ The sample project ReplacePDFPages replaces specific pages in a PDF file with pa
 ```$xslt
 cd ReplacePDFPages/
 dotnet run ReplacePDFPages.csproj
+```
+
+### Split PDF File
+These samples illustrate how to split PDF file into multiple PDF files.
+
+#### Split PDF By Number of Pages
+
+The sample project SplitPDFByNumberOfPages splits input PDF into multiple PDF files on the basis of the maximum number
+of pages each of the output files can have.
+
+```$xslt
+cd SplitPDFByNumberOfPages/
+dotnet run SplitPDFByNumberOfPages.csproj
+```
+
+#### Split PDF Into Number of PDF Files
+
+The sample project SplitPDFIntoNumberOfFiles splits input PDF into multiple PDF files on the basis of the number
+of documents.
+ 
+```$xslt
+cd SplitPDFIntoNumberOfFiles/
+dotnet run SplitPDFIntoNumberOfFiles.csproj
+```
+
+#### Split PDF By Page Ranges
+
+The sample project SplitPDFByPageRanges splits input PDF into multiple PDF files on the basis of page ranges.
+Each page range corresponds to a single output file having the pages specified in the page range.
+
+```$xslt
+cd SplitPDFByPageRanges/
+dotnet run SplitPDFByPageRanges.csproj
 ```
 
 ## Licensing
