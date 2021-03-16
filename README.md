@@ -51,6 +51,16 @@ cd CreatePDFFromDocx/
 dotnet run CreatePDFFromDocx.csproj
 ```
 
+#### Create a PDF File From a DOCX File with options 
+
+The sample project CreatePDFFromDocxWithOptions creates a PDF file from a DOCX file by setting documentLanguage as
+the language of input file.
+
+```$xslt
+cd CreatePDFFromDocxWithOptions/
+dotnet run CreatePDFFromDocxWithOptions.csproj
+```
+
 #### Create a PDF File From a DOCX Input Stream 
 
 The sample project CreatePDFFromDOCXInputStream creates a PDF file from a DOCX input stream.
@@ -206,6 +216,16 @@ cd CompressPDF/
 dotnet run CompressPDF.csproj
 ```
 
+#### Reduce PDF File Size on the basis of Compression Level
+
+The sample project CompressPDFWithOptions reduces the size of a PDF file on the basis of provided compression level. 
+Refer to the documentation of CompressionLevel.cs to see the list of supported compression levels.
+
+```$xslt
+cd CompressPDFWithOptions/
+dotnet run CompressPDFWithOptions.csproj
+```
+
 ### Linearize PDF File
 
 The sample illustrates how to convert a PDF file into a Linearized (also known as "web optimized") PDF file. Such PDF files are 
@@ -235,7 +255,7 @@ dotnet run ProtectPDF.csproj
 
 #### Protect a PDF File with an Owner Password and Permissions
 
-The sample project ProtectPDFWithOwnerPassword secures input PDF file with owner password and allows certain access permissions such as copying and editing the contents, and printing of the document at low resolution.
+The sample project ProtectPDFWithOwnerPassword secures an input PDF file with owner password and allows certain access permissions such as copying and editing the contents, and printing of the document at low resolution.
 
 ```$xslt
 cd ProtectPDFWithOwnerPassword/
@@ -351,6 +371,32 @@ Each page range corresponds to a single output file having the pages specified i
 ```$xslt
 cd SplitPDFByPageRanges/
 dotnet run SplitPDFByPageRanges.csproj
+```
+
+### Document Merge
+Adobe Document Merge Operation allows you to produce high fidelity PDF and Word documents with dynamic data inputs.
+Using this operation, you can merge your JSON data with Word templates to create dynamic documents for 
+contracts and agreements, invoices, proposals, reports, forms, branded marketing documents and more.
+To know more about document generation and document templates, please checkout the [documentation](http://www.adobe.com/go/dcdocgen_overview_doc)
+
+#### Merge Document to DOCX
+
+The sample project MergeDocumentToDocx merges the Word based document template with the input JSON data to generate 
+the output document in the DOCX format.
+
+```$xslt
+cd MergeDocumentToDocx/
+dotnet run MergeDocumentToDocx.csproj
+```
+
+#### Merge Document to PDF
+
+The sample project MergeDocumentToPDF merges the Word based document template with the input JSON data to generate
+the output document in the PDF format.
+
+```$xslt
+cd MergeDocumentToPDF/
+dotnet run MergeDocumentToPDF.csproj
 ```
 
 ## Licensing
