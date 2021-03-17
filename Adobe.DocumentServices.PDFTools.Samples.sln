@@ -57,6 +57,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitPDFByPageRanges", "Spl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitPDFIntoNumberOfFiles", "SplitPDFIntoNumberOfFiles\SplitPDFIntoNumberOfFiles.csproj", "{A9E59AD5-A0C6-4803-8CFE-0F8EEF9D535F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeDocumentToDocx", "MergeDocumentToDocx\MergeDocumentToDocx.csproj", "{01B61CEF-3D68-4AC2-BF6D-B6C758192590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeDocumentToPDF", "MergeDocumentToPDF\MergeDocumentToPDF.csproj", "{76900B7B-2E8C-41D8-831B-A9EA3C70C02E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressPDFWithOptions", "CompressPDFWithOptions\CompressPDFWithOptions.csproj", "{A8374F7C-CAEB-480A-8FBA-93F2D7316A2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromDocxWithOptions", "CreatePDFFromDocxWithOptions\CreatePDFFromDocxWithOptions.csproj", "{975E1643-DFAA-4812-9A41-3144931800CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +179,22 @@ Global
 		{A9E59AD5-A0C6-4803-8CFE-0F8EEF9D535F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9E59AD5-A0C6-4803-8CFE-0F8EEF9D535F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9E59AD5-A0C6-4803-8CFE-0F8EEF9D535F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B61CEF-3D68-4AC2-BF6D-B6C758192590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B61CEF-3D68-4AC2-BF6D-B6C758192590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B61CEF-3D68-4AC2-BF6D-B6C758192590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B61CEF-3D68-4AC2-BF6D-B6C758192590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76900B7B-2E8C-41D8-831B-A9EA3C70C02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76900B7B-2E8C-41D8-831B-A9EA3C70C02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76900B7B-2E8C-41D8-831B-A9EA3C70C02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76900B7B-2E8C-41D8-831B-A9EA3C70C02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8374F7C-CAEB-480A-8FBA-93F2D7316A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8374F7C-CAEB-480A-8FBA-93F2D7316A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8374F7C-CAEB-480A-8FBA-93F2D7316A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8374F7C-CAEB-480A-8FBA-93F2D7316A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975E1643-DFAA-4812-9A41-3144931800CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975E1643-DFAA-4812-9A41-3144931800CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975E1643-DFAA-4812-9A41-3144931800CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975E1643-DFAA-4812-9A41-3144931800CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
