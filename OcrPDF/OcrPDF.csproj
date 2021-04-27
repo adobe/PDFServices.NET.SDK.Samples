@@ -7,11 +7,11 @@
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.12" />
-    <PackageReference Include="Adobe.DocumentServices.PDFTools" Version="1.3.0" />
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="pdftools-api-credentials.json">
+    <None Update="pdfservices-api-credentials.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ocrInput.pdf">
