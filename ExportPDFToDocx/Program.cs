@@ -8,12 +8,12 @@
  * then your use, modification, or distribution of it requires the prior 
  * written permission of Adobe.
  */
-using Adobe.DocumentServices.PDFTools;
-using Adobe.DocumentServices.PDFTools.auth;
-using Adobe.DocumentServices.PDFTools.exception;
-using Adobe.DocumentServices.PDFTools.io;
-using Adobe.DocumentServices.PDFTools.options.exportpdf;
-using Adobe.DocumentServices.PDFTools.pdfops;
+using Adobe.PDFServicesSDK;
+using Adobe.PDFServicesSDK.auth;
+using Adobe.PDFServicesSDK.exception;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.options.exportpdf;
+using Adobe.PDFServicesSDK.pdfops;
 using log4net;
 using log4net.Config;
 using log4net.Repository;
@@ -40,7 +40,7 @@ namespace ExportPDFToDocx
             {
                 // Initial setup, create credentials instance.
                 Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdftools-api-credentials.json")
+                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.

@@ -1,8 +1,8 @@
-# Samples for the PDF Tools .NET SDK
+# Samples for the PDF Services .NET SDK
 
-This sample solution helps you get started with the PDF Tools .NET SDK.
+This sample solution helps you get started with the PDF Services .NET SDK.
 
-The sample projects illustrate how to perform PDF-related actions (such as converting to and from the PDF format) using the PDF Tools .NET SDK. **Please note that the PDF Tools .NET SDK supports only server side use cases**.
+The sample projects illustrate how to perform PDF-related actions (such as converting to and from the PDF format) using the PDF Services .NET SDK. **Please note that the PDF Services .NET SDK supports only server side use cases**.
 
 ## Prerequisites
 The sample solution has the following requirements:
@@ -10,7 +10,7 @@ The sample solution has the following requirements:
 * Build Tool: The solution requires Visual studio or .NET Core CLI to be installed to be able to run the sample projects.
 
 ## Authentication Setup
-The credentials file and corresponding private key file for the samples is ```pdftools-api-credentials.json``` and ```private.key``` respectively. 
+The credentials file and corresponding private key file for the samples is ```pdfservices-api-credentials.json``` and ```private.key``` respectively. 
 Before the samples can be run, replace both the files with the ones present in the downloaded zip file at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
 
 ## Quota Exhaustion
@@ -22,7 +22,7 @@ Run the following command to build the project:
 dotnet build
 ```
 
-Note that the PDF Tools SDK is listed as a dependency and will be downloaded automatically.
+Note that the PDF Services SDK is listed as a dependency and will be downloaded automatically.
 
 ## A Note on Logging
 Following component is being used by SDK:

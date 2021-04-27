@@ -14,12 +14,12 @@ using log4net.Repository;
 using log4net;
 using log4net.Config;
 using System.Reflection;
-using Adobe.DocumentServices.PDFTools;
-using Adobe.DocumentServices.PDFTools.auth;
-using Adobe.DocumentServices.PDFTools.pdfops;
-using Adobe.DocumentServices.PDFTools.io;
-using Adobe.DocumentServices.PDFTools.exception;
-using Adobe.DocumentServices.PDFTools.options.createpdf;
+using Adobe.PDFServicesSDK;
+using Adobe.PDFServicesSDK.auth;
+using Adobe.PDFServicesSDK.pdfops;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.exception;
+using Adobe.PDFServicesSDK.options.createpdf;
 using Newtonsoft.Json.Linq;
 
 /// <summary>
@@ -44,7 +44,7 @@ namespace CreatePDFFromDynamicHtml
             {
                 // Initial setup, create credentials instance.
                 Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdftools-api-credentials.json")
+                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
