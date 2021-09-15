@@ -133,10 +133,28 @@ cd CreatePDFFromDynamicHtml/
 dotnet run CreatePDFFromDynamicHtml.csproj
 ```
 
+#### Create a PDF File From a Static HTML file with inline CSS
+
+The sample project CreatePDFFromHTMLWithInlineCSS creates a PDF file from an input HTML file with inline CSS.
+
+```$xslt
+cd CreatePDFFromHTMLWithInlineCSS/
+dotnet run CreatePDFFromHTMLWithInlineCSS.csproj
+```
+
+#### Create a PDF File From HTML specified via URL
+
+The sample project CreatePDFFromURL creates a PDF file from an HTML specified via URL.
+```$xslt
+cd CreatePDFFromURL/
+dotnet run CreatePDFFromURL.csproj
+```
+
+
 ### Export PDF To Other Formats
 
 These samples illustrate how to export PDF files to other formats. Refer to the documentation of ExportPDFOperation.cs
-to see the list of supported export formats.
+to see the list of supported export formats. Please note that exporting PDF to images results in a zip archive. To export PDF to a list of images refer to the documentation of ExportPDFToImagesOperation.cs.
 
 #### Export a PDF File To a DOCX File 
 
@@ -155,6 +173,14 @@ the individual images.
 ```$xslt
 cd ExportPDFToImage/
 dotnet run ExportPDFToImage.csproj
+```
+
+#### Export a PDF File To a List of Images (JPEG)
+
+The sample project ExportPDFToJPEGList converts a PDF file's pages to a list of JPEG images.
+```$xslt
+cd ExportPDFToJPEGList/
+dotnet run ExportPDFToJPEGList.csproj
 ```
 
 ### Combine PDF Files
@@ -397,6 +423,113 @@ the output document in the PDF format.
 ```$xslt
 cd MergeDocumentToPDF/
 dotnet run MergeDocumentToPDF.csproj
+```
+
+#### Extract PDF
+
+These samples illustrate extracting content of PDF in a structured JSON format along with the renditions inside PDF.
+* The structuredData.json file with the extracted content & PDF element structure.
+* A renditions folder(s) containing renditions for each element type selected as input.
+  The folder name is either “tables” or “figures” depending on your specified element type.
+  Each folder contains renditions with filenames that correspond to the element information in the JSON file.
+
+#### Extract Text Elements
+
+The sample project ExtractTextInfoFromPDF extracts text elements from PDF Document.
+
+```$xslt
+cd ExtractTextInfoFromPDF/
+dotnet run ExtractTextInfoFromPDF.csproj
+```
+
+#### Extract Text Elements and bounding boxes for Characters present in text blocks
+
+The sample project ExtractTextInfoWithCharBoundsFromPDF extracts text elements and bounding boxes for characters present in text blocks.
+
+```$xslt
+cd ExtractTextInfoWithCharBoundsFromPDF/
+dotnet run ExtractTextInfoWithCharBoundsFromPDF.csproj
+```
+
+#### Extract Text, Table Elements
+
+The sample project ExtractTextTableInfoFromPDF extracts text, table elements from PDF Document.
+
+```$xslt
+cd ExtractTextTableInfoFromPDF/
+dotnet run ExtractTextTableInfoFromPDF.csproj
+```
+
+#### Extract Text, Table Elements and bounding boxes for Characters present in text blocks with Renditions of Table Elements
+
+The sample project ExtractTextTableInfoWithCharBoundsFromPDF extracts text, table elements, bounding boxes for characters present in text blocks and
+table element's renditions from PDF Document.
+
+```$xslt
+cd ExtractTextTableInfoWithCharBoundsFromPDF/
+dotnet run ExtractTextTableInfoWithCharBoundsFromPDF.csproj
+```
+
+#### Extract Text, Table Elements with Renditions of Figure, Table Elements
+
+The sample project ExtractTextTableInfoWithFiguresTablesRenditionsFromPDF extracts text, table elements along with figure
+and table element's renditions from PDF Document.
+
+
+```$xslt
+cd ExtractTextTableInfoWithFiguresTablesRenditionsFromPDF/
+dotnet run ExtractTextTableInfoWithFiguresTablesRenditionsFromPDF.csproj
+```
+
+#### Extract Text, Table Elements with Renditions of Table Elements
+
+The sample project ExtractTextTableInfoWithRenditionsFromPDF extracts text, table elements along with table renditions
+from PDF Document.
+
+
+```$xslt
+cd ExtractTextTableInfoWithRenditionsFromPDF/
+dotnet run ExtractTextTableInfoWithRenditionsFromPDF.csproj
+```
+
+#### Extract Text, Table Elements with Styling information of text
+
+The sample project ExtractTextTableInfoWithStylingFromPDF extracts text and table elements along with the styling information of the text blocks.
+
+```$xslt
+cd ExtractTextTableInfoWithStylingFromPDF/
+dotnet run ExtractTextTableInfoWithStylingFromPDF.csproj
+```
+
+#### Extract Text, Table Elements with Renditions and CSV's of Table Elements
+
+The sample project ExtractTextTableInfoWithTableStructureFromPdf extracts text, table elements, table structures as CSV and
+table element's renditions from PDF Document.
+
+
+```$xslt
+cd ExtractTextTableInfoWithTableStructureFromPDF/
+dotnet run ExtractTextTableInfoWithTableStructureFromPDF.csproj
+```
+
+### Fetch PDF Properties
+
+These samples illustrate how to fetch properties of a PDF file in the JSON format.
+
+#### Fetch PDF Properties as a JSON File
+
+The sample project PDFPropertiesAsFile fetches the properties of an input PDF, as a JSON file.
+```$xslt
+cd PDFPropertiesAsFile/
+dotnet run PDFPropertiesAsFile.csproj
+```
+
+#### Fetch PDF Properties as a JSON Object
+
+The sample project PDFPropertiesAsJSONObject fetches the properties of an input PDF, as a JSON Object.
+```
+cd PDFPropertiesAsJSONObject/
+dotnet run PDFPropertiesAsJSONObject.csproj
 ```
 
 ## Licensing
