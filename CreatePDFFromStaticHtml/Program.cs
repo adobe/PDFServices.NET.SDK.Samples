@@ -99,7 +99,7 @@ namespace CreatePDFFromStaticHtml
             CreatePDFOptions htmlToPdfOptions = CreatePDFOptions.HtmlOptionsBuilder()
                     .IncludeHeaderFooter(true)
                     .WithPageLayout(pageLayout)
-                    . Build();
+                    .Build();
             htmlToPDFOperation.SetOptions(htmlToPdfOptions);
         }
 

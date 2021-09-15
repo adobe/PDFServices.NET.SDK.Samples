@@ -20,7 +20,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Adobe.PDFServicesSDK" Version="2.0.0" />
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="2.1.0" />
     <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
 </Project>
