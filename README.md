@@ -425,6 +425,16 @@ cd MergeDocumentToPDF/
 dotnet run MergeDocumentToPDF.csproj
 ```
 
+#### Merge Document to DOCX Fragments
+
+The sample project MergeDocumentToDocxFragments merges the Word based document template with the input JSON data and Fragments JSON to generate
+the output document in the Docx format.
+
+```$xslt
+cd MergeDocumentToDocxFragments/
+dotnet run MergeDocumentToDocxFragments.csproj
+```
+
 #### Extract PDF
 
 These samples illustrate extracting content of PDF in a structured JSON format along with the renditions inside PDF.

@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTextTableInfoWithSty
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTextTableInfoWithTableStructureFromPDF", "ExtractTextTableInfoWithTableStructureFromPDF\ExtractTextTableInfoWithTableStructureFromPDF.csproj", "{76053FFC-3391-4A22-A394-16E777B1345D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeDocumentToDocxFragments", "MergeDocumentToDocxFragments\MergeDocumentToDocxFragments.csproj", "{191521DC-3135-4DA6-BD5B-9626CF8C2F79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -273,6 +275,10 @@ Global
 		{76053FFC-3391-4A22-A394-16E777B1345D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76053FFC-3391-4A22-A394-16E777B1345D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76053FFC-3391-4A22-A394-16E777B1345D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

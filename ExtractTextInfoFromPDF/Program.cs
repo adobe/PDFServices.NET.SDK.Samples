@@ -52,9 +52,9 @@ namespace ExtractTextInfoFromPDF
                 extractPdfOperation.SetInputFile(sourceFileRef);
                 
                 // Build ExtractPDF options and set them into the operation.
-                ExtractPDFOptions extractPdfOptions = ExtractPDFOptions.ExtractPdfOptionsBuilder()
+                ExtractPDFOptions extractPdfOptions = ExtractPDFOptions.ExtractPDFOptionsBuilder()
                     .AddElementsToExtract(new List<ExtractElementType>(new []{ ExtractElementType.TEXT}))
-                    .build();
+                    .Build();
                 extractPdfOperation .SetOptions(extractPdfOptions);
 
                 // Execute the operation.

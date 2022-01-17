@@ -52,10 +52,10 @@ namespace ExtractTextTableInfoWithRenditionsFromPDF
                 extractPdfOperation.SetInputFile(sourceFileRef);
                 
                 // Build ExtractPDF options and set them into the operation
-                ExtractPDFOptions extractPdfOptions = ExtractPDFOptions.ExtractPdfOptionsBuilder()
+                ExtractPDFOptions extractPdfOptions = ExtractPDFOptions.ExtractPDFOptionsBuilder()
                     .AddElementsToExtract(new List<ExtractElementType>(new []{ ExtractElementType.TEXT, ExtractElementType.TABLES}))
                     .AddElementsToExtractRenditions(new List<ExtractRenditionsElementType> (new [] {ExtractRenditionsElementType.TABLES}))
-                    .build();
+                    .Build();
                     
                 extractPdfOperation.SetOptions(extractPdfOptions);
 
