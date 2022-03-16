@@ -100,7 +100,7 @@ If a FileRef instance is created by this SDK and it refers to a temporary file l
   <h4 id="Adobe_PDFServicesSDK_io_FileRef_CreateFromLocalFile_String_" data-uid="Adobe.PDFServicesSDK.io.FileRef.CreateFromLocalFile(String)">CreateFromLocalFile(String)</h4>
   <div class="markdown level1 summary"><p>Creates a FileRef instance from a local file path where the media type can be inferred from the file extension.</p>
 <p>
-To specify the media type explicitly, use <see cref="!:FileRef.CreateFromLocalFile(string, string)"></see>.
+To specify the media type explicitly, use <a class="xref" href="Adobe.PDFServicesSDK.io.FileRef.html#Adobe_PDFServicesSDK_io_FileRef_CreateFromLocalFile_String_String_">CreateFromLocalFile(String, String)</a>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -148,7 +148,7 @@ To specify the media type explicitly, use <see cref="!:FileRef.CreateFromLocalFi
   <h4 id="Adobe_PDFServicesSDK_io_FileRef_CreateFromLocalFile_String_String_" data-uid="Adobe.PDFServicesSDK.io.FileRef.CreateFromLocalFile(String,String)">CreateFromLocalFile(String, String)</h4>
   <div class="markdown level1 summary"><p>Creates a FileRef instance from a local file path with an explicitly specified media type.</p>
 <p>
-If the media type can be inferred from the file extension, consider <see cref="!:FileRef.CreateFromLocalFile(string)"></see>.
+If the media type can be inferred from the file extension, consider <a class="xref" href="Adobe.PDFServicesSDK.io.FileRef.html#Adobe_PDFServicesSDK_io_FileRef_CreateFromLocalFile_String_">CreateFromLocalFile(String)</a>.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -255,7 +255,11 @@ The <code>Stream</code> is not read by this method but by consumers of file cont
   
   <a id="Adobe_PDFServicesSDK_io_FileRef_CreateFromURI_" data-uid="Adobe.PDFServicesSDK.io.FileRef.CreateFromURI*"></a>
   <h4 id="Adobe_PDFServicesSDK_io_FileRef_CreateFromURI_Uri_" data-uid="Adobe.PDFServicesSDK.io.FileRef.CreateFromURI(Uri)">CreateFromURI(Uri)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a FileRef instance from the input URL.</p>
+<p>
+As of now, this method is only supported for creation of PDF from HTML using <a class="xref" href="Adobe.PDFServicesSDK.pdfops.CreatePDFOperation.html">CreatePDFOperation</a>.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -274,7 +278,8 @@ The <code>Stream</code> is not read by this method but by consumers of file cont
       <tr>
         <td><span class="xref">Uri</span></td>
         <td><span class="parametername">uri</span></td>
-        <td></td>
+        <td><p>Input URI</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -289,7 +294,8 @@ The <code>Stream</code> is not read by this method but by consumers of file cont
     <tbody>
       <tr>
         <td><a class="xref" href="Adobe.PDFServicesSDK.io.FileRef.html">FileRef</a></td>
-        <td></td>
+        <td><p>a FileRef instance</p>
+</td>
       </tr>
     </tbody>
   </table>
