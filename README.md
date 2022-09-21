@@ -83,7 +83,7 @@ dotnet run CreatePDFFromDocxToOutputStream.csproj
 #### Create a PDF File From a DOCX File (By providing in-memory Authentication credentials)
 
 The sample project CreatePDFWithInMemoryAuthCredentials highlights how to provide in-memory auth credentials
-for performing an operation. This enables the clients to fetch the credentials from a secret server during runtime, 
+for performing an operation. This enables the clients to fetch the credentials from a secret server during runtime,
 instead of storing them in a file.
 
 Before running the sample, authentication credentials need to be updated as per the instructions in the code.
@@ -154,7 +154,7 @@ dotnet run CreatePDFFromURL.csproj
 ### Export PDF To Other Formats
 
 These samples illustrate how to export PDF files to other formats. Refer to the documentation of ExportPDFOperation.cs
-to see the list of supported export formats. Please note that exporting PDF to images results in a zip archive. To export PDF to a list of images refer to the documentation of ExportPDFToImagesOperation.cs.
+and ExportPDFToImagesOperation.cs for supported export formats.
 
 #### Export a PDF File To a DOCX File 
 
@@ -165,22 +165,33 @@ cd ExportPDFToDocx/
 dotnet run ExportPDFToDocx.csproj
 ```
 
-#### Export a PDF File To an Image Format (JPEG)
+#### Export a PDF file to a DOCX file (apply OCR on the PDF file)
 
-The sample project ExportPDFToImage converts a PDF file's pages to JPEG images. Note that the output is a zip archive containing
-the individual images.
+The sample project ExportPDFToDocxWithOCROption converts a PDF file to a DOCX file.
+OCR processing is also performed on the input PDF file to extract text from images in the document.
 
 ```$xslt
-cd ExportPDFToImage/
-dotnet run ExportPDFToImage.csproj
+cd ExportPDFToDocxWithOCROption/
+dotnet run ExportPDFToDocxWithOCROption.csproj
 ```
 
-#### Export a PDF File To a List of Images (JPEG)
+#### Export a PDF File To an Image Format (JPEG)
 
-The sample project ExportPDFToJPEGList converts a PDF file's pages to a list of JPEG images.
+The sample project ExportPDFToJPEG converts a PDF file's pages to a list of JPEG images.
+
 ```$xslt
-cd ExportPDFToJPEGList/
-dotnet run ExportPDFToJPEGList.csproj
+cd ExportPDFToJPEG/
+dotnet run ExportPDFToJPEG.csproj
+```
+
+#### Export a PDF File To a Zip of Images (JPEG)
+
+The sample project ExportPDFToJPEGZip converts a PDF file's pages to JPEG images.
+The resulting file is a ZIP archive containing one image per page of the source PDF file
+
+```$xslt
+cd ExportPDFToJPEGZip/
+dotnet run ExportPDFToJPEGZip.csproj
 ```
 
 ### Combine PDF Files
@@ -445,7 +456,7 @@ These samples illustrate extracting content of PDF in a structured JSON format a
 
 #### Extract Text Elements
 
-The sample project ExtractTextInfoFromPDF extracts text elements from PDF Document.
+The sample project ExtractTextInfoFromPDF extracts text elements from PDF document.
 
 ```$xslt
 cd ExtractTextInfoFromPDF/
@@ -463,7 +474,7 @@ dotnet run ExtractTextInfoWithCharBoundsFromPDF.csproj
 
 #### Extract Text, Table Elements
 
-The sample project ExtractTextTableInfoFromPDF extracts text, table elements from PDF Document.
+The sample project ExtractTextTableInfoFromPDF extracts text, table elements from PDF document.
 
 ```$xslt
 cd ExtractTextTableInfoFromPDF/
@@ -473,7 +484,7 @@ dotnet run ExtractTextTableInfoFromPDF.csproj
 #### Extract Text, Table Elements and bounding boxes for Characters present in text blocks with Renditions of Table Elements
 
 The sample project ExtractTextTableInfoWithCharBoundsFromPDF extracts text, table elements, bounding boxes for characters present in text blocks and
-table element's renditions from PDF Document.
+table element's renditions from PDF document.
 
 ```$xslt
 cd ExtractTextTableInfoWithCharBoundsFromPDF/
@@ -483,7 +494,7 @@ dotnet run ExtractTextTableInfoWithCharBoundsFromPDF.csproj
 #### Extract Text, Table Elements with Renditions of Figure, Table Elements
 
 The sample project ExtractTextTableInfoWithFiguresTablesRenditionsFromPDF extracts text, table elements along with figure
-and table element's renditions from PDF Document.
+and table element's renditions from PDF document.
 
 
 ```$xslt
@@ -494,7 +505,7 @@ dotnet run ExtractTextTableInfoWithFiguresTablesRenditionsFromPDF.csproj
 #### Extract Text, Table Elements with Renditions of Table Elements
 
 The sample project ExtractTextTableInfoWithRenditionsFromPDF extracts text, table elements along with table renditions
-from PDF Document.
+from PDF document.
 
 
 ```$xslt
@@ -514,7 +525,7 @@ dotnet run ExtractTextTableInfoWithStylingFromPDF.csproj
 #### Extract Text, Table Elements with Renditions and CSV's of Table Elements
 
 The sample project ExtractTextTableInfoWithTableStructureFromPdf extracts text, table elements, table structures as CSV and
-table element's renditions from PDF Document.
+table element's renditions from PDF document.
 
 
 ```$xslt
@@ -522,24 +533,12 @@ cd ExtractTextTableInfoWithTableStructureFromPDF/
 dotnet run ExtractTextTableInfoWithTableStructureFromPDF.csproj
 ```
 
-### Fetch PDF Properties
+#### Fetch PDF Properties
 
-These samples illustrate how to fetch properties of a PDF file in the JSON format.
-
-#### Fetch PDF Properties as a JSON File
-
-The sample project PDFPropertiesAsFile fetches the properties of an input PDF, as a JSON file.
-```$xslt
-cd PDFPropertiesAsFile/
-dotnet run PDFPropertiesAsFile.csproj
+The sample project GetPDFProperties fetches the properties of an input PDF.
 ```
-
-#### Fetch PDF Properties as a JSON Object
-
-The sample project PDFPropertiesAsJSONObject fetches the properties of an input PDF, as a JSON Object.
-```
-cd PDFPropertiesAsJSONObject/
-dotnet run PDFPropertiesAsJSONObject.csproj
+cd GetPDFProperties/
+dotnet run GetPDFProperties.csproj
 ```
 
 ## Licensing

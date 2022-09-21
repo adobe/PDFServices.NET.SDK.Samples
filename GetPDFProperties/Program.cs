@@ -16,17 +16,19 @@ using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
 using Adobe.PDFServicesSDK.exception;
 using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.io.pdfproperties;
+using Adobe.PDFServicesSDK.options.pdfproperties;
 using Adobe.PDFServicesSDK.pdfops;
 using log4net;
 using log4net.Config;
 using log4net.Repository;
 
 /// <summary>
-/// This sample illustrates how to use PDF Properties Operation to fetch various properties of an input PDF File and save them as a JSON file.
+/// This sample illustrates how to retrieve properties of an input PDF file.
 /// <para/>
 /// Refer to README.md for instructions on how to run the samples.
 /// </summary>
-namespace PDFPropertiesAsFile
+namespace GetPDFProperties
 {
     class Program
     {
@@ -49,12 +51,18 @@ namespace PDFPropertiesAsFile
                 // Provide an input FileRef for the operation
                 FileRef source = FileRef.CreateFromLocalFile(@"pdfPropertiesInput.pdf");
                 pdfPropertiesOperation.SetInput(source);
-
-                // Execute the operation.
-                FileRef result = pdfPropertiesOperation.ExecuteAndReturnFileRef(executionContext);
+                
+                // Build PDF Properties options to include page level properties and set them into the operation
+                PDFPropertiesOptions pdfPropertiesOptions = PDFPropertiesOptions.PDFPropertiesOptionsBuilder()
+                        .IncludePageLevelProperties(true)               
+                        .Build();
+                pdfPropertiesOperation.SetOptions(pdfPropertiesOptions);
             
-                // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + "/output/pdfPropertiesOutput.json");
+                // Execute the operation and return PDFProperties Object
+                PDFProperties pdfProperties = pdfPropertiesOperation.Execute(executionContext);
+                log.Info("The size of input PDF is : " + pdfProperties.Document?.FileSize);
+                log.Info("Input PDF Version is : " + pdfProperties.Document?.PDFVersion);
+                log.Info("Number of pages in input PDF : " + pdfProperties.Document?.PageCount);
             }
             catch (ServiceUsageException ex)
             {

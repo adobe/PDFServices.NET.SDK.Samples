@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromDocx", "CreatePDFFromDocx\CreatePDFFromDocx.csproj", "{7EF3EB3B-560D-489A-9239-1A30F0A4CCE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToImage", "ExportPDFToImage\ExportPDFToImage.csproj", "{FC9EF356-4743-4820-B435-DECFE3F6346B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToJPEGZip", "ExportPDFToJPEGZip\ExportPDFToJPEGZip.csproj", "{FC9EF356-4743-4820-B435-DECFE3F6346B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinePDF", "CombinePDF\CombinePDF.csproj", "{C8610742-A61A-4155-BDC2-2E3AD8C31E34}"
 EndProject
@@ -65,15 +65,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressPDFWithOptions", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromDocxWithOptions", "CreatePDFFromDocxWithOptions\CreatePDFFromDocxWithOptions.csproj", "{975E1643-DFAA-4812-9A41-3144931800CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFPropertiesAsJSONObject", "PDFPropertiesAsJSONObject\PDFPropertiesAsJSONObject.csproj", "{6CECB214-BC94-440C-A2C1-7CA63D8BF846}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFPropertiesAsFile", "PDFPropertiesAsFile\PDFPropertiesAsFile.csproj", "{35BDEBE1-AB7C-457F-B3C7-7ADED31F8B8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetPDFProperties", "GetPDFProperties\GetPDFProperties.csproj", "{35BDEBE1-AB7C-457F-B3C7-7ADED31F8B8A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromURL", "CreatePDFFromURL\CreatePDFFromURL.csproj", "{7385C518-5906-4CC1-AEF2-E0F9F4009124}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromHTMLWithInlineCSS", "CreatePDFFromHTMLWithInlineCSS\CreatePDFFromHTMLWithInlineCSS.csproj", "{8049AAEC-71D4-4BEA-A4A7-1EA20573DDEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToJPEGList", "ExportPDFToJPEGList\ExportPDFToJPEGList.csproj", "{34A86681-8E9A-458F-A0F0-530FF29683E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToJPEG", "ExportPDFToJPEG\ExportPDFToJPEG.csproj", "{34A86681-8E9A-458F-A0F0-530FF29683E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTextInfoFromPDF", "ExtractTextInfoFromPDF\ExtractTextInfoFromPDF.csproj", "{3CD1AD62-CB60-4330-A904-A125D9D117D7}"
 EndProject
@@ -92,6 +90,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTextTableInfoWithTableStructureFromPDF", "ExtractTextTableInfoWithTableStructureFromPDF\ExtractTextTableInfoWithTableStructureFromPDF.csproj", "{76053FFC-3391-4A22-A394-16E777B1345D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeDocumentToDocxFragments", "MergeDocumentToDocxFragments\MergeDocumentToDocxFragments.csproj", "{191521DC-3135-4DA6-BD5B-9626CF8C2F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToDocxWithOCROption", "ExportPDFToDocxWithOCROption\ExportPDFToDocxWithOCROption.csproj", "{E52A209B-66BE-4A65-BAB9-4F61738BAF0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,10 +223,6 @@ Global
 		{975E1643-DFAA-4812-9A41-3144931800CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975E1643-DFAA-4812-9A41-3144931800CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975E1643-DFAA-4812-9A41-3144931800CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CECB214-BC94-440C-A2C1-7CA63D8BF846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CECB214-BC94-440C-A2C1-7CA63D8BF846}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CECB214-BC94-440C-A2C1-7CA63D8BF846}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CECB214-BC94-440C-A2C1-7CA63D8BF846}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35BDEBE1-AB7C-457F-B3C7-7ADED31F8B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35BDEBE1-AB7C-457F-B3C7-7ADED31F8B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35BDEBE1-AB7C-457F-B3C7-7ADED31F8B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -279,6 +275,10 @@ Global
 		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{191521DC-3135-4DA6-BD5B-9626CF8C2F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52A209B-66BE-4A65-BAB9-4F61738BAF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52A209B-66BE-4A65-BAB9-4F61738BAF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52A209B-66BE-4A65-BAB9-4F61738BAF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52A209B-66BE-4A65-BAB9-4F61738BAF0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

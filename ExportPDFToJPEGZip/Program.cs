@@ -9,30 +9,33 @@
  * written permission of Adobe.
  */
 
-using System;
 using System.IO;
+using System;
+using System.Collections.Generic;
+using log4net.Repository;
+using log4net.Config;
+using log4net;
 using System.Reflection;
 using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
-using Adobe.PDFServicesSDK.exception;
-using Adobe.PDFServicesSDK.io;
-using Adobe.PDFServicesSDK.options.pdfproperties;
 using Adobe.PDFServicesSDK.pdfops;
-using log4net;
-using log4net.Config;
-using log4net.Repository;
-using Newtonsoft.Json.Linq;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.exception;
+using Adobe.PDFServicesSDK.options.exportpdftoimages;
 
 /// <summary>
-/// This sample illustrates how to use PDF Properties Operation to fetch various properties of an input PDF File and return them as a JSON Object.
+/// This sample illustrates how to export a PDF file to JPEG.
+/// <para/>
+/// The resulting file is a ZIP archive containing one image per page of the source PDF file.
 /// <para/>
 /// Refer to README.md for instructions on how to run the samples.
 /// </summary>
-namespace PDFPropertiesAsJSONObject
+namespace ExportPDFToJPEGZip
 {
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main()
         {
             //Configure the logging
@@ -46,21 +49,20 @@ namespace PDFPropertiesAsJSONObject
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);
-                PDFPropertiesOperation pdfPropertiesOperation = PDFPropertiesOperation.CreateNew();
+                ExportPDFToImagesOperation exportPDFToImagesOperation = ExportPDFToImagesOperation.CreateNew(ExportPDFToImagesTargetFormat.JPEG);
                 
-                // Provide an input FileRef for the operation
-                FileRef source = FileRef.CreateFromLocalFile(@"pdfPropertiesInput.pdf");
-                pdfPropertiesOperation.SetInput(source);
-                
-                // Build PDF Properties options to include page level properties and set them into the operation
-                PDFPropertiesOptions pdfPropertiesOptions = PDFPropertiesOptions.PDFPropertiesOptionsBuilder()
-                        .IncludePageLevelProperties(true)               
-                        .Build();
-                pdfPropertiesOperation.SetOptions(pdfPropertiesOptions);
-            
-                // Execute the operation and return JSON Object
-                JObject result = pdfPropertiesOperation.Execute(executionContext);
-                Console.WriteLine("The resultant PDF Properties are: " + result.ToString());
+                // Set output type specifying whether to generate zip or list of images
+                exportPDFToImagesOperation.SetOutputType(ExportPDFToImagesOutputType.ZIP_OF_IMAGES);
+
+                // Set operation input from a source file.
+                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfToImageInput.pdf");
+                exportPDFToImagesOperation.SetInput(sourceFileRef);
+
+                // Execute the operation.
+                List<FileRef> results = exportPDFToImagesOperation.Execute(executionContext);
+
+                // Save the result to the specified location.
+                results[0].SaveAs(Directory.GetCurrentDirectory() + "/output/exportPdfToImageOutput.zip");
             }
             catch (ServiceUsageException ex)
             {

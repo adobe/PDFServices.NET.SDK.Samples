@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright 2021 Adobe
+ * Copyright 2019 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
@@ -8,6 +8,7 @@
  * then your use, modification, or distribution of it requires the prior 
  * written permission of Adobe.
  */
+
 using System.IO;
 using System;
 using System.Collections.Generic;
@@ -27,11 +28,12 @@ using Adobe.PDFServicesSDK.options.exportpdftoimages;
 /// <para/>
 /// Refer to README.md for instructions on how to run the samples.
 /// </summary>
-namespace ExportPDFToJPEGList
+namespace ExportPDFToJPEG
 {
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+        
         static void Main()
         {
             //Configure the logging
