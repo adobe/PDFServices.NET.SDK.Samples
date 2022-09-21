@@ -53,7 +53,7 @@ namespace ExportPDFToDocxWithOCROption
                 FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfInput.pdf");
                 exportPdfOperation.SetInput(sourceFileRef);
 
-                // Set operation options
+                // Create a new ExportPDFOptions instance from the specified OCR locale and set it into the operation.
                 ExportPDFOptions exportPdfOptions = new ExportPDFOptions(ExportOCRLocale.EN_US);
                 exportPdfOperation.SetOptions(exportPdfOptions);
 

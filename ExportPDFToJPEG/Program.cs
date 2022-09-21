@@ -60,7 +60,7 @@ namespace ExportPDFToJPEG
                 int index = 0;
                 foreach (FileRef fileRef in result)
                 {
-                    fileRef.SaveAs(Directory.GetCurrentDirectory() + "/output/exportPDFToImagesOutput_" + index + ".jpeg");
+                    fileRef.SaveAs(Directory.GetCurrentDirectory() + "/output/exportPDFToJPEGOutput_" + index + ".jpeg");
                     index++;
                 }
             }

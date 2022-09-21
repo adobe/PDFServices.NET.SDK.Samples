@@ -48,18 +48,20 @@ namespace GetPDFProperties
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 PDFPropertiesOperation pdfPropertiesOperation = PDFPropertiesOperation.CreateNew();
                 
-                // Provide an input FileRef for the operation
+                // Provide an input FileRef for the operation.
                 FileRef source = FileRef.CreateFromLocalFile(@"pdfPropertiesInput.pdf");
                 pdfPropertiesOperation.SetInput(source);
                 
-                // Build PDF Properties options to include page level properties and set them into the operation
+                // Build PDF Properties options to include page level properties and set them into the operation.
                 PDFPropertiesOptions pdfPropertiesOptions = PDFPropertiesOptions.PDFPropertiesOptionsBuilder()
                         .IncludePageLevelProperties(true)               
                         .Build();
                 pdfPropertiesOperation.SetOptions(pdfPropertiesOptions);
             
-                // Execute the operation and return PDFProperties Object
+                // Execute the operation.
                 PDFProperties pdfProperties = pdfPropertiesOperation.Execute(executionContext);
+                
+                // Fetch the requisite properties of the specified PDF.
                 log.Info("The size of input PDF is : " + pdfProperties.Document?.FileSize);
                 log.Info("Input PDF Version is : " + pdfProperties.Document?.PDFVersion);
                 log.Info("Number of pages in input PDF : " + pdfProperties.Document?.PageCount);

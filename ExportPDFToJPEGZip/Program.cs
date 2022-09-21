@@ -51,7 +51,7 @@ namespace ExportPDFToJPEGZip
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 ExportPDFToImagesOperation exportPDFToImagesOperation = ExportPDFToImagesOperation.CreateNew(ExportPDFToImagesTargetFormat.JPEG);
                 
-                // Set output type specifying whether to generate zip or list of images
+                // Set the output type to create zip of images.
                 exportPDFToImagesOperation.SetOutputType(ExportPDFToImagesOutputType.ZIP_OF_IMAGES);
 
                 // Set operation input from a source file.
@@ -62,7 +62,7 @@ namespace ExportPDFToJPEGZip
                 List<FileRef> results = exportPDFToImagesOperation.Execute(executionContext);
 
                 // Save the result to the specified location.
-                results[0].SaveAs(Directory.GetCurrentDirectory() + "/output/exportPdfToImageOutput.zip");
+                results[0].SaveAs(Directory.GetCurrentDirectory() + "/output/exportPDFToJPEGOutput.zip");
             }
             catch (ServiceUsageException ex)
             {

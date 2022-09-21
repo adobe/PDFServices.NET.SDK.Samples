@@ -533,6 +533,11 @@ cd ExtractTextTableInfoWithTableStructureFromPDF/
 dotnet run ExtractTextTableInfoWithTableStructureFromPDF.csproj
 ```
 
+
+### PDF Properties
+
+This sample illustrates how to fetch properties of a PDF file
+
 #### Fetch PDF Properties
 
 The sample project GetPDFProperties fetches the properties of an input PDF.
