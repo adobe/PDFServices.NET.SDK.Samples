@@ -17,7 +17,7 @@
     <None Update="private.key">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="exportPdfToImageInput.pdf">
+    <None Update="exportPDFToImageInput.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="log4net.config">

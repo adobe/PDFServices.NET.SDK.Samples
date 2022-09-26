@@ -50,7 +50,7 @@ namespace ExportPDFToDocxWithOCROption
                 ExportPDFOperation exportPdfOperation = ExportPDFOperation.CreateNew(ExportPDFTargetFormat.DOCX);
 
                 // Set operation input from a source file
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfInput.pdf");
+                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPDFInput.pdf");
                 exportPdfOperation.SetInput(sourceFileRef);
 
                 // Create a new ExportPDFOptions instance from the specified OCR locale and set it into the operation.
@@ -61,7 +61,7 @@ namespace ExportPDFToDocxWithOCROption
                 FileRef result = exportPdfOperation.Execute(executionContext);
 
                 // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + "/output/exportPdfOutput.docx");
+                result.SaveAs(Directory.GetCurrentDirectory() + "/output/exportPDFWithOCROptionsOutput.docx");
             }
             catch (ServiceUsageException ex)
             {

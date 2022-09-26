@@ -55,7 +55,7 @@ namespace ExportPDFToJPEGZip
                 exportPDFToImagesOperation.SetOutputType(ExportPDFToImagesOutputType.ZIP_OF_IMAGES);
 
                 // Set operation input from a source file.
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfToImageInput.pdf");
+                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPDFToImageInput.pdf");
                 exportPDFToImagesOperation.SetInput(sourceFileRef);
 
                 // Execute the operation.
