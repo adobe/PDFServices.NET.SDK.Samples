@@ -53,7 +53,8 @@ namespace CompressPDF
                 FileRef result = compressPDFOperation.Execute(executionContext);
 
                 // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + "/output/compressPDFOutput.pdf");
+                result.SaveAs(Directory.GetCurrentDirectory() + 
+                              CreateOutputFileDirectoryPath("output","Compress","pdf"));
             }
             catch (ServiceUsageException ex)
             {
@@ -81,6 +82,13 @@ namespace CompressPDF
         {
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+        }
+        
+        //Generates a string containing a directory structure and file name for the output file.
+        public static string CreateOutputFileDirectoryPath(string directory, string name, string format)
+        {
+            String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
+            return ("/" + directory + "/" + name + "_" + timeStamp + "." + format);
         }
     }
 }

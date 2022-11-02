@@ -60,7 +60,8 @@ namespace ExportPDFToJPEG
                 int index = 0;
                 foreach (FileRef fileRef in result)
                 {
-                    fileRef.SaveAs(Directory.GetCurrentDirectory() + "/output/exportPDFToJPEGOutput_" + index + ".jpeg");
+                    fileRef.SaveAs(Directory.GetCurrentDirectory() + 
+                                   CreateOutputFileDirectoryPathWithIndex("output","Export", index, "jpeg"));
                     index++;
                 }
             }
@@ -90,6 +91,13 @@ namespace ExportPDFToJPEG
         {
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+        }
+        
+        //Generates a string containing a directory structure and indexed file name for the output file.
+        public static string CreateOutputFileDirectoryPathWithIndex(string directory, string name, int index, string format)
+        {
+            String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
+            return ("/" + directory + "/" + name + "_" + timeStamp + "_" + index + "." + format);
         }
     }
 }
