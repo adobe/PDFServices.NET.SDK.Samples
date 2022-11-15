@@ -87,9 +87,11 @@ namespace MergeDocumentToDocx
                 // Execute the operation.
                 FileRef result = documentMergeOperation.Execute(executionContext);
 
-                // Save the result to the specified location
-                result.SaveAs(Directory.GetCurrentDirectory() + 
-                              CreateOutputFileDirectoryPath("output","Merge","docx"));
+                //Generating a file name
+                String outputFilePath = CreateOutputFilePath();
+                
+                // Save the result to the specified location.
+                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
             }
             catch (ServiceUsageException ex)
             {
@@ -120,10 +122,10 @@ namespace MergeDocumentToDocx
         }
         
         //Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFileDirectoryPath(string directory, string name, string format)
+        public static string CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
-            return ("/" + directory + "/" + name + "_" + timeStamp + "." + format);
+            return ("/output/merge" + timeStamp + ".docx");
         }
     }
 }

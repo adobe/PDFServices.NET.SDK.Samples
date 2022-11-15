@@ -49,7 +49,7 @@ namespace CreatePDFFromURL
                 CreatePDFOperation htmlToPDFOperation = CreatePDFOperation.CreateNew();
 
                 // Set operation input from a source URL.
-                FileRef source = FileRef.CreateFromURI(new Uri("https://developer.adobe.com/document-services/docs/overview/"));
+                FileRef source = FileRef.CreateFromURI(new Uri("https://en.wikipedia.org/wiki/India"));
                 htmlToPDFOperation.SetInput(source);
 
                 // Provide any custom configuration options for the operation.
@@ -58,9 +58,11 @@ namespace CreatePDFFromURL
                 // Execute the operation.
                 FileRef result = htmlToPDFOperation.Execute(executionContext);
 
+                //Generating a file name
+                String outputFilePath = CreateOutputFilePath();
+                
                 // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + 
-                              CreateOutputFileDirectoryPath("output","Create","pdf"));
+                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
             }
             catch (ServiceUsageException ex)
             {
@@ -109,10 +111,10 @@ namespace CreatePDFFromURL
         }
         
         //Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFileDirectoryPath(string directory, string name, string format)
+        public static string CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
-            return ("/" + directory + "/" + name + "_" + timeStamp + "." + format);
+            return ("/output/create" + timeStamp + ".pdf");
         }
     }
 }

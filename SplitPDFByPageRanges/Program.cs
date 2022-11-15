@@ -62,15 +62,17 @@ namespace SplitPDFByPageRanges
                 // Execute the operation.
                 List<FileRef> result = splitPDFOperation.Execute(executionContext);
 
+                //Generating a file name
+                String outputFilePath = CreateOutputFilePath();
+
                 // Save the result to the specified location.
                 int index = 0;
                 foreach (FileRef fileRef in result)
                 {
-                    fileRef.SaveAs(Directory.GetCurrentDirectory() + 
-                                   CreateOutputFileDirectoryPathWithIndex("output","Split", index, "pdf"));
+                    fileRef.SaveAs(Directory.GetCurrentDirectory() + String.Format(outputFilePath, index));
                     index++;
                 }
-
+                
             }
             catch (ServiceUsageException ex)
             {
@@ -113,10 +115,10 @@ namespace SplitPDFByPageRanges
         }
         
         //Generates a string containing a directory structure and indexed file name for the output file.
-        public static string CreateOutputFileDirectoryPathWithIndex(string directory, string name, int index, string format)
+        public static string CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
-            return ("/" + directory + "/" + name + "_" + timeStamp + "_" + index + "." + format);
+            return ("/output/split" + timeStamp + "_{0}.pdf");
         }
     }
 }

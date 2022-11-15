@@ -87,9 +87,10 @@ namespace CreatePDFFromDocxToOutputStream
         /// <returns>the Stream instance</returns>
         private static Stream PrepareOutputStream()
         {
+            //Generating a file name
+            String outputFilePath = CreateOutputFilePath();
 
-            Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + 
-                                                 CreateOutputFileDirectoryPath("Create","pdf"));
+            Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
             return outputStream;
         }
 
@@ -100,10 +101,10 @@ namespace CreatePDFFromDocxToOutputStream
         }
         
         //Generates a string containing a file name for the output file.
-        public static string CreateOutputFileDirectoryPath( string name, string format)
+        public static string CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
-            return ( "/" + name + "_" + timeStamp + "." + format);
+            return ("/create" + timeStamp + ".pdf");
         }
 
     }
