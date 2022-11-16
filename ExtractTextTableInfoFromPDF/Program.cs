@@ -59,8 +59,7 @@ namespace ExtractTextTableInfoFromPDF
                 
                 // Execute the operation.
                 FileRef result = extractPdfOperation.Execute(executionContext);
-
-                // Save the result to the specified location.
+                
                 //Generating a file name
                 String outputFilePath = CreateOutputFilePath();
                 
