@@ -56,7 +56,7 @@ namespace CompressPDF
                 String outputFilePath = CreateOutputFilePath();
                 
                 // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);;
+                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
             }
             catch (ServiceUsageException ex)
             {
