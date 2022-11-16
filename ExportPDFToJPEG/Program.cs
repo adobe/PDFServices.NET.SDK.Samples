@@ -100,7 +100,7 @@ namespace ExportPDFToJPEG
         public static string CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
-            return ("/output/export" + timeStamp + "_{0}.pdf");
+            return ("/output/export" + timeStamp + "_{0}.jpeg");
         }
     }
 }
