@@ -61,8 +61,11 @@ namespace ExportPDFToJPEGZip
                 // Execute the operation.
                 List<FileRef> results = exportPDFToImagesOperation.Execute(executionContext);
 
+                //Generating a file name
+                String outputFilePath = CreateOutputFilePath();
+                
                 // Save the result to the specified location.
-                results[0].SaveAs(Directory.GetCurrentDirectory() + "/output/exportPDFToJPEGOutput.zip");
+                results[0].SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
             }
             catch (ServiceUsageException ex)
             {
@@ -90,6 +93,13 @@ namespace ExportPDFToJPEGZip
         {
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+        }
+        
+        //Generates a string containing a directory structure and file name for the output file.
+        public static string CreateOutputFilePath()
+        {
+            String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
+            return ("/output/export" + timeStamp + ".zip");
         }
     }
 }

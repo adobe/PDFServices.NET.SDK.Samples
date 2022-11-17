@@ -60,11 +60,14 @@ namespace SplitPDFIntoNumberOfFiles
                 // Execute the operation.
                 List<FileRef> result = splitPDFOperation.Execute(executionContext);
 
+                //Generating a file name
+                String outputFilePath = CreateOutputFilePath();
+
                 // Save the result to the specified location.
                 int index = 0;
                 foreach (FileRef fileRef in result)
                 {
-                    fileRef.SaveAs(Directory.GetCurrentDirectory() + "/output/SplitPDFIntoNumberOfFilesOutput_" + index + ".pdf");
+                    fileRef.SaveAs(Directory.GetCurrentDirectory() + String.Format(outputFilePath, index));
                     index++;
                 }
 
@@ -95,6 +98,13 @@ namespace SplitPDFIntoNumberOfFiles
         {
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+        }
+        
+        //Generates a string containing a directory structure and indexed file name for the output file.
+        public static string CreateOutputFilePath()
+        {
+            String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
+            return ("/output/split" + timeStamp + "_{0}.pdf");
         }
     }
 }

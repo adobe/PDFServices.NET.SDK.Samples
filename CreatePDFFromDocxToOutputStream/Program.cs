@@ -87,8 +87,10 @@ namespace CreatePDFFromDocxToOutputStream
         /// <returns>the Stream instance</returns>
         private static Stream PrepareOutputStream()
         {
+            //Generating a file name
+            String outputFilePath = CreateOutputFilePath();
 
-            Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + "/createPDFOutput.pdf");
+            Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
             return outputStream;
         }
 
@@ -96,6 +98,13 @@ namespace CreatePDFFromDocxToOutputStream
         {
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+        }
+        
+        //Generates a string containing a file name for the output file.
+        public static string CreateOutputFilePath()
+        {
+            String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
+            return ("/create" + timeStamp + ".pdf");
         }
 
     }

@@ -54,8 +54,11 @@ namespace OcrPDF
                 // Execute the operation.
                 FileRef result = ocrOperation.Execute(executionContext);
 
+                //Generating a file name
+                String outputFilePath = CreateOutputFilePath();
+                
                 // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + "/output/ocrOperationOutput.pdf");
+                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
             }
             catch (ServiceUsageException ex)
             {
@@ -83,6 +86,13 @@ namespace OcrPDF
         {
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+        }
+        
+        //Generates a string containing a directory structure and file name for the output file.
+        public static string CreateOutputFilePath()
+        {
+            String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
+            return ("/output/ocr" + timeStamp + ".pdf");
         }
     }
 }
