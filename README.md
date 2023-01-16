@@ -1,4 +1,3 @@
-
 # Samples for the PDF Services .NET SDK
 
 This sample solution helps you get started with the PDF Services .NET SDK.
