@@ -6,12 +6,21 @@ The sample projects illustrate how to perform PDF-related actions (such as conve
 
 ## Prerequisites
 The sample solution has the following requirements:
-* .NET Core: version 2.1 or above  
+* .NET: version 6.0 or above  
 * Build Tool: The solution requires Visual studio or .NET Core CLI to be installed to be able to run the sample projects.
 
 ## Authentication Setup
 The credentials file and corresponding private key file for the samples is ```pdfservices-api-credentials.json``` and ```private.key``` respectively. 
 Before the samples can be run, replace both the files with the ones present in the downloaded zip file at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
+
+## Client Configurations
+
+The SDK supports setting up custom socket timeout or connect timeout for the API calls. Please
+refer this [section](#create-a-pdf-file-from-a-docx-file-by-providing-custom-value-for-timeouts) to
+know more.
+
+Additionally, SDK can be configured to process the documents in the specified region.
+Please refer this [section](#export-a-pdf-file-to-a-docx-file-by-providing-the-region) to know more.
 
 ## Quota Exhaustion
 If you receive ServiceUsageException during the Samples run, it means that trial credentials have exhausted their usage quota. Please [contact us](https://www.adobe.com/go/pdftoolsapi_requestform) to get paid credentials.
@@ -78,28 +87,6 @@ result to an output stream.
 ```$xslt
 cd CreatePDFFromDocxToOutputStream/
 dotnet run CreatePDFFromDocxToOutputStream.csproj
-```
-
-#### Create a PDF File From a DOCX File (By providing in-memory Authentication credentials)
-
-The sample project CreatePDFWithInMemoryAuthCredentials highlights how to provide in-memory auth credentials
-for performing an operation. This enables the clients to fetch the credentials from a secret server during runtime,
-instead of storing them in a file.
-
-Before running the sample, authentication credentials need to be updated as per the instructions in the code.
-
-```$xslt
-cd CreatePDFWithInMemoryAuthCredentials/
-dotnet run CreatePDFWithInMemoryAuthCredentials.csproj
-```
-
-#### Create a PDF File From a DOCX File (By providing custom value for timeouts)
-
-The sample project CreatePDFWithCustomTimeouts highlights how to provide the custom value for timeout and read write timeout.
-
-```$xslt
-cd CreatePDFWithCustomTimeouts/
-dotnet run CreatePDFWithCustomTimeouts.csproj
 ```
 
 ####  Create a PDF File From a PPTX File 
@@ -541,9 +528,46 @@ This sample illustrates how to fetch properties of a PDF file
 #### Fetch PDF Properties
 
 The sample project GetPDFProperties fetches the properties of an input PDF.
+
 ```
 cd GetPDFProperties/
 dotnet run GetPDFProperties.csproj
+```
+
+### Custom Client Configuration
+
+These samples illustrate how to provide a custom client configurations(timeouts and region) and in-memory authentication
+credentials.
+
+#### Create a PDF File From a DOCX File (By providing custom value for timeouts)
+
+The sample project CreatePDFWithCustomTimeouts highlights how to provide the custom value for timeout and read write timeout.
+
+```$xslt
+cd CreatePDFWithCustomTimeouts/
+dotnet run CreatePDFWithCustomTimeouts.csproj
+```
+
+#### Create a PDF File From a DOCX File (By providing in-memory Authentication credentials)
+
+The sample project CreatePDFWithInMemoryAuthCredentials highlights how to provide in-memory auth credentials
+for performing an operation. This enables the clients to fetch the credentials from a secret server during runtime,
+instead of storing them in a file.
+
+Before running the sample, authentication credentials need to be updated as per the instructions in the code.
+
+```$xslt
+cd CreatePDFWithInMemoryAuthCredentials/
+dotnet run CreatePDFWithInMemoryAuthCredentials.csproj
+```
+
+#### Export a PDF File to a DOCX File (By providing the region)
+
+The sample project ExportPDFWithSpecifiedRegion highlights how to configure the SDK to process the documents in the specified region.
+
+```$xslt
+cd ExportPDFWithSpecifiedRegion/
+dotnet run ExportPDFWithSpecifiedRegion.csproj
 ```
 
 ## Licensing
