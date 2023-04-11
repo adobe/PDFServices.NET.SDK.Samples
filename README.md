@@ -10,8 +10,20 @@ The sample solution has the following requirements:
 * Build Tool: The solution requires Visual studio or .NET Core CLI to be installed to be able to run the sample projects.
 
 ## Authentication Setup
-The credentials file and corresponding private key file for the samples is ```pdfservices-api-credentials.json``` and ```private.key``` respectively. 
-Before the samples can be run, replace both the files with the ones present in the downloaded zip file at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
+The credentials file for the samples is ```pdfservices-api-credentials.json```. 
+Before the samples can be run, set the environment variables `CLIENT_ID` and `CLIENT_SECRET` from the `pdfservices-api-credentials.json` file downloaded at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow by running the following commands :
+
+1. For MAC/Linux Users : 
+```$xlst
+export CLIENT_ID=<YOU CLIENT ID>
+export CLIENT_SECRET=<YOU CLIENT SECRET>
+```
+
+2. For Windows Users :
+```$xlst
+SET CLIENT_ID=<YOU CLIENT ID>
+SET CLIENT_SECRET=<YOU CLIENT SECRET>
+```
 
 ## Client Configurations
 
@@ -548,19 +560,6 @@ cd CreatePDFWithCustomTimeouts/
 dotnet run CreatePDFWithCustomTimeouts.csproj
 ```
 
-#### Create a PDF File From a DOCX File (By providing in-memory Authentication credentials)
-
-The sample project CreatePDFWithInMemoryAuthCredentials highlights how to provide in-memory auth credentials
-for performing an operation. This enables the clients to fetch the credentials from a secret server during runtime,
-instead of storing them in a file.
-
-Before running the sample, authentication credentials need to be updated as per the instructions in the code.
-
-```$xslt
-cd CreatePDFWithInMemoryAuthCredentials/
-dotnet run CreatePDFWithInMemoryAuthCredentials.csproj
-```
-
 #### Export a PDF File to a DOCX File (By providing the region)
 
 The sample project ExportPDFWithSpecifiedRegion highlights how to configure the SDK to process the documents in the specified region.
@@ -568,6 +567,44 @@ The sample project ExportPDFWithSpecifiedRegion highlights how to configure the 
 ```$xslt
 cd ExportPDFWithSpecifiedRegion/
 dotnet run ExportPDFWithSpecifiedRegion.csproj
+```
+
+### Autotag PDF
+
+These samples illustrate autotagging a PDF and generating the tagged PDF and an optional report
+which contains the information about the tags the tagged document contains.
+
+#### Generates tagged PDF from a PDF
+
+The sample project AutotagPDF generates tagged PDF from a PDF.
+
+```$xslt
+cd AutotagPDF/
+dotnet run AutotagPDF.csproj
+```
+
+#### Generates tagged PDF along with a report and shift the headings in the output PDF file
+
+The sample project AutotagPDFWithOptions generates tagged PDF with a report and shift the headings in the output PDF file.
+
+```$xslt
+cd AutotagPDFWithOptions/
+dotnet run AutotagPDFWithOptions.csproj
+```
+
+#### Generates tagged PDF by setting options with command line arguments
+
+The sample project AutotagPDFParamaterised generates tagged PDF by setting options through command line arguments
+
+Here is a sample list of command line arguments and their description: </br>
+--input &lt; input file path &gt; </br>
+--output &lt; output file path &gt; </br>
+--report { If this argument is present then the output will be generated with the report } </br>
+--shift_headings { If this argument is present then the headings will be shifted in the output PDF file } </br>
+
+```$xslt
+cd AutotagPDFParamaterised/
+dotnet run AutotagPDFParameterised.csproj --report --shift_headings --input autotagPdfInput.pdf --output output/
 ```
 
 ## Licensing

@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromPPTX", "Create
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToDocx", "ExportPDFToDocx\ExportPDFToDocx.csproj", "{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFWithInMemoryAuthCredentials", "CreatePDFWithInMemoryAuthCredentials\CreatePDFWithInMemoryAuthCredentials.csproj", "{7B19464E-A298-4FF4-8FBD-5B4D52873F48}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromDOCXInputStream", "CreatePDFFromDOCXInputStream\CreatePDFFromDOCXInputStream.csproj", "{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcrPDF", "OcrPDF\OcrPDF.csproj", "{4E7FBE97-04D1-4DA0-99E3-79CFCF0F2CD9}"
@@ -95,6 +93,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFToDocxWithOCROptio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFWithSpecifiedRegion", "ExportPDFWithSpecifiedRegion\ExportPDFWithSpecifiedRegion.csproj", "{F9A474AF-2153-4ED3-B985-A89AF33A4112}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDF", "AutotagPDF\AutotagPDF.csproj", "{1E16D203-7BD6-4FE1-9B77-97A68FFAE610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDFParameterised", "AutotagPDFParameterised\AutotagPDFParameterised.csproj", "{92CA2F4A-C35A-4AD5-A4AC-C35A955102D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDFWithOptions", "AutotagPDFWithOptions\AutotagPDFWithOptions.csproj", "{73A065C5-4433-4027-89AC-844B48C577D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,10 +137,6 @@ Global
 		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C0FA9C8-DA5E-4DA2-8BDD-AFCC3FBD0195}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B19464E-A298-4FF4-8FBD-5B4D52873F48}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2B2BF13-AB24-4AE1-B5F0-0A54C6116C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -285,6 +285,18 @@ Global
 		{F9A474AF-2153-4ED3-B985-A89AF33A4112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9A474AF-2153-4ED3-B985-A89AF33A4112}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A474AF-2153-4ED3-B985-A89AF33A4112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E16D203-7BD6-4FE1-9B77-97A68FFAE610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E16D203-7BD6-4FE1-9B77-97A68FFAE610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E16D203-7BD6-4FE1-9B77-97A68FFAE610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E16D203-7BD6-4FE1-9B77-97A68FFAE610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CA2F4A-C35A-4AD5-A4AC-C35A955102D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CA2F4A-C35A-4AD5-A4AC-C35A955102D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CA2F4A-C35A-4AD5-A4AC-C35A955102D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CA2F4A-C35A-4AD5-A4AC-C35A955102D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A065C5-4433-4027-89AC-844B48C577D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A065C5-4433-4027-89AC-844B48C577D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A065C5-4433-4027-89AC-844B48C577D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A065C5-4433-4027-89AC-844B48C577D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

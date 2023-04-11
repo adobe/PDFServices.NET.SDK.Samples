@@ -41,8 +41,9 @@ namespace ExportPDFToJPEG
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                                .WithClientId(Environment.GetEnvironmentVariable("CLIENT_ID"))
+                                .WithClientSecret(Environment.GetEnvironmentVariable("CLIENT_SECRET"))
                                 .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.

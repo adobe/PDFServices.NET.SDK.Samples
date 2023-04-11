@@ -42,9 +42,10 @@ namespace ExportPDFWithSpecifiedRegion
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                    .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
-                    .Build();
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                                .WithClientId(Environment.GetEnvironmentVariable("CLIENT_ID"))
+                                .WithClientSecret(Environment.GetEnvironmentVariable("CLIENT_SECRET"))
+                                .Build();
 
                 // Create client config instance with the specified region.
                 ClientConfig clientConfig = ClientConfig.ConfigBuilder()
