@@ -31,7 +31,7 @@ using ExecutionContext = Adobe.PDFServicesSDK.ExecutionContext;
  */
 
 
-namespace CreatePDFFromStaticHtml
+namespace CreatePDFFromHTMLWithTemplateEngine
 {
     class Program
     {
