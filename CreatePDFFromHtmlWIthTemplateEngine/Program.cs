@@ -1,5 +1,5 @@
-﻿/*
- * Copyright 2019 Adobe
+/*
+ * Copyright 2023 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
@@ -20,14 +20,16 @@ using Adobe.PDFServicesSDK.pdfops;
 using Adobe.PDFServicesSDK.io;
 using Adobe.PDFServicesSDK.exception;
 using Adobe.PDFServicesSDK.options.createpdf;
+using ExecutionContext = Adobe.PDFServicesSDK.ExecutionContext;
 
-/// <summary>
-/// This sample illustrates how to convert an HTML file to PDF. The HTML file and its associated dependencies must be
-/// in a single ZIP file.
-/// <para>
-/// Refer to README.md for instructions on how to run the samples.
-/// </para>
-/// </summary>
+/**
+ * This sample illustrates how to generate PDF Files from HTML using a template engine.
+ * Note :It is must to include a template engine(e.g Mustache,Liquid) in the client file to process HTML templates and generate the corresponding PDF output.
+ * This mechanismn can be used to provide tags replacement in the template based HTML dynamically and convert it into a PDF file.
+ * <p>
+ * Refer to README.md for instructions on how to run the samples.
+ */
+
 
 namespace CreatePDFFromStaticHtml
 {
@@ -50,7 +52,7 @@ namespace CreatePDFFromStaticHtml
                 CreatePDFOperation htmlToPDFOperation = CreatePDFOperation.CreateNew();
 
                 // Set operation input from a source file.
-                FileRef source = FileRef.CreateFromLocalFile(@"createPDFFromStaticHtmlInput.zip");
+                FileRef source = FileRef.CreateFromLocalFile(@"createPDFFromHTMLWithTemplateEngineInput.zip");
                 htmlToPDFOperation.SetInput(source);
 
                 // Provide any custom configuration options for the operation.

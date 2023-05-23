@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDFParameterised", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDFWithOptions", "AutotagPDFWithOptions\AutotagPDFWithOptions.csproj", "{D87C8C9B-521C-4638-B201-CDEDA77395EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDFFromHTMLWithTemplateEngine", "CreatePDFFromHTMLWithTemplateEngine\CreatePDFFromHTMLWithTemplateEngine.csproj", "{9245998F-E5EB-45A9-AAD1-70119555AD15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,10 @@ Global
 		{D87C8C9B-521C-4638-B201-CDEDA77395EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87C8C9B-521C-4638-B201-CDEDA77395EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87C8C9B-521C-4638-B201-CDEDA77395EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9245998F-E5EB-45A9-AAD1-70119555AD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9245998F-E5EB-45A9-AAD1-70119555AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9245998F-E5EB-45A9-AAD1-70119555AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9245998F-E5EB-45A9-AAD1-70119555AD15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
