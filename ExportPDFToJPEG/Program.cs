@@ -33,7 +33,7 @@ namespace ExportPDFToJPEG
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
-        
+
         static void Main()
         {
             //Configure the logging
@@ -41,9 +41,10 @@ namespace ExportPDFToJPEG
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
-                                .Build();
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
+                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
+                    .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);

@@ -101,6 +101,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDFParameterised", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotagPDFWithOptions", "AutotagPDFWithOptions\AutotagPDFWithOptions.csproj", "{D87C8C9B-521C-4638-B201-CDEDA77395EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicSeal", "ElectronicSeal\ElectronicSeal.csproj", "{02923B6D-4FD8-4E51-9F0B-381EA0EBFBD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicSealWithAppearanceOptions", "ElectronicSealWithAppearanceOptions\ElectronicSealWithAppearanceOptions.csproj", "{08CD2865-5118-4772-96BA-E4B70909139D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +307,14 @@ Global
 		{D87C8C9B-521C-4638-B201-CDEDA77395EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87C8C9B-521C-4638-B201-CDEDA77395EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87C8C9B-521C-4638-B201-CDEDA77395EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02923B6D-4FD8-4E51-9F0B-381EA0EBFBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02923B6D-4FD8-4E51-9F0B-381EA0EBFBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02923B6D-4FD8-4E51-9F0B-381EA0EBFBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02923B6D-4FD8-4E51-9F0B-381EA0EBFBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08CD2865-5118-4772-96BA-E4B70909139D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08CD2865-5118-4772-96BA-E4B70909139D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08CD2865-5118-4772-96BA-E4B70909139D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08CD2865-5118-4772-96BA-E4B70909139D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

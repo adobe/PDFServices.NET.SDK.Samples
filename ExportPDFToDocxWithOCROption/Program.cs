@@ -41,16 +41,17 @@ namespace ExportPDFToDocxWithOCROption
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
-                                .Build();
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
+                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
+                    .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 ExportPDFOperation exportPdfOperation = ExportPDFOperation.CreateNew(ExportPDFTargetFormat.DOCX);
 
                 // Set operation input from a source file
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPDFInput.pdf");
+                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfInput.pdf");
                 exportPdfOperation.SetInput(sourceFileRef);
 
                 // Create a new ExportPDFOptions instance from the specified OCR locale and set it into the operation.
@@ -65,6 +66,7 @@ namespace ExportPDFToDocxWithOCROption
                 
                 // Save the result to the specified location.
                 result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
+                
             }
             catch (ServiceUsageException ex)
             {

@@ -43,9 +43,10 @@ namespace ExportPDFToJPEGZip
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
-                                .Build();
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
+                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
+                    .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);
@@ -55,7 +56,7 @@ namespace ExportPDFToJPEGZip
                 exportPDFToImagesOperation.SetOutputType(ExportPDFToImagesOutputType.ZIP_OF_IMAGES);
 
                 // Set operation input from a source file.
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPDFToImageInput.pdf");
+                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfToImageInput.pdf");
                 exportPDFToImagesOperation.SetInput(sourceFileRef);
 
                 // Execute the operation.
@@ -66,6 +67,7 @@ namespace ExportPDFToJPEGZip
                 
                 // Save the result to the specified location.
                 results[0].SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
+                
             }
             catch (ServiceUsageException ex)
             {

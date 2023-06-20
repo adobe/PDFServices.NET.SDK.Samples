@@ -9,18 +9,12 @@
     <None Update="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="pdfservices-api-credentials.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="private.key">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="compressPDFInput.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Adobe.PDFServicesSDK" Version="3.3.0" />
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="3.4.0" />
     <PackageReference Include="log4net" Version="2.0.12" />
   </ItemGroup>
 </Project>

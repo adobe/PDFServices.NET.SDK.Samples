@@ -40,16 +40,17 @@ namespace CreatePDFFromURL
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                                .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
-                                .Build();
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
+                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
+                    .Build();
 
                 //Create an ExecutionContext using credentials and create a new operation instance.
                 ExecutionContext executionContext = ExecutionContext.Create(credentials);
                 CreatePDFOperation htmlToPDFOperation = CreatePDFOperation.CreateNew();
 
                 // Set operation input from a source URL.
-                FileRef source = FileRef.CreateFromURI(new Uri("https://en.wikipedia.org/wiki/India"));
+                FileRef source = FileRef.CreateFromURI(new Uri("URL"));
                 htmlToPDFOperation.SetInput(source);
 
                 // Provide any custom configuration options for the operation.

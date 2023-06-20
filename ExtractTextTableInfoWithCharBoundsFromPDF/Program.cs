@@ -39,8 +39,9 @@ namespace ExtractTextTableInfoWithCharBoundsFromPDF
             try
             {
                 // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServiceAccountCredentialsBuilder()
-                    .FromFile(Directory.GetCurrentDirectory() + "/pdfservices-api-credentials.json")
+                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
+                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
+                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
                     .Build();
 
                 // Create an ExecutionContext using credentials and create a new operation instance.
@@ -66,6 +67,7 @@ namespace ExtractTextTableInfoWithCharBoundsFromPDF
                 
                 // Save the result to the specified location.
                 result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
+                
             }
             catch (ServiceUsageException ex)
             {
