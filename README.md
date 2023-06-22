@@ -1,3 +1,4 @@
+
 # Samples for the PDF Services .NET SDK
 
 This sample solution helps you get started with the PDF Services .NET SDK.
@@ -10,8 +11,20 @@ The sample solution has the following requirements:
 * Build Tool: The solution requires Visual studio or .NET Core CLI to be installed to be able to run the sample projects.
 
 ## Authentication Setup
-The credentials file and corresponding private key file for the samples is ```pdfservices-api-credentials.json``` and ```private.key``` respectively.
-Before the samples can be run, replace both the files with the ones present in the downloaded zip file at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow.
+The credentials file for the samples is ```pdfservices-api-credentials.json```.
+Before the samples can be run, set the environment variables `PDF_SERVICES_CLIENT_ID` and `PDF_SERVICES_CLIENT_SECRET` from the `pdfservices-api-credentials.json` file downloaded at the end of creation of credentials via [Get Started](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSdk) workflow by running the following commands :
+
+1. For MacOS/Linux Users :
+```$xlst
+export PDF_SERVICES_CLIENT_ID=<YOUR CLIENT ID>
+export PDF_SERVICES_CLIENT_SECRET=<YOUR CLIENT SECRET>
+```
+
+2. For Windows Users :
+```$xlst
+set PDF_SERVICES_CLIENT_ID=<YOUR CLIENT ID>
+set PDF_SERVICES_CLIENT_SECRET=<YOUR CLIENT SECRET>
+```
 
 ## Client Configurations
 
@@ -432,6 +445,31 @@ cd MergeDocumentToDocxFragments/
 dotnet run MergeDocumentToDocxFragments.csproj
 ```
 
+### PDF Electronic Seal
+
+These samples illustrate how to perform electronic seal over PDF documents like
+agreements, invoices, proposals, reports, forms, branded marketing documents and more.
+To know more about PDF Electronic Seal, please see the [documentation](https://www.adobe.com/go/dc_eseal_overview_doc).
+The following details needs to updated while executing these samples: PROVIDER_NAME, ACCESS_TOKEN, CREDENTIAL_ID and PIN.
+
+#### Apply Electronic Seal
+
+The sample class ElectronicSeal uses the sealing options with default appearance options to apply electronic seal over the PDF document.
+
+```$xslt
+cd ElectronicSeal/
+dotnet run ElectronicSeal.csproj
+```
+
+#### Apply Electronic Seal With Custom Appearance Options
+
+The sample class ElectronicSealWithAppearanceOptions uses the sealing options with custom appearance options to apply electronic seal over the PDF document.
+
+```$xslt
+cd ElectronicSealWithAppearanceOptions/
+dotnet run ElectronicSealWithAppearanceOptions.csproj
+```
+
 #### Extract PDF
 
 These samples illustrate extracting content of PDF in a structured JSON format along with the renditions inside PDF.
@@ -535,8 +573,7 @@ dotnet run GetPDFProperties.csproj
 
 ### Custom Client Configuration
 
-These samples illustrate how to provide a custom client configurations(timeouts and region) and in-memory authentication
-credentials.
+These samples illustrate how to provide a custom client configurations(timeouts and region).
 
 #### Create a PDF File From a DOCX File (By providing custom value for timeouts)
 
@@ -545,19 +582,6 @@ The sample project CreatePDFWithCustomTimeouts highlights how to provide the cus
 ```$xslt
 cd CreatePDFWithCustomTimeouts/
 dotnet run CreatePDFWithCustomTimeouts.csproj
-```
-
-#### Create a PDF File From a DOCX File (By providing in-memory Authentication credentials)
-
-The sample project CreatePDFWithInMemoryAuthCredentials highlights how to provide in-memory auth credentials
-for performing an operation. This enables the clients to fetch the credentials from a secret server during runtime,
-instead of storing them in a file.
-
-Before running the sample, authentication credentials need to be updated as per the instructions in the code.
-
-```$xslt
-cd CreatePDFWithInMemoryAuthCredentials/
-dotnet run CreatePDFWithInMemoryAuthCredentials.csproj
 ```
 
 #### Export a PDF File to a DOCX File (By providing the region)
