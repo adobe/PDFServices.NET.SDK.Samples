@@ -1,27 +1,24 @@
 /*
- * Copyright 2023 Adobe
+ * Copyright 2024 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
- * accordance with the terms of the Adobe license agreement accompanying 
- * it. If you have received this file from a source other than Adobe, 
- * then your use, modification, or distribution of it requires the prior 
- * written permission of Adobe.
+ * accordance with the terms of the Adobe license agreement accompanying it.
  */
 
 using System;
 using System.IO;
-using log4net;
-using log4net.Config;
 using System.Reflection;
-using log4net.Repository;
 using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
-using Adobe.PDFServicesSDK.pdfops;
-using Adobe.PDFServicesSDK.io;
 using Adobe.PDFServicesSDK.exception;
-using Adobe.PDFServicesSDK.io.autotag;
-using Adobe.PDFServicesSDK.options.autotag;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.pdfjobs.jobs;
+using Adobe.PDFServicesSDK.pdfjobs.parameters.autotag;
+using Adobe.PDFServicesSDK.pdfjobs.results;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
 
 /// <summary>
 /// This sample illustrates how to generate a tagged PDF along with a report and shift the headings in
@@ -41,34 +38,47 @@ namespace AutotagPDFWithOptions
             ConfigureLogging();
             try
             {
-                // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
-                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
-                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
-                    .Build();
+                // Initial setup, create credentials instance
+                ICredentials credentials = new ServicePrincipalCredentials(
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
 
-                // Create an ExecutionContext using credentials and create a new operation instance.
-                ExecutionContext executionContext = ExecutionContext.Create(credentials);
-                AutotagPDFOperation autotagPDFOperation = AutotagPDFOperation.CreateNew();
+                // Creates a PDF Services instance
+                PDFServices pdfServices = new PDFServices(credentials);
 
-                // Provide an input FileRef for the operation
-                autotagPDFOperation.SetInput(FileRef.CreateFromLocalFile(@"autotagPdfInput.pdf"));
+                // Creates an asset(s) from source file(s) and upload
+                using Stream inputStream = File.OpenRead(@"autotagPdfInput.pdf");
+                IAsset asset = pdfServices.Upload(inputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
 
-                // Build AutotagPDF options and set them into the operation
-                AutotagPDFOptions autotagPDFOptions = AutotagPDFOptions.AutotagPDFOptionsBuilder()
-                    .ShiftHeadings()
-                    .GenerateReport()
-                    .Build();
-                autotagPDFOperation.SetOptions(autotagPDFOptions);
+                // Create parameters for the job
+                AutotagPDFParams autotagPDFParams = AutotagPDFParams.AutotagPDFParamsBuilder().GenerateReport().Build();
 
-                // Execute the operation
-                AutotagPDFOutput autotagPDFOutput = autotagPDFOperation.Execute(executionContext);
+                // Creates a new job instance
+                AutotagPDFJob autotagPDFJob = new AutotagPDFJob(asset).SetParams(autotagPDFParams);
 
-                // Save the output files at the specified location
-                autotagPDFOutput.GetTaggedPDF()
-                    .SaveAs(Directory.GetCurrentDirectory() + CreateOutputFilePathForTaggedPDF());
-                autotagPDFOutput.GetReport()
-                    .SaveAs(Directory.GetCurrentDirectory() + CreateOutputFilePathForTaggingReport());
+                // Submits the job and gets the job result
+                String location = pdfServices.Submit(autotagPDFJob);
+                PDFServicesResponse<AutotagPDFResult> pdfServicesResponse =
+                    pdfServices.GetJobResult<AutotagPDFResult>(location, typeof(AutotagPDFResult));
+
+                // Get content from the resulting asset(s)
+                IAsset resultAsset = pdfServicesResponse.Result.TaggedPDF;
+                IAsset resultAssetReport = pdfServicesResponse.Result.Report;
+                StreamAsset streamAsset = pdfServices.GetContent(resultAsset);
+                StreamAsset streamAssetReport = pdfServices.GetContent(resultAssetReport);
+
+                // Creating output streams and copying stream asset's content to it
+                String outputFilePathForTaggedPDF = CreateOutputFilePathForTaggedPDF();
+                String outputFilePathForReport = CreateOutputFilePathForTaggingReport();
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePathForTaggedPDF).Directory.Create();
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePathForReport).Directory.Create();
+                Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePathForTaggedPDF);
+                Stream outputStreamReport =
+                    File.OpenWrite(Directory.GetCurrentDirectory() + CreateOutputFilePathForTaggingReport());
+                streamAsset.Stream.CopyTo(outputStream);
+                streamAssetReport.Stream.CopyTo(outputStreamReport);
+                outputStream.Close();
+                outputStreamReport.Close();
             }
             catch (ServiceUsageException ex)
             {
@@ -99,14 +109,14 @@ namespace AutotagPDFWithOptions
         }
 
         // Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFilePathForTaggedPDF()
+        private static String CreateOutputFilePathForTaggedPDF()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
             return "/output/AutotagPDF-tagged" + timeStamp + ".pdf";
         }
 
         // Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFilePathForTaggingReport()
+        private static String CreateOutputFilePathForTaggingReport()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
             return "/output/AutotagPDF-report" + timeStamp + ".xlsx";

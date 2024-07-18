@@ -1,12 +1,9 @@
 ﻿/*
- * Copyright 2019 Adobe
+ * Copyright 2024 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
- * accordance with the terms of the Adobe license agreement accompanying 
- * it. If you have received this file from a source other than Adobe, 
- * then your use, modification, or distribution of it requires the prior 
- * written permission of Adobe.
+ * accordance with the terms of the Adobe license agreement accompanying it.
  */
 
 using System;
@@ -16,9 +13,10 @@ using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
 using Adobe.PDFServicesSDK.exception;
 using Adobe.PDFServicesSDK.io;
-using Adobe.PDFServicesSDK.io.pdfproperties;
-using Adobe.PDFServicesSDK.options.pdfproperties;
-using Adobe.PDFServicesSDK.pdfops;
+using Adobe.PDFServicesSDK.pdfjobs.jobs;
+using Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties;
+using Adobe.PDFServicesSDK.pdfjobs.results;
+using Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties;
 using log4net;
 using log4net.Config;
 using log4net.Repository;
@@ -33,35 +31,41 @@ namespace GetPDFProperties
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main()
         {
             //Configure the logging
             ConfigureLogging();
             try
             {
-                // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
-                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
-                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
+                // Initial setup, create credentials instance
+                ICredentials credentials = new ServicePrincipalCredentials(
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
+
+                // Creates a PDF Services instance
+                PDFServices pdfServices = new PDFServices(credentials);
+
+                // Creates an asset(s) from source file(s) and upload
+                using Stream inputStream = File.OpenRead(@"pdfPropertiesInput.pdf");
+                IAsset asset = pdfServices.Upload(inputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
+
+                // Create parameters for the job
+                PDFPropertiesParams pdfPropertiesParams = PDFPropertiesParams.PDFPropertiesParamsBuilder()
+                    .IncludePageLevelProperties()
                     .Build();
 
-                //Create an ExecutionContext using credentials and create a new operation instance.
-                ExecutionContext executionContext = ExecutionContext.Create(credentials);
-                PDFPropertiesOperation pdfPropertiesOperation = PDFPropertiesOperation.CreateNew();
-                
-                // Provide an input FileRef for the operation.
-                FileRef source = FileRef.CreateFromLocalFile(@"pdfPropertiesInput.pdf");
-                pdfPropertiesOperation.SetInput(source);
-                
-                // Build PDF Properties options to include page level properties and set them into the operation.
-                PDFPropertiesOptions pdfPropertiesOptions = PDFPropertiesOptions.PDFPropertiesOptionsBuilder()
-                        .IncludePageLevelProperties(true)               
-                        .Build();
-                pdfPropertiesOperation.SetOptions(pdfPropertiesOptions);
-            
-                // Execute the operation.
-                PDFProperties pdfProperties = pdfPropertiesOperation.Execute(executionContext);
-                
+                // Creates a new job instance
+                PDFPropertiesJob pdfPropertiesJob = new PDFPropertiesJob(asset);
+                pdfPropertiesJob.SetParams(pdfPropertiesParams);
+
+                // Submits the job and gets the job result
+                String location = pdfServices.Submit(pdfPropertiesJob);
+                PDFServicesResponse<PDFPropertiesResult> pdfServicesResponse =
+                    pdfServices.GetJobResult<PDFPropertiesResult>(location, typeof(PDFPropertiesResult));
+
+                PDFProperties pdfProperties = pdfServicesResponse.Result.PDFProperties;
+
                 // Fetch the requisite properties of the specified PDF.
                 log.Info("The size of input PDF is : " + pdfProperties.Document?.FileSize);
                 log.Info("Input PDF Version is : " + pdfProperties.Document?.PDFVersion);

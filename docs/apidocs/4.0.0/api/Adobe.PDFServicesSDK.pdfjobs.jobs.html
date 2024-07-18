@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Adobe.PDFServicesSDK.pdfjobs.jobs
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Adobe.PDFServicesSDK.pdfjobs.jobs
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adobe.PDFServicesSDK.pdfjobs.jobs">
+  
+  <h1 id="Adobe_PDFServicesSDK_pdfjobs_jobs" data-uid="Adobe.PDFServicesSDK.pdfjobs.jobs" class="text-break">Namespace Adobe.PDFServicesSDK.pdfjobs.jobs
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob.html">AutotagPDFJob</a></h4>
+      <section><p>A job that creates PDF documents with enhanced readability from existing PDF documents.
+An optional tagging report can also be generated which contains the information
+about the tags that the tagged output PDF document contains.
+Accessibility tags, used by assistive technology such as screen reader are required to make PDF files compliant.
+However, the generated PDF is not guaranteed to comply with accessibility standards such as WCAG and PDF/UA as
+there could be a need to perform further downstream remediation to meet those standards.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.html">CombinePDFJob</a></h4>
+      <section><p>A job that combines multiple PDF files into a single PDF file. Allows specifying which pages of the source files
+to combine.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob.html">CompressPDFJob</a></h4>
+      <section><p>A job that reduces the size of a PDF file. Allows specifying <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel.html">CompressionLevel</a> for compressing PDF</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob.html">CreatePDFJob</a></h4>
+      <section><p>A job that converts a non-PDF file to a PDF file. Some source formats may have associated conversion parameters
+which can be set using the <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams.html">CreatePDFParams</a>.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob.html">DeletePagesJob</a></h4>
+      <section><p>A job that deletes pages from a PDF file.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob.html">DocumentMergeJob</a></h4>
+      <section><p>A job that enables the clients to produce high fidelity PDF and Word documents with dynamic data inputs.
+This operation merges the JSON data with the Word template to create dynamic documents for contracts and
+agreements, invoices, proposals, reports, forms, branded marketing documents and more.</p>
+<p>
+    To know more about document generation and document templates, please see the
+<a href="http://www.adobe.com/go/dcdocgen_overview_doc" target="_blank">documentation</a>
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob.html">ExportPDFJob</a></h4>
+      <section><p>A job which exports a source PDF file to a supported format specified by <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat.html">ExportPDFTargetFormat</a>.</p>
+<p>
+    For example, a PDF can be exported to a DOCX file as follows:
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob.html">ExportPDFToImagesJob</a></h4>
+      <section><p>A job which exports a source PDF file to a supported format specified by
+<a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat.html">ExportPDFToImagesTargetFormat</a>.</p>
+<p>
+    The result is a list of images or a list containing a zip of images. For example, a PDF file with 15
+    pages will generate 15 image files. The first file&apos;s name ends with &quot;_0&quot; and the last file&apos;s name ends with
+    &quot;_14&quot;.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob.html">ExtractPDFJob</a></h4>
+      <section><p>A job that extracts PDF elements such as text, images, tables in a structured format from a PDF.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.html">HTMLToPDFJob</a></h4>
+      <section><ul>
+<li>A job that converts a HTML file to a PDF file. Some source formats may have associated conversion parameters
+which can be set using the {@link HTMLToPDFParams} parameter.</li>
+</ul>
+<p>
+    An HTML input can be provided either as a local zip archive or as a static HTML file with inline CSS.
+    Alternatively, an HTML can also be specified via URL.
+</p>
+While creating the corresponding Asset instance, the media type must be:
+<ul>
+<li>&quot;application/zip&quot;, if the input is a local zip archive.</li>
+<li>&quot;text/html&quot;, if the input is a static HTML file with inline CSS</li>
+</ul>
+In case the input is a local zip archive, it must have the following structure:
+<ul>
+<li>The main HTML file must be named &quot;index.html&quot;.</li>
+<li>&quot;index.html&quot; must exist at the top level of zip archive, not in a folder.</li>
+</ul>
+<p>
+    Sample layout:
+<pre>
+    html_files.zip
+    |__index.html
+    |__referenced_file_1.css
+    |__referenced_file_2.jpeg
+    |__subfolder_1
+    |_____referenced_file_3.jpeg
+</pre>
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob.html">InsertPagesPDFJob</a></h4>
+      <section><p>A job that can be used to insert pages of multiple PDF files into a base PDF file.</p>
+<p>
+    For more complex use cases, refer the <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.html">CombinePDFJob</a>.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob.html">LinearizePDFJob</a></h4>
+      <section><p>A job that converts a PDF file into a linearized (also known as &quot;web optimized&quot;) PDF file. Such PDF files are
+optimized for incremental access in network environments.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob.html">OCRJob</a></h4>
+      <section><p>A job that convert a PDF file into a searchable PDF file. Allows specifying locale(
+<a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale.html">OCRSupportedLocale</a>) and
+OCR Type
+(<a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType.html">OCRSupportedType</a>) for performing OCR (Optical Character Recognition)</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob.html">PDFElectronicSealJob</a></h4>
+      <section><p>A job that allows clients to apply an electronic seal onto various PDF documents such as
+agreements, invoices, and more.</p>
+<p>
+    To know more about PDF Electronic Seal, please see the
+<a href="http://www.adobe.com/go/dc_eseal_overview_doc" target="_blank">documentation</a>.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob.html">PDFPropertiesJob</a></h4>
+      <section><p>A job that is used to fetch properties from an input PDF file. The properties are returned in a POJO.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a></h4>
+      <section><p>This abstract class represents the basic contract for all the PDF Services Jobs.
+It imposes no restrictions or particular details on the job execution process and leaves the
+specifics of setting up the jobs to their individual implementations.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob.html">ProtectPDFJob</a></h4>
+      <section><p>A job that is used for securing PDF document with password(s).
+The password(s) is used for encrypting the PDF document and setting the restriction on certain features
+like printing, editing and copying in the PDF document.</p>
+<p>
+    The supported algorithm for encrypting the PDF document are listed here. The {@link EncryptionAlgorithm} enum
+    can
+    be used to set the encryption algorithm.
+</p>
+<ul>
+<li>AES-128</li>
+<li>AES-256</li>
+</ul>
+<p>
+    For AES-128 encryption the password supports LATIN-I characters only.
+    For AES-256 encryption the password supports Unicode character set.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob.html">RemoveProtectionJob</a></h4>
+      <section><p>A job that allows to remove password security from a PDF document.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob.html">ReorderPagesPDFJob</a></h4>
+      <section><p>A job that allows to rearrange pages in a PDF file according to the specified order.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob.html">ReplacePagesPDFJob</a></h4>
+      <section><p>A job that allows specific pages in a PDF file to be replaced with pages from multiple PDF files.</p>
+<p>
+    For more complex use cases, refer the <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.html">CombinePDFJob</a>.
+</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob.html">RotatePagesJob</a></h4>
+      <section><p>A job that allows rotation of specific pages in a PDF file.</p>
+</section>
+      <h4><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob.html">SplitPDFJob</a></h4>
+      <section><p>A job that splits PDF document into multiple smaller documents by simply specifying either the number of files,
+pages per file, or page ranges.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2020 Adobe. All rights reserved.</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

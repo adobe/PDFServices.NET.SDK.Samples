@@ -1,27 +1,25 @@
 ﻿/*
- * Copyright 2019 Adobe
+ * Copyright 2024 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
- * accordance with the terms of the Adobe license agreement accompanying 
- * it. If you have received this file from a source other than Adobe, 
- * then your use, modification, or distribution of it requires the prior 
- * written permission of Adobe.
+ * accordance with the terms of the Adobe license agreement accompanying it.
  */
 
-using System.IO;
 using System;
 using System.Collections.Generic;
-using log4net.Repository;
-using log4net.Config;
-using log4net;
+using System.IO;
 using System.Reflection;
 using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
-using Adobe.PDFServicesSDK.pdfops;
-using Adobe.PDFServicesSDK.io;
 using Adobe.PDFServicesSDK.exception;
-using Adobe.PDFServicesSDK.options.exportpdftoimages;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.pdfjobs.jobs;
+using Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages;
+using Adobe.PDFServicesSDK.pdfjobs.results;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
 
 /// <summary>
 /// This sample illustrates how to export a PDF file to JPEG.
@@ -42,32 +40,42 @@ namespace ExportPDFToJPEGZip
             ConfigureLogging();
             try
             {
-                // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
-                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
-                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
+                // Initial setup, create credentials instance
+                ICredentials credentials = new ServicePrincipalCredentials(
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
+
+                // Creates a PDF Services instance
+                PDFServices pdfServices = new PDFServices(credentials);
+
+                // Creates an asset from source file and upload
+                using Stream inputStream = File.OpenRead(@"exportPdfToImageInput.pdf");
+                IAsset asset = pdfServices.Upload(inputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
+
+                // Create parameters for the job
+                ExportPDFToImagesParams exportPDFToImagesParams = ExportPDFToImagesParams
+                    .ExportPDFToImagesParamsBuilder(ExportPDFToImagesTargetFormat.JPEG,
+                        ExportPDFToImagesOutputType.ZIP_OF_PAGE_IMAGES)
                     .Build();
 
-                //Create an ExecutionContext using credentials and create a new operation instance.
-                ExecutionContext executionContext = ExecutionContext.Create(credentials);
-                ExportPDFToImagesOperation exportPDFToImagesOperation = ExportPDFToImagesOperation.CreateNew(ExportPDFToImagesTargetFormat.JPEG);
-                
-                // Set the output type to create zip of images.
-                exportPDFToImagesOperation.SetOutputType(ExportPDFToImagesOutputType.ZIP_OF_IMAGES);
+                // Creates a new job instance
+                ExportPDFToImagesJob exportPDFToImagesJob = new ExportPDFToImagesJob(asset, exportPDFToImagesParams);
 
-                // Set operation input from a source file.
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"exportPdfToImageInput.pdf");
-                exportPDFToImagesOperation.SetInput(sourceFileRef);
+                // Submits the job and gets the job result
+                String location = pdfServices.Submit(exportPDFToImagesJob);
+                PDFServicesResponse<ExportPDFToImagesResult> pdfServicesResponse =
+                    pdfServices.GetJobResult<ExportPDFToImagesResult>(location, typeof(ExportPDFToImagesResult));
 
-                // Execute the operation.
-                List<FileRef> results = exportPDFToImagesOperation.Execute(executionContext);
+                // Get content from the resulting asset(s)
+                List<IAsset> resultAssets = pdfServicesResponse.Result.Assets;
+                StreamAsset streamAsset = pdfServices.GetContent(resultAssets[0]);
 
-                //Generating a file name
+                // Creating output streams and copying stream asset's content to it
                 String outputFilePath = CreateOutputFilePath();
-                
-                // Save the result to the specified location.
-                results[0].SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
-                
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePath).Directory.Create();
+                Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
+                streamAsset.Stream.CopyTo(outputStream);
+                outputStream.Close();
             }
             catch (ServiceUsageException ex)
             {
@@ -96,9 +104,9 @@ namespace ExportPDFToJPEGZip
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
-        
-        //Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFilePath()
+
+        // Generates a string containing a directory structure and file name for the output file.
+        private static String CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
             return ("/output/export" + timeStamp + ".zip");
