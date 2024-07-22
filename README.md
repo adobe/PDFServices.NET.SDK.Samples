@@ -460,6 +460,16 @@ cd ElectronicSealWithAppearanceOptions/
 dotnet run ElectronicSealWithAppearanceOptions.csproj
 ```
 
+#### Apply Electronic Seal With Trusted Timestamp
+
+The sample project ElectronicSealWithTimeStampAuthority uses a time stamp authority to apply electronic seal
+with trusted timestamp over the PDF document.
+
+```$xslt
+cd ElectronicSealWithTimeStampAuthority/
+dotnet run ElectronicSealWithTimeStampAuthority.csproj
+```
+
 #### Extract PDF
 
 These samples illustrate extracting content of PDF in a structured JSON format along with the renditions inside PDF.
