@@ -1,0 +1,2498 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/varunkumar/work/Adobe.DocumentCloud.CPF.Services.SDK/Adobe.PDFServicesSDK",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "NuGet.md",
+      "output": {
+        ".html": {
+          "relative_path": "NuGet.html",
+          "hash": "aFAwmMFHAfRxf8Zk7S29ExUhwvIebZwiL4wbts90OKs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServices.html",
+          "hash": "iyQarGILZFrfHWOeebUydWOa1ggZEiZqlt+2vF8oE58="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatus.html",
+          "hash": "48VK8telqRy98guFF9TWlzM6t1zxvRz/eyh3F4Hc2cw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusMethods.html",
+          "hash": "US8mk3dqI/AIXZjrRTMvalb/OE6lS/cZTfpFp+8q+uk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.html",
+          "hash": "Z+BALtCbXFWDNQOyVqg8SLgJIao1iovHTqufo0aTIbo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaType.html",
+          "hash": "1ojISJHIKCnnrsYCgsjLUdLH/egBnd9zqcDooj0kzzU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaTypeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaTypeMethods.html",
+          "hash": "jM8H/JBXwLJRFS11ParkkX9xWH4pvD5Gfgt7RZEdXak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesResponse-1.html",
+          "hash": "2nN4Vx2Zqt/idmjUhSmByhgskuWyjYi3LKiuS15S7BY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.Region.html",
+          "hash": "7KHAw6NLi0g8xOow8SI3OVG0Evezvb5f/Ar1X2fqwUc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.auth.ICredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.auth.ICredentials.html",
+          "hash": "uoCVPevF6CKFeXf7A1WF0dGPmW5EOxmKoAY5g8d/wGI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.auth.ServicePrincipalCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.auth.ServicePrincipalCredentials.html",
+          "hash": "LCfNpkloDKES7DqNZDY+TqkL31TOpEssmG+Ns/+/ang="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.auth.html",
+          "hash": "yWu5JGPlG3W8mDT/FV+9i4/fk7/iGMrcO7W/WUSUUJ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.Builder.html",
+          "hash": "dCuHpQK7eybBraDVbCZ31Gy2OdAcBcvZGgUjy29NRRo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.html",
+          "hash": "5ufkgcxHz2rjk8Bfq8qtDrRKnLUUnH9045DBznkRUhM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.CallbackNotifierData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.CallbackNotifierData.html",
+          "hash": "1z3ut1uzM8bKeM/cwZAj8xn8QjkQMLCKp76j8djrOYU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.INotifierData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.INotifierData.html",
+          "hash": "ltt4k1viPVC085HL0B1ON6FVx2ODX3HGNgC8o+YCef0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierConfig.html",
+          "hash": "lLg0r7wzztQ9tBMfBkjqDsNUlBu1fCuFP5wbOiBISO8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierType.html",
+          "hash": "8uDY3Ald2cskYuSbQvrFI7KF4Pwb0BzCl8oLjcZw1+E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.html",
+          "hash": "1P5eQf+GJPkptIeoZKSVRwQYYv2L05BDl8Yj92nBIek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials.html",
+          "hash": "Xpj7dwi4i824E+0tCaZrn3bbBj7n1IwkJ7sRfx6f2wE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyScheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyScheme.html",
+          "hash": "bp9ZTtD9rIUaxznhBHkJ8r9kYKdKboIcclXQHkUOntc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.Builder.html",
+          "hash": "eREMyUMUP83b3LUJsDCgsuWhdXNsFgxJaWTBi+m8OEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.html",
+          "hash": "giDHU8LQiTgyQJnyV6VCGVWLLfXNMlLDv2PZPsH289A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.UsernamePasswordCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.UsernamePasswordCredentials.html",
+          "hash": "aE1SbK7tP7Xc2gbL/a9sSfzOSkYHFCDbQGP5LkrA+AA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.html",
+          "hash": "8eT4moZLnNjhDqiMOlEFzmfj+a9Hq14s+mSv8XiJnWg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.html",
+          "hash": "Po1vetMv1kOnDmUoKcZEBlMkgweLeCQmDgNaLrUG1w8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.SDKException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.SDKException.html",
+          "hash": "cWvr2qG6TrJiGfwXntbURSK01P3+lxBTNtLPVFl7ZOY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceApiException.html",
+          "hash": "QBTi5Zw46owmXMsyfRcxUhjI1K5S68mf0unaKF69+qM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceUsageException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceUsageException.html",
+          "hash": "9OUtaMRVyY6GU2vdX7etkp664/rQZ1EqU3akF3OCV0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.html",
+          "hash": "ibMQhxdwVZVrhFxw3ogyvdjrLqz82hVpwYC+Wj6PWk0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.CloudAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.CloudAsset.html",
+          "hash": "JiydDbQXyWUv3JU2d1V6kZB58I7UTFyS2rCzJTqvofs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.ExternalAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.ExternalAsset.html",
+          "hash": "tOmACQggOyIeeljBT+GTCML6yukh/lPxesTJahSQ13w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.ExternalStorageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.ExternalStorageType.html",
+          "hash": "EfWeNI2+EfrlyZvaSNf88uv+JWmBBUDza+N6IT0mVuc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.IAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.IAsset.html",
+          "hash": "L2pPE3yhEeg2V87rBxIh5F+e9vL7o6Sv0AeTA9jgINQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.StreamAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.StreamAsset.html",
+          "hash": "0zHmMbPuRbF0cFAHtbZTkVU8/vN9syWF9t55SU2wiYY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.html",
+          "hash": "7yIrgxBdGlVMy3D1tBlmrL7jdyox3/ZQ9htECchr/nI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob.html",
+          "hash": "ea5A+JOgSI0A2MRfUYvebaH/3OK40EvxIuf9GUZeViQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.html",
+          "hash": "rKAdO/5Fm9rmFR8sYt6f1OZfJEWmX5LA4GG58KLiaD0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob.html",
+          "hash": "Wg8uq1cO2xiZR8jAIAijhE1T/QcctIIOQjApwiB6vg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob.html",
+          "hash": "2YZ9A+vFQu1LTechUr6klbIiS0LjOgm289qqvGZTumA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob.html",
+          "hash": "U6GwvXdEzqZFgigwlFpSi4BkpfIHC3vh9KShm0Ww41k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob.html",
+          "hash": "eZjE3iiB+/r8M3SYDU0smZwrcShB9ZTYO+WnhcW1ZjU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob.html",
+          "hash": "Xl96Yw5KeclDAqPuUPLbx9bFnIiPHYhmse4o63ln47E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob.html",
+          "hash": "kcVkN0y8NUjvb1sFJXSVZuOtbO+axhdnvFfYKjd/9sM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob.html",
+          "hash": "33tfzJ5gGbuwzVLS6IRQCa98N7ZItNYbNfN10793Sks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.html",
+          "hash": "J12pwvkhYZ/QxzRye0q+0Qg7jS/3JoLyqOjgZZ+BGzk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob.html",
+          "hash": "GjPOHc+fmqnAvXpGZ6D+y5LLgZNvl7613ZEtJCgjT3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob.html",
+          "hash": "D9oA3/lb+kxY70xPeB8XWGwJdeEi7Jqt3bZ50vUIuNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob.html",
+          "hash": "b03m+biiyr+g6ylgN4rX6T6reeGnPjOdzlvlbbc7E3E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob.html",
+          "hash": "8clFAzmTLh4TFvUGhw0Vu+cqsKKfLVB6bNTFuEdJ3hs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob.html",
+          "hash": "5zONfr4+7g3A1RKimX/CrrXBTr8/kbxZOBwbLHpwOY4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html",
+          "hash": "NbzqAKdQPTNVQr291jJz/2RuRixK10xfGVquZADoTiY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob.html",
+          "hash": "jDqJWB29MSXJu0QuFL7cA0bVCta1wWmyRPsE8Fn578I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob.html",
+          "hash": "5e1NULyILi4J5EgIrN2oRVR331NeQtwGWDEPaXbogoI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob.html",
+          "hash": "M3+XFsN+3TmZYa4JQD4obWAlFJiJBgW8F493hUUPZjM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob.html",
+          "hash": "SU6gCEZ+Yp6dJbKtQZ1s2ICbXjzPQfqx/rC+zXd5GFs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob.html",
+          "hash": "ponJf+1D/JKtquzojYskei/qwZBrnMxoTKTFUfx+4k4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob.html",
+          "hash": "xZmUszou5J8UEdhF7YQ0U1eHAR7SoOKOO7VpfvRfopI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.html",
+          "hash": "sHZBkUOxa5S6Mxl/7cqt5OZtgX4yTdzo4espCJNeYkc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.IPDFServicesJobParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.IPDFServicesJobParams.html",
+          "hash": "33PRbRuZ8/+cJtBjtHR0O5QzGKVE9gE41/WrruG4Ze0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.PageRanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.PageRanges.html",
+          "hash": "YMBYbL8epYu/xPhrrIrAUqkRn2I50TVtXD+dfL76uok="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.Builder.html",
+          "hash": "99CGlgO+j6J0QlL51BKVdPofAlTvQx5ofDB/JWZGTfg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.html",
+          "hash": "zDHROxFqUb7fEfEWP55kqzFIzz9f7getjxSywgCbjxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.html",
+          "hash": "biEaTN8OJyBPwKJvJSkJPegQOj1pY3+TJqhRhK1/q7E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.Builder.html",
+          "hash": "nyPt+kIkzH/fVB9kg3ouTCGRi3+ysRkKDL6RrJuZjAI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.html",
+          "hash": "FKegZ1rOCKx/Gp5xG/QcITrYTGEM1AK8dBlgkyomH7E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.html",
+          "hash": "va7yba6CAOKI4SlJIQZOnJ+afQvc2/goXR+Zar+nQgU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.Builder.html",
+          "hash": "3sAYBEkIDZe+D9LiM4iK9tcl+lh9XhgnwfoqJ1s1IhM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.html",
+          "hash": "WkEiD/fY3pDCeLwN59XcD2rH6h6rZ4WBMQ7bI46YUjI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel.html",
+          "hash": "zJIkSvIQ99IZLCMkKU4bqamOvQzU3JB94qCzjhgmg+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.html",
+          "hash": "GPqIIBEKuBi86DpfC7ldIEfW3FbclKIIExygFscxsx8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams.html",
+          "hash": "KiDa+DxYNM/YBHXV1Dth3P+kRSSGaotx2JhgxCF6x94="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.Builder.html",
+          "hash": "GpibzeTyBrIhyEoUK4+8aWL7iQeEofVCi2mzpgbg4bI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.html",
+          "hash": "AIVgg/9rgjh1aRE8yAYAnd0AfXHwEHJuJrMh/cknYfI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.DocumentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.DocumentLanguage.html",
+          "hash": "2NPCw3qV+KXmB+laTyfrVvSwyGmHLqVK8/Dd2oQUjxE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.html",
+          "hash": "+AO3aiheKvj4SKW4sonHAM2UgxhRfJsBoUrUSnos7gE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.Builder.html",
+          "hash": "ikWC/QVabwYM2LGegC5Wembzzzm4/1pcT5vsIeAgSMs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.html",
+          "hash": "VmdjgesfQN9+WhFX3avk6+Xq7U0UWS0OagpGJpzPfI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.DocumentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.DocumentLanguage.html",
+          "hash": "1Ke0WH2kA0yq/J/UpiMu4JDnLTIYQuaztKve0xa7bXU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.html",
+          "hash": "8RzGPe1AeUavfeNlMKYlDGf2NKE7PbC0S8mxMCq4cz0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.Builder.html",
+          "hash": "Z7pNuAPKqIe3YyCz6KY9ZN+RE0P6A1RyZffsEhAF6Ys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.html",
+          "hash": "cVHxQXiWqTlGNbj2uOmLphtP+WiS4j7EWljBJWlkOZM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.DocumentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.DocumentLanguage.html",
+          "hash": "Cq6/SSW1NkoKqnGzSGQdJb8JkHGcmfXG06oEw91xlUc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.html",
+          "hash": "J10JMymVp4nY+GIfeqMn2cRo2vRWxOKmNEndzH0/IXQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.html",
+          "hash": "emEz0NoVM1devjC41j0XlnuNN8oUeDT70fHYrzEKOZg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.DeletePagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.DeletePagesParams.html",
+          "hash": "lTTYjHGv/PlsxBsvEwPWjcRzIPlgYVlcq1B2wGVLGfo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.html",
+          "hash": "QGeT8fFusrpvMBqkU0ubyXb63qp0/BvHeP4Rn0h6N5c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.Builder.html",
+          "hash": "C1RaiqG+ywDSHJa+6BR53scovNkjYk51rvl33dmGRJM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.html",
+          "hash": "k2ITidwn06KLp6+IvJsA30/sZ3ONI17TyoxIflJLJec="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.Fragments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.Fragments.html",
+          "hash": "Q7uhQAVga9GHWvbXm6+92K0n1iHN1ZCfW6GrvBBMP70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.OutputFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.OutputFormat.html",
+          "hash": "1KYqdhWWprpsUb3iYbkq3YzVI4+2ifPpu7rFlLtWJQU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.html",
+          "hash": "5/O78meKeB5xQ4LJjC91y2xY2ptup/3UkySv+pCsICQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceItem.html",
+          "hash": "3+X1wuYpWShJ2c6Hmhuey1m16aMO3cJJm9oNGQKkWWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions.html",
+          "hash": "m1q5zS2Gc/pomoCuHp48rtH0PQ0hZOBpEzx9TN0sHW8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCAuthContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCAuthContext.html",
+          "hash": "HSP4iaVSLyI3ueSkt5SThZnG0kLnptONUBhefab7gOM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.Builder.html",
+          "hash": "zAMmNtzZP+1tgf4L/IC/KnkbjVJuDmY6/Ph9Y5ikfNc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.html",
+          "hash": "RJMbfU5ITbPOvDSr6FxpWk6WGOifcr6eWu599y62aV0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials.html",
+          "hash": "GScHUnZVgPqkQPjGXxbnHBNhOhLZMyGpwWIB4Vi5A04="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.DocumentLevelPermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.DocumentLevelPermission.html",
+          "hash": "CBq9y64MqAOLuNAVJPIi2h3EzS9Xr/NLsqodwYG2Kkg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldLocation.html",
+          "hash": "MpDBL8G779dgu9vh/ZOrtdj9WYFdMYmIyzxVjgNwYVA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.Builder.html",
+          "hash": "iK8mL7i1bU6xiIoYuUBvjuc4whyhH1YjLksRgFBj8kI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.html",
+          "hash": "acinzgDkA+uu3uPpPHkvlDLYH/ozi7lUs1J8nVVpQj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.Builder.html",
+          "hash": "MzwHFzTXFmq4uxpTrQ5T5N9ZQTPjzhc+7hDqyHpnYmE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.html",
+          "hash": "o9//+YRJ9qsddrWXEr1MNvxU7UHi5GDk4NXGffqWJt8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions.html",
+          "hash": "49fKW9CgFhNtKW/UZkxWFI0cIHGjwcryl8hbwgVgTWs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.SignatureFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.SignatureFormat.html",
+          "hash": "1FumlhLzt8Lqu8fPjuA0fjW/3u6vXBX1arA5G5Kckc0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSABasicAuthCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSABasicAuthCredentials.html",
+          "hash": "41rw+OTvXDZEZb/Kj/N9CWK+8xcMhTXlmbBtLWE355Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSAOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSAOptions.html",
+          "hash": "CPdhqqSMR3vGHsLXE0RlpUUpmfMRsbsuo4ThbyBOP/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.html",
+          "hash": "Yki9nlyudLV1PsTyvzKB8gRnFxWV4t/V1gxYsVvj7dU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportOCRLocale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportOCRLocale.html",
+          "hash": "u6EEbcB4QkcTecz5i/V3BWnMoXC1iuWNAc+3FJdStv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.Builder.html",
+          "hash": "NJPvRwvXCESX+oBlUA2qaTKC7x9cQxrgVWO5WYu33Rw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.html",
+          "hash": "dDtPD2VX/KoUby5jj0AQmn8I2yB1qpeZyK99klbKMHg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat.html",
+          "hash": "F/S2FDpdFxgCr4eGreIBqbmDXiQSy7NumPsvR43VQQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.html",
+          "hash": "MOK7b1k+jM6wf41wA97P0/SSRoIfsGw28b0bspkyobA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesOutputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesOutputType.html",
+          "hash": "W3e9+U9N/i1qFl7DpNY8HIbjFj9zOFGV6dHfLiGTXIY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.Builder.html",
+          "hash": "0+L5q7yO0fNZgCgjJC5ZBIJNkeRB3+IBTCMBs9S8GJc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.html",
+          "hash": "bbK9sQVd3uH3XmY4h3FeIU+d1XcMWTMWPbv6cIqTGeE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat.html",
+          "hash": "LlOybCi2UlK1EspyzRzWPh+Mf6iyZimp9jqFb9yE6ds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.html",
+          "hash": "1H/ECJO8Wala6F8MyNovvZH7n1XFvly1GkMqpdaCxUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractElementType.html",
+          "hash": "0jvrGmZjGD6Ts2cW+y93He9W4Xco450JeflfeMxsS3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.Builder.html",
+          "hash": "l2kXJ7q7pCLEU1YYOQ1krbLz6dADKwMZTrc1sJVJnFY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.html",
+          "hash": "rHzCHTwRi4/og6wKpSKr0gcavPNbA2pWWgFVyiflw3E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractRenditionsElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractRenditionsElementType.html",
+          "hash": "IzQbQwp1AAA5OXRLAfpzCZRElygs0M1sffqihA+uy20="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TableStructureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TableStructureType.html",
+          "hash": "OXWCSR0TTH1TvGQFZcUvw3ophY8XrRVM/66qc0Ou5Og="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.html",
+          "hash": "HrYl1tNh2e2YWbnf5gJiBkK2oPYmIioZRt3g8bvTPA4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.Builder.html",
+          "hash": "RTih57wkl8IdXn73YyMJiL//CrIH31veYaoWqzQJ9QE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.html",
+          "hash": "rE+oG8iwsA0enlmFAMQ0/LOiPuatIEJJYYthi/kpb7g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.PageLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.PageLayout.html",
+          "hash": "vDiAyfho4GbGPnX2m0r/OBE/iCPK13i3dEQ+IRCrDJU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.html",
+          "hash": "bYUDJTJsWHkScEhpiFrz+ThtCqFk/VnNn+JWR1qAbH8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.Builder.html",
+          "hash": "oIZkzSb72Uv0tdA+YFBw6JyxASKWOjEBDCb8+dic7Po="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.html",
+          "hash": "zHa4JCFiOSavuFsNnNiTbFqMCJHJhnktra0eaD9aKP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.html",
+          "hash": "F3Iag2u1fSlTbPhAmj36AKDchZU1oFjqItIowJZjylg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.Builder.html",
+          "hash": "p4IabA927WVqleeNqT0tRWiZwQCbGT13BfF6IclGH88="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.html",
+          "hash": "XHH+PcIR6u58/AGZVaR4CbtBIyMS97h5fA/uL2E0eZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale.html",
+          "hash": "LuXvpF+ljfESx8r9xmR+ZSsSi/5ecb842x/k3PjrFf0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType.html",
+          "hash": "xIeEccug3vFKNqgW4+ibKINyiClCcvLttSoL/zsC/jA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.html",
+          "hash": "xBcIvi3qnzL9Ysy+rVeZ0cQIW1JaVcXQChYJcTbMmBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.Builder.html",
+          "hash": "ZT9gzTc/qQtyOK+kEOcSDWqcSgN5OyGAxT53JD5j+pg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.html",
+          "hash": "adOjccRMpYwIGpW8+7NxWQWb51LI2zbwft7CW1F93is="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.html",
+          "hash": "qBRrXdwdoYiy1n92j/AbuJiR4RXK0nIUNEoO/Be4ulM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ContentEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ContentEncryption.html",
+          "hash": "gBVLuDGrAx659gw0IHj+1nnX267Z/g+ygCN0qErZRJE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.EncryptionAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.EncryptionAlgorithm.html",
+          "hash": "FCFTUqrNs+UOvoyHDPVhILS+yakwO2PR2CdCWaooNP0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.Builder.html",
+          "hash": "q2DBCMYq0jIWZHg0/YlP1sgkq2g6rVs+RzRj6puGQUM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.html",
+          "hash": "N5mMQexs8UE2VWsWpfzJmsmWKxqDcWqsy61iSMU/2QY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permission.html",
+          "hash": "ClRHOGcZp63Edho+hzw+3ujdEGmGcSxvCiJkIvAcY6s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permissions.html",
+          "hash": "uYV1udodA6Ge3SwBfQLcMhEtclZWrsPYJz9PvZg8pmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ProtectPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ProtectPDFParams.html",
+          "hash": "Goe6+3UFeUIjLyopwyj9A+1VjqX2BjMM+9xC3nWu4pY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.html",
+          "hash": "T0rHhfdem9nnCGuTKJEOMEZc4DzlcmKXQ1OIERzm+m8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.RemoveProtectionParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.RemoveProtectionParams.html",
+          "hash": "eO9Omwzyt0Tt+KwEA1po+NHgzxqFzECdQ5BHB844oIo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.html",
+          "hash": "jdPRdp0/P+EQqaSgHeZqO6aSTUZ/Z0jSA5UWTwnJQJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.Builder.html",
+          "hash": "1t2cOQgcGAy0D9h5W+FIGMFIcXIexHRS+vnw2QaqCDY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.html",
+          "hash": "yVuUCpPkzX8pTAQWywd+w7C9bbKf33FWnEgEkvMELDA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.html",
+          "hash": "0+UCIbOSDjdTmytchRC6lggGBy4twpe3QvDYe5y1OBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.Builder.html",
+          "hash": "2X6SR/jHF/Y2NDyXkDjKWI4jUpc68vPdxX70XURqYKw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.html",
+          "hash": "by//jiD0ocM0Zj9Ove40HI5DJOt3Sy+p3YcwqjwZQlA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.html",
+          "hash": "BYrwckytfQXpVKjpnAtZZTtHQ4GbxRURmqy8qQtUIks="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.Angle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.Angle.html",
+          "hash": "zUw/e8HLYcgaiVYgEXJ5Hm6es6/u0rn401XJIKTqghQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.Builder.html",
+          "hash": "X09BhX0/V7BHjhFcQjWvis3iPDOMJdNcYayoRzQw5p8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.html",
+          "hash": "oOKv/F+oPEt7se/9AzJG9opSPzMcgo0AlgXbMn75xIY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.html",
+          "hash": "ZeviKY3Urxmwn9IE8hPif9OhVlIeD53pCnwNfn3ueCk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.SplitPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.SplitPDFParams.html",
+          "hash": "xxf8WBhpkCsratf95Yz93M/gn5zerUQnCOkfARuk0Cg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.html",
+          "hash": "12FKQCQS0RPH5aZnVlaOJPPGq8Qr4GoyF6WWMxVJxS8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.html",
+          "hash": "9vr6VKCAxqwkhb5nQEm68cQTjlRgPirMrCWUhKPfB7o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.AutotagPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.AutotagPDFResult.html",
+          "hash": "NhskyT1FRzUtKNUHOezXDZ+gg10uYZpYknIYr3oOA8I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CombinePDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CombinePDFResult.html",
+          "hash": "M4/Ld3Jer6c6UBW9bbPV28l2fLTUzvbvLAwuXs9RZMg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult.html",
+          "hash": "Scjn/2pWAUMb0DkecPDnvLDwfsZEGZc0r6TD950FPnE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CreatePDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CreatePDFResult.html",
+          "hash": "1TEcrlU1oTyLUixADmQtVXGk2s6T4VqnzDy1Bsd6BQ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DeletePagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DeletePagesResult.html",
+          "hash": "Oayo5nfRJBdABekCjIPe7HHWejUt1B/LvUYQCLBahzU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DocumentMergeResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DocumentMergeResult.html",
+          "hash": "5oiu8cxrZbT6oXFlJPqL3krqbbfvalFZjRBeNtcRtEw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFResult.html",
+          "hash": "IC/a9KTDqVX3eujavHnqD+/XLPUoscMv6YuFiB88Xl8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFToImagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFToImagesResult.html",
+          "hash": "Xp1wDI4lzy+sPl/s0GTPJti2+TLoUictapcrjkjuAAk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExtractPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExtractPDFResult.html",
+          "hash": "WP4ZEgnaJ8c3TwoVxZ/hoLNR/TaGV+XzT0VMdWLZsY0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.HTMLToPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.HTMLToPDFResult.html",
+          "hash": "O/wgN4oFWUztJ+TP3IJalRNKO/8osQMZKwjabBtD+/o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult.html",
+          "hash": "CSKV4wzActNjsIfRLcbmG93PLNoheFq/hvJmD/xjGrY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.InsertPagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.InsertPagesResult.html",
+          "hash": "ZG3U79WxlTOA1Ds0YEpQWMNi1nPDMZvQRUOfbpOwHY0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.LinearizePDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.LinearizePDFResult.html",
+          "hash": "Yx2C5x6KBRUQuKFlOenaMKBJsikd6g2zD8qZAJTTlNk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.OCRResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.OCRResult.html",
+          "hash": "aKOOjJWiaIMDGgFqgBvFX0xknv5EwnCmNVzQ1Z19BGQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFElectronicSealResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFElectronicSealResult.html",
+          "hash": "5wU0RfuhfACr/CAzAQqyVE4RUuIyXT/dxGYYWSjUmbY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFPropertiesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFPropertiesResult.html",
+          "hash": "RZ2wc3gogIvPXCMYRMtm29KxTVD7HHXB5N3wq3aTA14="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ProtectPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ProtectPDFResult.html",
+          "hash": "FjpAftc8mqExEvadGqOphnzyiatoO4zYj+Lg/j1oIrs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RemoveProtectionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RemoveProtectionResult.html",
+          "hash": "wkjy3GD07SG2VzvZEr9EFPZtCI58LxLs+Lc2IiFCblY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReorderPagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReorderPagesResult.html",
+          "hash": "S2NNu11qMNlXCeIEYTr9KkALfTBPDwhL6dor/0nl4+A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReplacePagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReplacePagesResult.html",
+          "hash": "t1iFjVJxYXeFjPCTs+YoR74OxhkV6vjl1HYmr58ie7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RotatePagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RotatePagesResult.html",
+          "hash": "joUnhJQkPdxAk5k7QVE7911gaCUDybiuuhVnbTox6eI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.SplitPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.SplitPDFResult.html",
+          "hash": "qv093Tn+z77w92l4StPIAMgmP9iuIDa8jtOdA0Q28JE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Content.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Content.html",
+          "hash": "F1V6rqy35Ll6LsSYEfvDyMY3JYd8UqWFNy9SpofdxJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Document.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Document.html",
+          "hash": "jBdkGiknqPPbWIaorHF61gApZ5N2iHK9G7v8sO9aRTw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.EncryptionSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.EncryptionSettings.html",
+          "hash": "2cPWEuAKKzlfQ4TBS81tXQofefYiO5jKvB8K0M45xN0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Font.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Font.html",
+          "hash": "DueBsLJ8YXh79SoiStPsEaWlEhj7RX08I8dQ7Do9CQg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.InfoDict.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.InfoDict.html",
+          "hash": "ws07bm5/oaPoSuYWIP1dHbaQVrWND8EjgH0JajAziok="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PDFProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PDFProperties.html",
+          "hash": "gzU/FenfVYBGLBDiVp5n6jpGinVU+Tr1jjSX08kb2lE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Page.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Page.html",
+          "hash": "LAtYPWbtvogTrVFFiI3eAAVKEPSolig0j3FTwGo+IWQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PermissionSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PermissionSettings.html",
+          "hash": "Q1CztAC7vyfswgmo8BRHBP8DYZNauK3KFUSE5Tm0+f8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.SecuritySettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.SecuritySettings.html",
+          "hash": "mzLUoRAQaHAXswoysMMONIgnuQ1kt1FPlTckZ7BsEzw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.html",
+          "hash": "h5hi3ZOUMzhxcCW2J22VBFiYTnpl3kPtCUjw9NeOWWg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.html",
+          "hash": "00VnusgCoXhjPInoWNy9WAR2hbA+2QcyGhgpTCTftVw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.html",
+          "hash": "Dh59u1yvMyXaZpHNxHACkww5KeW71WBlnoAeJssZiuo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Z49o/6DK6V5btkqSKi4LGbRvZJhi1qnWoLxwNvPLBZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "6mfm6FZyTxbbDvgG8mJgRIoyXvu3o50BtMgE7JYOV4k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "KSZj/U+IPO9fLwMDPYH4u/XCgfUqgoiL/xYRerM1GHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "CzALDj2v7fmNYoKI0Gcsn9874VB9JfV3s7yikgN/kxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "jmlvP6nLefm4bRK1MFULrdSdkhybxIhBDvd8aa2PrPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 196,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

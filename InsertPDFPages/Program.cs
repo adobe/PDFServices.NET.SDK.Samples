@@ -1,26 +1,25 @@
 ﻿/*
- * Copyright 2019 Adobe
+ * Copyright 2024 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
- * accordance with the terms of the Adobe license agreement accompanying 
- * it. If you have received this file from a source other than Adobe, 
- * then your use, modification, or distribution of it requires the prior 
- * written permission of Adobe.
+ * accordance with the terms of the Adobe license agreement accompanying it.
  */
 
-using System.IO;
 using System;
-using log4net.Repository;
-using log4net.Config;
-using log4net;
+using System.IO;
 using System.Reflection;
 using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
-using Adobe.PDFServicesSDK.options;
-using Adobe.PDFServicesSDK.pdfops;
-using Adobe.PDFServicesSDK.io;
 using Adobe.PDFServicesSDK.exception;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.pdfjobs.jobs;
+using Adobe.PDFServicesSDK.pdfjobs.parameters;
+using Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages;
+using Adobe.PDFServicesSDK.pdfjobs.results;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
 
 /// <summary>
 /// This sample illustrates how to insert specific pages of multiple PDF files into a single PDF file.
@@ -32,52 +31,57 @@ namespace InsertPDFPages
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main()
         {
             // Configure the logging
             ConfigureLogging();
             try
             {
-                // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
-                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
-                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
-                    .Build();
+                // Initial setup, create credentials instance
+                ICredentials credentials = new ServicePrincipalCredentials(
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
 
-                // Create an ExecutionContext using credentials.
-                ExecutionContext executionContext = ExecutionContext.Create(credentials);
+                // Creates a PDF Services instance
+                PDFServices pdfServices = new PDFServices(credentials);
 
-                // Create a new operation instance
-                InsertPagesOperation insertPagesOperation = InsertPagesOperation.CreateNew();
+                // Creates an asset from source file and upload
+                using Stream baseInputStream = File.OpenRead(@"baseInput.pdf");
+                using Stream firstInputStream = File.OpenRead(@"firstFileToInsertInput.pdf");
+                using Stream secondInputStream = File.OpenRead(@"secondFileToInsertInput.pdf");
+                IAsset baseAsset = pdfServices.Upload(baseInputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
+                IAsset firstAssetToInsert =
+                    pdfServices.Upload(firstInputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
+                IAsset secondAssetToInsert =
+                    pdfServices.Upload(secondInputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
 
-                // Set operation base input from a source file.
-                FileRef baseSourceFile = FileRef.CreateFromLocalFile(@"baseInput.pdf");
-                insertPagesOperation.SetBaseInput(baseSourceFile);
-
-                // Create a FileRef instance using a local file.
-                FileRef firstFileToInsert = FileRef.CreateFromLocalFile(@"firstFileToInsertInput.pdf");
                 PageRanges pageRanges = GetPageRangeForFirstFile();
 
-                // Adds the pages (specified by the page ranges) of the input PDF file to be inserted at
-                // the specified page of the base PDF file.
-                insertPagesOperation.AddPagesToInsertAt(firstFileToInsert, pageRanges, 2);
+                // Create parameters for the job
+                InsertPagesParams insertPagesParams = InsertPagesParams.InsertPagesParamsBuilder(baseAsset)
+                    .AddPagesToInsertAt(firstAssetToInsert, pageRanges, 2)
+                    .AddPagesToInsertAt(secondAssetToInsert, 3)
+                    .Build();
 
-                // Create a FileRef instance using a local file.
-                FileRef secondFileToInsert = FileRef.CreateFromLocalFile(@"secondFileToInsertInput.pdf");
+                // Creates a new job instance
+                InsertPagesPDFJob insertPagesPDFJob = new InsertPagesPDFJob(insertPagesParams);
 
-                // Adds all the pages of the input PDF file to be inserted at the specified page of the
-                // base PDF file.
-                insertPagesOperation.AddPagesToInsertAt(secondFileToInsert, 3);
+                // Submits the job and gets the job result
+                String location = pdfServices.Submit(insertPagesPDFJob);
+                PDFServicesResponse<InsertPagesResult> pdfServicesResponse =
+                    pdfServices.GetJobResult<InsertPagesResult>(location, typeof(InsertPagesResult));
 
-                // Execute the operation.
-                FileRef result = insertPagesOperation.Execute(executionContext);
+                // Get content from the resulting asset(s)
+                IAsset resultAsset = pdfServicesResponse.Result.Asset;
+                StreamAsset streamAsset = pdfServices.GetContent(resultAsset);
 
-                //Generating a file name
+                // Creating output streams and copying stream asset's content to it
                 String outputFilePath = CreateOutputFilePath();
-                
-                // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
-                
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePath).Directory.Create();
+                Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
+                streamAsset.Stream.CopyTo(outputStream);
+                outputStream.Close();
             }
             catch (ServiceUsageException ex)
             {
@@ -119,9 +123,9 @@ namespace InsertPDFPages
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
-        
-        //Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFilePath()
+
+        // Generates a string containing a directory structure and file name for the output file.
+        private static string CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
             return ("/output/insert" + timeStamp + ".pdf");

@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Adobe.PDFServicesSDK" Version="3.5.1" />
-    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="4.0.0" />
+    <PackageReference Include="log4net" Version="2.0.17" />
   </ItemGroup>
   
   <ItemGroup>

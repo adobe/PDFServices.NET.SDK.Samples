@@ -1,84 +1,87 @@
 ﻿/*
- * Copyright 2019 Adobe
+ * Copyright 2024 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
- * accordance with the terms of the Adobe license agreement accompanying 
- * it. If you have received this file from a source other than Adobe, 
- * then your use, modification, or distribution of it requires the prior 
- * written permission of Adobe.
+ * accordance with the terms of the Adobe license agreement accompanying it.
  */
 
-using System.IO;
 using System;
-using log4net.Repository;
-using log4net.Config;
-using log4net;
+using System.IO;
 using System.Reflection;
 using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
-using Adobe.PDFServicesSDK.options.protectpdf;
-using Adobe.PDFServicesSDK.pdfops;
-using Adobe.PDFServicesSDK.io;
 using Adobe.PDFServicesSDK.exception;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.pdfjobs.jobs;
+using Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf;
+using Adobe.PDFServicesSDK.pdfjobs.results;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
 
+/// <summary>
+///     This sample illustrates how to secure a PDF file with owner password and allow certain access permissions
+///     such as copying and editing the contents, and printing of the document at low resolution.
+///     <para />
+///     Refer to README.md for instructions on how to run the samples.
+/// </summary>
 namespace ProtectPDFWithOwnerPassword
 {
-    /// <summary>
-    /// This sample illustrates how to secure a PDF file with owner password and allow certain access permissions 
-    /// such as copying and editing the contents, and printing of the document at low resolution.
-    /// <para/>
-    /// Refer to README.md for instructions on how to run the samples.
-    /// </summary>
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main()
         {
             //Configure the logging
             ConfigureLogging();
             try
             {
-                // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
-                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
-                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
-                    .Build();
+                // Initial setup, create credentials instance
+                ICredentials credentials = new ServicePrincipalCredentials(
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
 
-                // Create an ExecutionContext using credentials.
-                ExecutionContext executionContext = ExecutionContext.Create(credentials);
+                // Creates a PDF Services instance
+                PDFServices pdfServices = new PDFServices(credentials);
+
+                // Creates an asset(s) from source file(s) and upload
+                using Stream inputStream = File.OpenRead(@"protectPDFInput.pdf");
+                IAsset asset = pdfServices.Upload(inputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
 
                 // Create new permissions instance and add the required permissions
-                Permissions permissions = Permissions.CreateNew();
+                Permissions permissions = new Permissions();
                 permissions.AddPermission(Permission.PRINT_LOW_QUALITY);
                 permissions.AddPermission(Permission.EDIT_DOCUMENT_ASSEMBLY);
                 permissions.AddPermission(Permission.COPY_CONTENT);
 
-                // Build ProtectPDF options by setting an Owner/Permissions Password, Permissions,
-                // Encryption Algorithm (used for encrypting the PDF file) and specifying the type of content to encrypt.
-                ProtectPDFOptions protectPDFOptions = ProtectPDFOptions.PasswordProtectOptionsBuilder()
+                // Create parameters for the job
+                ProtectPDFParams protectPDFParams = ProtectPDFParams.PasswordProtectParamsBuilder()
                     .SetOwnerPassword("password")
                     .SetPermissions(permissions)
                     .SetEncryptionAlgorithm(EncryptionAlgorithm.AES_256)
                     .SetContentEncryption(ContentEncryption.ALL_CONTENT_EXCEPT_METADATA)
                     .Build();
 
-                // Create a new operation instance
-                ProtectPDFOperation protectPDFOperation = ProtectPDFOperation.CreateNew(protectPDFOptions);
+                // Creates a new job instance
+                ProtectPDFJob protectPDFJob = new ProtectPDFJob(asset, protectPDFParams);
 
-                // Set operation input from a source file.
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"protectPDFInput.pdf");
-                protectPDFOperation.SetInput(sourceFileRef);
+                // Submits the job and gets the job result
+                String location = pdfServices.Submit(protectPDFJob);
+                PDFServicesResponse<ProtectPDFResult> pdfServicesResponse =
+                    pdfServices.GetJobResult<ProtectPDFResult>(location, typeof(ProtectPDFResult));
 
-                // Execute the operation.
-                FileRef result = protectPDFOperation.Execute(executionContext);
+                // Get content from the resulting asset(s)
+                IAsset resultAsset = pdfServicesResponse.Result.Asset;
+                StreamAsset streamAsset = pdfServices.GetContent(resultAsset);
 
-                //Generating a file name
+                // Creating output streams and copying stream asset's content to it
                 String outputFilePath = CreateOutputFilePath();
-                
-                // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
-                
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePath).Directory.Create();
+                Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
+                streamAsset.Stream.CopyTo(outputStream);
+                outputStream.Close();
             }
             catch (ServiceUsageException ex)
             {
@@ -107,9 +110,9 @@ namespace ProtectPDFWithOwnerPassword
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
-        
-        //Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFilePath()
+
+        // Generates a string containing a directory structure and file name for the output file.
+        private static String CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
             return ("/output/protect" + timeStamp + ".pdf");

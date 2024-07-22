@@ -7,7 +7,7 @@ The sample projects illustrate how to perform PDF-related actions (such as conve
 
 ## Prerequisites
 The sample solution has the following requirements:
-* .NET: version 6.0 or above
+* .NET: version 8.0 or above
 * Build Tool: The solution requires Visual studio or .NET Core CLI to be installed to be able to run the sample projects.
 
 ## Authentication Setup
@@ -28,8 +28,12 @@ set PDF_SERVICES_CLIENT_SECRET=<YOUR CLIENT SECRET>
 
 ## Client Configurations
 
-The SDK supports setting up custom socket timeout or connect timeout for the API calls. Please
+The SDK supports setting up custom timeout for the API calls. Please
 refer this [section](#create-a-pdf-file-from-a-docx-file-by-providing-custom-value-for-timeouts) to
+know more.
+
+The SDK also supports setting up Proxy Server configurations which helps in successful API calls for network where all outgoing calls have to go through a proxy else, they are blocked. Please
+refer this [section](#create-a-pdf-file-from-a-docx-file-by-providing-proxy-server-settings) to
 know more.
 
 Additionally, SDK can be configured to process the documents in the specified region.
@@ -82,25 +86,6 @@ cd CreatePDFFromDocxWithOptions/
 dotnet run CreatePDFFromDocxWithOptions.csproj
 ```
 
-#### Create a PDF File From a DOCX Input Stream
-
-The sample project CreatePDFFromDOCXInputStream creates a PDF file from a DOCX input stream.
-
-```$xslt
-cd CreatePDFFromDOCXInputStream/
-dotnet run CreatePDFFromDOCXInputStream.csproj
-```
-
-#### Create a PDF File From a DOCX File (Write to an OutputStream)
-
-The sample project CreatePDFFromDocxToOutputStream creates a PDF file from a DOCX file. Instead of saving the result to a local file, it writes the
-result to an output stream.
-
-```$xslt
-cd CreatePDFFromDocxToOutputStream/
-dotnet run CreatePDFFromDocxToOutputStream.csproj
-```
-
 ####  Create a PDF File From a PPTX File
 
 The sample project CreatePDFFromPPTX creates a PDF file from a PPTX file.
@@ -110,43 +95,48 @@ cd CreatePDFFromPPTX/
 dotnet run CreatePDFFromPPTX.csproj
 ```
 
+### Create a PDF File From HTML
+
+These samples illustrate how to convert HTML to PDF.
+Refer the [HTML to PDF API documentation](https://developer.adobe.com/document-services/docs/apis/#tag/Html-to-PDF/operation/pdfoperations.htmltopdf) to see instructions on the structure of the zip file.
+
 #### Create a PDF File From Static HTML (via Zip Archive)
 
-The sample project CreatePDFFromStaticHTML creates a PDF file from a zip file containing the input HTML file and its resources.
-Please refer the documentation of CreatePDFOperation.java to see instructions on the structure of the zip file.	Please refer the documentation of CreatePDFOperation.java to see instructions on the structure of the zip file.
+The sample project StaticHTMLToPDF creates a PDF file from a zip file containing the input HTML file and its resources.
 
 ```$xslt
-cd CreatePDFFromStaticHtml/
-dotnet run CreatePDFFromStaticHtml.csproj
+cd StaticHTMLToPDF/
+dotnet run StaticHTMLToPDF.csproj
 ```
 
 #### Create a PDF File From Dynamic HTML (via Zip Archive)
 
-The sample project CreatePDFFromDynamicHTML converts a zip file, containing the input HTML file and its resources, along
+The sample project DynamicHTMLToPDF converts a zip file, containing the input HTML file and its resources, along
 with the input data to a PDF file. The input data is used by the javascript in the HTML file to manipulate the HTML DOM,
 thus effectively updating the source HTML file. This mechanism can be used to provide data to the template HTML
 dynamically and then, convert it into a PDF file.
 
 ```$xslt
-cd CreatePDFFromDynamicHtml/
+cd DynamicHTMLToPDF/
 dotnet run CreatePDFFromDynamicHtml.csproj
 ```
 
 #### Create a PDF File From a Static HTML file with inline CSS
 
-The sample project CreatePDFFromHTMLWithInlineCSS creates a PDF file from an input HTML file with inline CSS.
+The sample project HTMLWithInlineCSSToPDF creates a PDF file from an input HTML file with inline CSS.
 
 ```$xslt
-cd CreatePDFFromHTMLWithInlineCSS/
-dotnet run CreatePDFFromHTMLWithInlineCSS.csproj
+cd HTMLWithInlineCSSToPDF/
+dotnet run HTMLWithInlineCSSToPDF.csproj
 ```
 
 #### Create a PDF File From HTML specified via URL
 
-The sample project CreatePDFFromURL creates a PDF file from an HTML specified via URL.
+The sample project HTMLToPDFFromURL creates a PDF file from an HTML specified via URL.
+
 ```$xslt
-cd CreatePDFFromURL/
-dotnet run CreatePDFFromURL.csproj
+cd HTMLToPDFFromURL/
+dotnet run HTMLToPDFFromURL.csproj
 ```
 
 
@@ -454,7 +444,7 @@ The following details needs to updated while executing these samples: PROVIDER_N
 
 #### Apply Electronic Seal
 
-The sample class ElectronicSeal uses the sealing options with default appearance options to apply electronic seal over the PDF document.
+The sample project ElectronicSeal uses the sealing options with default appearance options to apply electronic seal over the PDF document.
 
 ```$xslt
 cd ElectronicSeal/
@@ -463,11 +453,21 @@ dotnet run ElectronicSeal.csproj
 
 #### Apply Electronic Seal With Custom Appearance Options
 
-The sample class ElectronicSealWithAppearanceOptions uses the sealing options with custom appearance options to apply electronic seal over the PDF document.
+The sample project ElectronicSealWithAppearanceOptions uses the sealing options with custom appearance options to apply electronic seal over the PDF document.
 
 ```$xslt
 cd ElectronicSealWithAppearanceOptions/
 dotnet run ElectronicSealWithAppearanceOptions.csproj
+```
+
+#### Apply Electronic Seal With Trusted Timestamp
+
+The sample project ElectronicSealWithTimeStampAuthority uses a time stamp authority to apply electronic seal
+with trusted timestamp over the PDF document.
+
+```$xslt
+cd ElectronicSealWithTimeStampAuthority/
+dotnet run ElectronicSealWithTimeStampAuthority.csproj
 ```
 
 #### Extract PDF
@@ -573,7 +573,7 @@ dotnet run GetPDFProperties.csproj
 
 ### Custom Client Configuration
 
-These samples illustrate how to provide a custom client configurations(timeouts and region).
+These samples illustrate how to provide a custom client configurations(timeouts, proxy and region).
 
 #### Create a PDF File From a DOCX File (By providing custom value for timeouts)
 
@@ -582,6 +582,24 @@ The sample project CreatePDFWithCustomTimeouts highlights how to provide the cus
 ```$xslt
 cd CreatePDFWithCustomTimeouts/
 dotnet run CreatePDFWithCustomTimeouts.csproj
+```
+
+#### Create a PDF File From a DOCX File (By providing Proxy Server settings)
+
+The sample project CreatePDFWithProxyServer highlights how to provide Proxy Server configurations to allow all API calls via that proxy Server.
+
+```$xslt
+cd CreatePDFWithProxyServer/
+dotnet run CreatePDFWithProxyServer.csproj
+```
+
+#### Create a PDF File From a DOCX File (By providing Proxy Server settings with authentication)
+
+The sample project CreatePDFWithAuthenticatedProxyServer highlights how to provide Proxy Server configurations to allow all API calls via that proxy Server that requires authentication.
+
+```$xslt
+cd CreatePDFWithAuthenticatedProxyServer/
+dotnet run CreatePDFWithAuthenticatedProxyServer.csproj
 ```
 
 #### Export a PDF File to a DOCX File (By providing the region)
@@ -630,6 +648,28 @@ Here is a sample list of command line arguments and their description: </br>
 ```$xslt
 cd AutotagPDFParameterised/
 dotnet run AutotagPDFParameterised.csproj --report --shift_headings --input autotagPdfInput.pdf --output output/
+```
+
+### External Input / Output Storage
+
+These samples illustrate how to use external input and output storage for the supported operations.
+
+#### Create a PDF File From a DOCX File Using External Input Storage
+
+The sample project ExternalInputCreatePDFFromDOCX creates a PDF file from a DOCX file stored at external storage.
+
+```$xslt
+cd ExternalInputCreatePDFFromDOCX/
+dotnet run ExternalInputCreatePDFFromDOCX.csproj
+```
+
+#### Create a PDF File From a DOCX File Using External Input Storage and Store the Result in External Output Storage
+
+The sample project ExternalInputAndOutputCreatePDFFromDOCX creates a PDF file from a DOCX file stored at external storage and stores the result in external output storage.
+
+```$xslt
+cd ExternalInputAndOutputCreatePDFFromDOCX/
+dotnet run ExternalInputAndOutputCreatePDFFromDOCX.csproj
 ```
 
 ## Licensing

@@ -1,26 +1,25 @@
 ﻿/*
- * Copyright 2019 Adobe
+ * Copyright 2024 Adobe
  * All Rights Reserved.
  *
  * NOTICE: Adobe permits you to use, modify, and distribute this file in 
- * accordance with the terms of the Adobe license agreement accompanying 
- * it. If you have received this file from a source other than Adobe, 
- * then your use, modification, or distribution of it requires the prior 
- * written permission of Adobe.
+ * accordance with the terms of the Adobe license agreement accompanying it.
  */
 
-using System.IO;
 using System;
-using log4net.Repository;
-using log4net.Config;
-using log4net;
+using System.IO;
 using System.Reflection;
 using Adobe.PDFServicesSDK;
 using Adobe.PDFServicesSDK.auth;
-using Adobe.PDFServicesSDK.options;
-using Adobe.PDFServicesSDK.pdfops;
-using Adobe.PDFServicesSDK.io;
 using Adobe.PDFServicesSDK.exception;
+using Adobe.PDFServicesSDK.io;
+using Adobe.PDFServicesSDK.pdfjobs.jobs;
+using Adobe.PDFServicesSDK.pdfjobs.parameters;
+using Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages;
+using Adobe.PDFServicesSDK.pdfjobs.results;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
 
 /// <summary>
 /// This sample illustrates how to delete pages in a PDF file.
@@ -32,40 +31,49 @@ namespace DeletePDFPages
     class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+
         static void Main()
         {
             // Configure the logging
             ConfigureLogging();
             try
             {
-                // Initial setup, create credentials instance.
-                Credentials credentials = Credentials.ServicePrincipalCredentialsBuilder()
-                    .WithClientId(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"))
-                    .WithClientSecret(Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"))
-                    .Build();
+                // Initial setup, create credentials instance
+                ICredentials credentials = new ServicePrincipalCredentials(
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
 
-                // Create an ExecutionContext using credentials.
-                ExecutionContext executionContext = ExecutionContext.Create(credentials);
+                // Creates a PDF Services instance
+                PDFServices pdfServices = new PDFServices(credentials);
 
-                // Create a new operation instance
-                DeletePagesOperation deletePagesOperation = DeletePagesOperation.CreateNew();
-
-                // Set operation input from a source file.
-                FileRef sourceFileRef = FileRef.CreateFromLocalFile(@"deletePagesInput.pdf");
-                deletePagesOperation.SetInput(sourceFileRef);
+                // Creates an asset from source file and upload
+                using Stream inputStream = File.OpenRead(@"deletePagesInput.pdf");
+                IAsset asset = pdfServices.Upload(inputStream, PDFServicesMediaType.PDF.GetMIMETypeValue());
 
                 // Delete pages of the document (as specified by PageRanges).
                 PageRanges pageRangeForDeletion = GetPageRangeForDeletion();
-                deletePagesOperation.SetPageRanges(pageRangeForDeletion);
 
-                // Execute the operation.
-                FileRef result = deletePagesOperation.Execute(executionContext);
+                // Create parameters for the job
+                DeletePagesParams deletePagesParams = new DeletePagesParams(pageRangeForDeletion);
 
-                //Generating a file name
+                // Creates a new job instance
+                DeletePagesJob deletePagesJob = new DeletePagesJob(asset, deletePagesParams);
+
+                // Submits the job and gets the job result
+                String location = pdfServices.Submit(deletePagesJob);
+                PDFServicesResponse<DeletePagesResult> pdfServicesResponse =
+                    pdfServices.GetJobResult<DeletePagesResult>(location, typeof(DeletePagesResult));
+
+                // Get content from the resulting asset(s)
+                IAsset resultAsset = pdfServicesResponse.Result.Asset;
+                StreamAsset streamAsset = pdfServices.GetContent(resultAsset);
+
+                // Creating output streams and copying stream asset's content to it
                 String outputFilePath = CreateOutputFilePath();
-                
-                // Save the result to the specified location.
-                result.SaveAs(Directory.GetCurrentDirectory() + outputFilePath);
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePath).Directory.Create();
+                Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
+                streamAsset.Stream.CopyTo(outputStream);
+                outputStream.Close();
             }
             catch (ServiceUsageException ex)
             {
@@ -106,9 +114,9 @@ namespace DeletePDFPages
             ILoggerRepository logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
             XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
         }
-        
-        //Generates a string containing a directory structure and file name for the output file.
-        public static string CreateOutputFilePath()
+
+        // Generates a string containing a directory structure and file name for the output file.
+        private static String CreateOutputFilePath()
         {
             String timeStamp = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH'-'mm'-'ss");
             return ("/output/delete" + timeStamp + ".pdf");
