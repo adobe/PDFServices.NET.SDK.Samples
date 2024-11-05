@@ -64,6 +64,7 @@ namespace PDFWatermark
                 StreamAsset streamAsset = pdfServices.GetContent(resultAsset);
 
                 String outputFilePath = CreateOutputFilePath();
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePath).Directory.Create();
                 Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
                 
                 streamAsset.Stream.CopyTo(outputStream);

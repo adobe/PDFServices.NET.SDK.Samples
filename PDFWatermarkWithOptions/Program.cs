@@ -39,8 +39,8 @@ namespace PDFWatermarkWithOptions
             {
                 // Initial setup, create credentials instance
                 ICredentials credentials = new ServicePrincipalCredentials(
-                    "ca51a875b87343ea815ee587480a25d1",
-                    "c4f4fcfd-de7b-4174-bbb8-cc9bc7a93e6a");
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_ID"),
+                    Environment.GetEnvironmentVariable("PDF_SERVICES_CLIENT_SECRET"));
                 
                 PDFServices pdfServices = new PDFServices(credentials);
 
@@ -75,6 +75,7 @@ namespace PDFWatermarkWithOptions
                 StreamAsset streamAsset = pdfServices.GetContent(resultAsset);
 
                 String outputFilePath = CreateOutputFilePath();
+                new FileInfo(Directory.GetCurrentDirectory() + outputFilePath).Directory.Create();
                 Stream outputStream = File.OpenWrite(Directory.GetCurrentDirectory() + outputFilePath);
                 
                 streamAsset.Stream.CopyTo(outputStream);
