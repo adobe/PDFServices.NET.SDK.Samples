@@ -109,6 +109,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalInputAndOutputCreat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalInputCreatePDFFromDOCX", "ExternalInputCreatePDFFromDOCX\ExternalInputCreatePDFFromDOCX.csproj", "{4CD2DF1D-12F4-488C-B040-1E32E04A5493}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFAccessibilityChecker", "PDFAccessibilityChecker\PDFAccessibilityChecker.csproj", "{A02818DA-555F-4C85-AB62-F430D8C8DA5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFAccessibilityCheckerWithOptions", "PDFAccessibilityCheckerWithOptions\PDFAccessibilityCheckerWithOptions.csproj", "{24B14DB4-334C-4F34-BF2A-3F067E51EE32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFWatermark", "PDFWatermark\PDFWatermark.csproj", "{C6B16613-F327-47B2-BA60-C6401564DBC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFWatermarkWithOptions", "PDFWatermarkWithOptions\PDFWatermarkWithOptions.csproj", "{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -327,6 +334,22 @@ Global
 		{4CD2DF1D-12F4-488C-B040-1E32E04A5493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD2DF1D-12F4-488C-B040-1E32E04A5493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD2DF1D-12F4-488C-B040-1E32E04A5493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02818DA-555F-4C85-AB62-F430D8C8DA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02818DA-555F-4C85-AB62-F430D8C8DA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02818DA-555F-4C85-AB62-F430D8C8DA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02818DA-555F-4C85-AB62-F430D8C8DA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B14DB4-334C-4F34-BF2A-3F067E51EE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B14DB4-334C-4F34-BF2A-3F067E51EE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B14DB4-334C-4F34-BF2A-3F067E51EE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B14DB4-334C-4F34-BF2A-3F067E51EE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B16613-F327-47B2-BA60-C6401564DBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B16613-F327-47B2-BA60-C6401564DBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B16613-F327-47B2-BA60-C6401564DBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B16613-F327-47B2-BA60-C6401564DBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

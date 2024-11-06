@@ -570,6 +570,23 @@ The sample project GetPDFProperties fetches the properties of an input PDF.
 cd GetPDFProperties/
 dotnet run GetPDFProperties.csproj
 ```
+### PDF Watermark
+
+These samples illustrate how to add a watermark in PDF document.
+
+#### Add Watermark in PDF Document
+The sample project PDFWatermark adds watermarking with default appearance options to apply watermark on the PDF document.
+```
+cd PDFWatermark/
+dotnet run PDFWatermark.csproj
+```
+
+#### Add Watermark in PDF Document with custom appearance options
+The sample project PDFWatermarkWithOptions adds watermarking with custom appearance options to apply watermark on the PDF document.
+```
+cd PDFWatermarkWithOptions/
+dotnet run PDFWatermarkWithOptions.csproj
+```
 
 ### Custom Client Configuration
 
@@ -648,6 +665,28 @@ Here is a sample list of command line arguments and their description: </br>
 ```$xslt
 cd AutotagPDFParameterised/
 dotnet run AutotagPDFParameterised.csproj --report --shift_headings --input autotagPdfInput.pdf --output output/
+```
+
+### PDF Accessibility Checker
+
+This samples illustrate how to check PDF files to see if they meet the machine-verifiable requirements of PDF/UA and WCAG 2.0.
+
+#### Run Accessibility Checker on Input PDF
+
+The sample project PDFAccessibilityChecker illustrates how to run accessibility Checker on input PDF file.
+
+```$xslt
+cd PDFAccessibilityChecker/
+dotnet run PDFAccessibilityChecker.csproj
+```
+
+#### Run Accessibility Checker on input PDF file for given page start and page end
+
+The sample project PDFAccessibilityCheckerWithOptions illustrates how to run accessibility Checker on input PDF file for given page start and page end.
+
+```$xslt
+cd PDFAccessibilityCheckerWithOptions/
+dotnet run PDFAccessibilityCheckerWithOptions.csproj
 ```
 
 ### External Input / Output Storage
