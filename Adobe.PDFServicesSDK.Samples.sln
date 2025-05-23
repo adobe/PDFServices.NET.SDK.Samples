@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -115,6 +114,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFAccessibilityCheckerWith
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFWatermark", "PDFWatermark\PDFWatermark.csproj", "{C6B16613-F327-47B2-BA60-C6401564DBC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFWatermarkWithOptions", "PDFWatermarkWithOptions\PDFWatermarkWithOptions.csproj", "{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportPDFFormData", "ExportPDFFormData\ExportPDFFormData.csproj", "{D4B14DB4-334C-4F34-BF2A-3F067E51EE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportPDFFormData", "ImportPDFFormData\ImportPDFFormData.csproj", "{D4B14DB4-334C-4F34-BF2A-3F067E51EE34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -350,6 +353,14 @@ Global
 		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA37F975-EF3B-47A3-9E9D-61ABECADC40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B14DB4-334C-4F34-BF2A-3F067E51EE34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

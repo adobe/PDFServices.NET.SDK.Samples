@@ -252,6 +252,28 @@ cd CompressPDFWithOptions/
 dotnet run CompressPDFWithOptions.csproj
 ```
 
+### PDF Form Data Operations
+
+These samples illustrate how to work with form data in PDF files.
+
+#### Export Form Data from a PDF File
+
+The sample project ExportPDFFormData extracts form data from a PDF file into a JSON file.
+
+```$xslt
+cd ExportPDFFormData/
+dotnet run ExportPDFFormData.csproj
+```
+
+#### Import Form Data into a PDF File
+
+The sample project ImportPDFFormData imports form data from a JSON file into a PDF form.
+
+```$xslt
+cd ImportPDFFormData/
+dotnet run ImportPDFFormData.csproj
+```
+
 ### Linearize PDF File
 
 The sample illustrates how to convert a PDF file into a Linearized (also known as "web optimized") PDF file. Such PDF files are
@@ -475,7 +497,7 @@ dotnet run ElectronicSealWithTimeStampAuthority.csproj
 These samples illustrate extracting content of PDF in a structured JSON format along with the renditions inside PDF.
 * The structuredData.json file with the extracted content & PDF element structure.
 * A renditions folder(s) containing renditions for each element type selected as input.
-  The folder name is either “tables” or “figures” depending on your specified element type.
+  The folder name is either "tables" or "figures" depending on your specified element type.
   Each folder contains renditions with filenames that correspond to the element information in the JSON file.
 
 #### Extract Text Elements
