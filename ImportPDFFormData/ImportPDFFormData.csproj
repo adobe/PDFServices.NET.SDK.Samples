@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="4.3.0" />
+    <PackageReference Include="log4net" Version="2.0.17" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="importPdfFormDataInput.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
+</Project>
