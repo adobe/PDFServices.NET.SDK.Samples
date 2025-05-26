@@ -10,7 +10,7 @@
     <None Remove="log4net" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Adobe.PDFServicesSDK" Version="4.1.0" />
+    <PackageReference Include="Adobe.PDFServicesSDK" Version="4.3.0" />
     <PackageReference Include="log4net" Version="2.0.17" />
   </ItemGroup>
   <ItemGroup>
