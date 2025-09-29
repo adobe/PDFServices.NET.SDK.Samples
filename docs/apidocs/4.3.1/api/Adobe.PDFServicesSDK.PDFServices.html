@@ -1,0 +1,845 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PDFServices
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PDFServices
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adobe.PDFServicesSDK.PDFServices">
+  
+  
+  <h1 id="Adobe_PDFServicesSDK_PDFServices" data-uid="Adobe.PDFServicesSDK.PDFServices" class="text-break">Class PDFServices
+  </h1>
+  <div class="markdown level0 summary"><p>This class is the entry point for all the PDF Service utilities.
+These utilities can be used to perform various functions such as submitting <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a>,
+getting status of a <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a>, getting result of a <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a>,
+uploading <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a>, getting content of an <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a>, deleting an <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> and
+refreshing an
+<a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a>.</p>
+<p>
+    Methods provided by the utility are:
+<ul><li>Upload <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> (or Assets)</li><li>Submit <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a></li><li>Get status of a <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a></li><li>Get result of a <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a></li><li>Get content of <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></li><li>Delete <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></li><li>Refresh <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></li></ul>
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PDFServices</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Adobe.PDFServicesSDK.html">Adobe.PDFServicesSDK</a></h6>
+  <h6><strong>Assembly</strong>: Adobe.PDFServicesSDK.Doc.dll</h6>
+  <h5 id="Adobe_PDFServicesSDK_PDFServices_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PDFServices</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices__ctor_" data-uid="Adobe.PDFServicesSDK.PDFServices.#ctor*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices__ctor_Adobe_PDFServicesSDK_auth_ICredentials_" data-uid="Adobe.PDFServicesSDK.PDFServices.#ctor(Adobe.PDFServicesSDK.auth.ICredentials)">PDFServices(ICredentials)</h4>
+  <div class="markdown level1 summary"><p>Constructs a <a class="xref" href="Adobe.PDFServicesSDK.PDFServices.html">PDFServices</a> instance with the given <a class="xref" href="Adobe.PDFServicesSDK.auth.ICredentials.html">ICredentials</a> and
+<a class="xref" href="Adobe.PDFServicesSDK.config.ClientConfig.html">ClientConfig</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PDFServices(ICredentials credentials)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.auth.ICredentials.html">ICredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Credentials to be used for authentication; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices__ctor_" data-uid="Adobe.PDFServicesSDK.PDFServices.#ctor*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices__ctor_Adobe_PDFServicesSDK_auth_ICredentials_Adobe_PDFServicesSDK_config_ClientConfig_" data-uid="Adobe.PDFServicesSDK.PDFServices.#ctor(Adobe.PDFServicesSDK.auth.ICredentials,Adobe.PDFServicesSDK.config.ClientConfig)">PDFServices(ICredentials, ClientConfig)</h4>
+  <div class="markdown level1 summary"><p>Constructs a <a class="xref" href="Adobe.PDFServicesSDK.PDFServices.html">PDFServices</a> instance with the given <a class="xref" href="Adobe.PDFServicesSDK.auth.ICredentials.html">ICredentials</a> and
+<a class="xref" href="Adobe.PDFServicesSDK.config.ClientConfig.html">ClientConfig</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PDFServices(ICredentials credentials, ClientConfig clientConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.auth.ICredentials.html">ICredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>Credentials to be used for authentication; cannot be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.config.ClientConfig.html">ClientConfig</a></td>
+        <td><span class="parametername">clientConfig</span></td>
+        <td><p>Client configuration for <a class="xref" href="Adobe.PDFServicesSDK.PDFServices.html">PDFServices</a>; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_DeleteAsset_" data-uid="Adobe.PDFServicesSDK.PDFServices.DeleteAsset*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_DeleteAsset_Adobe_PDFServicesSDK_io_IAsset_" data-uid="Adobe.PDFServicesSDK.PDFServices.DeleteAsset(Adobe.PDFServicesSDK.io.IAsset)">DeleteAsset(IAsset)</h4>
+  <div class="markdown level1 summary"><p>Deletes an asset from PDF Services storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteAsset(IAsset asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> to be deleted; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while deleting the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_GetContent_" data-uid="Adobe.PDFServicesSDK.PDFServices.GetContent*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_GetContent_Adobe_PDFServicesSDK_io_IAsset_" data-uid="Adobe.PDFServicesSDK.PDFServices.GetContent(Adobe.PDFServicesSDK.io.IAsset)">GetContent(IAsset)</h4>
+  <div class="markdown level1 summary"><p>Returns the content of the asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamAsset GetContent(IAsset asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> whose content is to be retrieved; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.io.StreamAsset.html">StreamAsset</a></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.io.StreamAsset.html">StreamAsset</a> containing the stream content along with the media type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while getting the content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_GetJobResult_" data-uid="Adobe.PDFServicesSDK.PDFServices.GetJobResult*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_GetJobResult__1_System_String_System_Type_" data-uid="Adobe.PDFServicesSDK.PDFServices.GetJobResult``1(System.String,System.Type)">GetJobResult&lt;T&gt;(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>PDFServicesResponse</code> for the submitted <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a> result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PDFServicesResponse&lt;T&gt; GetJobResult&lt;T&gt;(string pollingURL, Type resultClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pollingURL</span></td>
+        <td><p>URL to be polled to get the job result; cannot be null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">resultClass</span></td>
+        <td><p>Result class for the job; cannot be null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.PDFServicesResponse-1.html">PDFServicesResponse</a>&lt;T&gt;</td>
+        <td><p><code>PDFServicesResponse</code> with the job result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The result class for <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a>, it will be an implementation of
+<a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult.html">IPDFServicesJobResult</a>; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while getting the job result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_GetJobStatus_" data-uid="Adobe.PDFServicesSDK.PDFServices.GetJobStatus*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_GetJobStatus_System_String_" data-uid="Adobe.PDFServicesSDK.PDFServices.GetJobStatus(System.String)">GetJobStatus(String)</h4>
+  <div class="markdown level1 summary"><p>Returns <a class="xref" href="Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.html">PDFServicesJobStatusResponse</a> for the submitted <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PDFServicesJobStatusResponse GetJobStatus(string pollingURL)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pollingURL</span></td>
+        <td><p>URL to be polled to get the job status; cannot be null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.html">PDFServicesJobStatusResponse</a></td>
+        <td><p><a class="xref" href="Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.html">PDFServicesJobStatusResponse</a> encapsulating the job status and retry interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while getting the job status.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_RefreshDownloadURI_" data-uid="Adobe.PDFServicesSDK.PDFServices.RefreshDownloadURI*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_RefreshDownloadURI_Adobe_PDFServicesSDK_io_IAsset_" data-uid="Adobe.PDFServicesSDK.PDFServices.RefreshDownloadURI(Adobe.PDFServicesSDK.io.IAsset)">RefreshDownloadURI(IAsset)</h4>
+  <div class="markdown level1 summary"><p>Returns a new <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> with a new valid download URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsset RefreshDownloadURI(IAsset asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> to be refreshed; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> with a new valid download URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while refreshing the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_Submit_" data-uid="Adobe.PDFServicesSDK.PDFServices.Submit*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_Submit_Adobe_PDFServicesSDK_pdfjobs_jobs_PDFServicesJob_" data-uid="Adobe.PDFServicesSDK.PDFServices.Submit(Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob)">Submit(PDFServicesJob)</h4>
+  <div class="markdown level1 summary"><p>Creates the <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a> and returns the polling URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Submit(PDFServicesJob pdfServicesJob)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a></td>
+        <td><span class="parametername">pdfServicesJob</span></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a> to be submitted; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Polling URL that can be used to get the status and result of the job.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while submitting the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceUsageException.html">ServiceUsageException</a></td>
+        <td><p>Thrown if service usage limits have been reached or credentials quota has been
+exhausted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_Submit_" data-uid="Adobe.PDFServicesSDK.PDFServices.Submit*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_Submit_Adobe_PDFServicesSDK_pdfjobs_jobs_PDFServicesJob_System_Collections_Generic_IList_Adobe_PDFServicesSDK_config_notifier_NotifierConfig__" data-uid="Adobe.PDFServicesSDK.PDFServices.Submit(Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob,System.Collections.Generic.IList{Adobe.PDFServicesSDK.config.notifier.NotifierConfig})">Submit(PDFServicesJob, IList&lt;NotifierConfig&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates the <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a> with the given <a class="xref" href="Adobe.PDFServicesSDK.config.notifier.NotifierConfig.html">NotifierConfig</a> and returns the polling URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Submit(PDFServicesJob pdfServicesJob, IList&lt;NotifierConfig&gt; notifierConfigList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a></td>
+        <td><span class="parametername">pdfServicesJob</span></td>
+        <td><p>The <a class="xref" href="Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html">PDFServicesJob</a> to be submitted; cannot be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Adobe.PDFServicesSDK.config.notifier.NotifierConfig.html">NotifierConfig</a>&gt;</td>
+        <td><span class="parametername">notifierConfigList</span></td>
+        <td><p>List of <a class="xref" href="Adobe.PDFServicesSDK.config.notifier.NotifierConfig.html">NotifierConfig</a> to be used for notification; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Polling URL that can be used to get the status and result of the job.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while submitting the job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceUsageException.html">ServiceUsageException</a></td>
+        <td><p>Thrown if service usage limits have been reached or credentials quota has been
+exhausted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_Upload_" data-uid="Adobe.PDFServicesSDK.PDFServices.Upload*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_Upload_System_IO_Stream_System_String_" data-uid="Adobe.PDFServicesSDK.PDFServices.Upload(System.IO.Stream,System.String)">Upload(Stream, String)</h4>
+  <div class="markdown level1 summary"><p>Uploads content from an input stream and returns an <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> to be used in PDF Services SDK.</p>
+<p>
+    Method will not close the input stream, responsibility of closing the input stream lies with the client.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAsset Upload(Stream inputStream, string mimeType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">inputStream</span></td>
+        <td><p>Input stream that is to be uploaded; cannot be null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimeType</span></td>
+        <td><p>MIME type of the input stream; cannot be null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a></td>
+        <td><p><a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> containing the uploaded content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while uploading the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceUsageException.html">ServiceUsageException</a></td>
+        <td><p>Thrown if service usage limits have been reached or credentials quota has been
+exhausted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Adobe_PDFServicesSDK_PDFServices_UploadAssets_" data-uid="Adobe.PDFServicesSDK.PDFServices.UploadAssets*"></a>
+  <h4 id="Adobe_PDFServicesSDK_PDFServices_UploadAssets_System_Collections_Generic_List_Adobe_PDFServicesSDK_io_StreamAsset__" data-uid="Adobe.PDFServicesSDK.PDFServices.UploadAssets(System.Collections.Generic.List{Adobe.PDFServicesSDK.io.StreamAsset})">UploadAssets(List&lt;StreamAsset&gt;)</h4>
+  <div class="markdown level1 summary"><p>Uploads content from a list of <a class="xref" href="Adobe.PDFServicesSDK.io.StreamAsset.html">StreamAsset</a> and returns a list of <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> to be used in
+PDF Services SDK.</p>
+<p>
+    Method will not close the input stream of the Stream Asset, responsibility of closing the input stream lies
+    with the client.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IAsset&gt; UploadAssets(List&lt;StreamAsset&gt; uploadAssetList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Adobe.PDFServicesSDK.io.StreamAsset.html">StreamAsset</a>&gt;</td>
+        <td><span class="parametername">uploadAssetList</span></td>
+        <td><p>List of <a class="xref" href="Adobe.PDFServicesSDK.io.StreamAsset.html">StreamAsset</a> that is to be uploaded; cannot be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a>&gt;</td>
+        <td><p>List of <a class="xref" href="Adobe.PDFServicesSDK.io.IAsset.html">IAsset</a> containing the assets with uploaded content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceApiException.html">ServiceApiException</a></td>
+        <td><p>Thrown if an error is encountered while uploading the assets.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.SDKException.html">SDKException</a></td>
+        <td><p>Thrown for client-side or network errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Adobe.PDFServicesSDK.exception.ServiceUsageException.html">ServiceUsageException</a></td>
+        <td><p>Thrown if service usage limits have been reached or credentials quota has been
+exhausted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2020 Adobe. All rights reserved.</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
