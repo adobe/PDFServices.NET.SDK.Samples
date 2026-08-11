@@ -109,6 +109,15 @@ cd StaticHTMLToPDF/
 dotnet run StaticHTMLToPDF.csproj
 ```
 
+#### Create a PDF File From Static HTML with Rendered HTML Included (via Zip Archive)
+
+The sample project HtmlToPDFwithRenderedHTML creates a ZIP file output containing both the generated PDF and rendered HTML content.
+
+```$xslt
+cd HtmlToPDFwithRenderedHTML/
+dotnet run HtmlToPDFwithRenderedHTML.csproj
+```
+
 #### Create a PDF File From Dynamic HTML (via Zip Archive)
 
 The sample project DynamicHTMLToPDF converts a zip file, containing the input HTML file and its resources, along
