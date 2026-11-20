@@ -1,0 +1,3212 @@
+{
+  "source_base_path": ".",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "NuGet.md",
+      "output": {
+        ".html": {
+          "relative_path": "NuGet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServices",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServices.yml\" sourcestartlinenumber=\"1\">This class is the entry point for all the PDF Service utilities.\nThese utilities can be used to perform various functions such as submitting <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>,\ngetting status of a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>, getting result of a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>,\nuploading <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref>, getting content of an <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref>, deleting an <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref> and\nrefreshing an\n<xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>\n    Methods provided by the utility are:\n    <ul><li>Upload <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref> (or Assets)</li><li>Submit <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref></li><li>Get status of a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref></li><li>Get result of a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref></li><li>Get content of <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref></li><li>Delete <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref></li><li>Refresh <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref></li></ul>\n\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServicesJobStatus",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServicesJobStatus.yml\" sourcestartlinenumber=\"1\">Status types for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServicesJobStatusMethods",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServicesJobStatusMethods.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"Adobe.PDFServicesSDK.PDFServicesJobStatus\" data-throw-if-not-resolved=\"false\"></xref> enum.\nTo be used to compare response status of <xref href=\"Adobe.PDFServicesSDK.PDFServicesJobStatusResponse\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServicesJobStatusResponse",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServicesJobStatusResponse.yml\" sourcestartlinenumber=\"1\">Response object encapsulating <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref> status and retry interval.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServicesMediaType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServicesMediaType.yml\" sourcestartlinenumber=\"1\">A mapping of Media types and extension.\nRefer:\n<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types\">\nMozilla\nMIME type\n</a>\n<a href=\"https://www.iana.org/assignments/media-types/media-types.xhtml\">IANA media types</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaTypeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesMediaTypeMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServicesMediaTypeMethods",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServicesMediaTypeMethods.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"Adobe.PDFServicesSDK.PDFServicesMediaType\" data-throw-if-not-resolved=\"false\"></xref> enum.\nTo be used to get extension of media type, for uploading input streams.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.PDFServicesResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.PDFServicesResponse-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.PDFServicesResponse<T>",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.PDFServicesResponse-1.yml\" sourcestartlinenumber=\"1\">Response object for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.Region.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.Region",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.Region.yml\" sourcestartlinenumber=\"1\">Supported regions to be used with <xref href=\"Adobe.PDFServicesSDK.config.ClientConfig\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.auth.ICredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.auth.ICredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.auth.ICredentials",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.auth.ICredentials.yml\" sourcestartlinenumber=\"1\">This interface represents the basic contract for the credentials to be used with <xref href=\"Adobe.PDFServicesSDK.PDFServices\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.auth.ServicePrincipalCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.auth.ServicePrincipalCredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.auth.ServicePrincipalCredentials",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.auth.ServicePrincipalCredentials.yml\" sourcestartlinenumber=\"1\">Service Principal credentials allow your application to call PDF Services API.\nFor getting the credentials,\n<a href=\"https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSdk\"> Click Here</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.auth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.auth",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.ClientConfig.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.ClientConfig.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.config.ClientConfig\" data-throw-if-not-resolved=\"false\"></xref> instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.ClientConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.ClientConfig",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.ClientConfig.yml\" sourcestartlinenumber=\"1\">Encapsulates the API request configurations</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.CallbackNotifierData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.CallbackNotifierData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.notifier.CallbackNotifierData",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.notifier.CallbackNotifierData.yml\" sourcestartlinenumber=\"1\">Represents the configuration for the notifier data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.INotifierData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.INotifierData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.notifier.INotifierData",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.notifier.INotifierData.yml\" sourcestartlinenumber=\"1\">This interface represents the basic contract for the notifier data to be used with <xref href=\"Adobe.PDFServicesSDK.config.notifier.NotifierConfig\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.notifier.NotifierConfig",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.notifier.NotifierConfig.yml\" sourcestartlinenumber=\"1\">Represents the configuration for a notifier to be used to notify user about the completion of a PDF Services job.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.NotifierType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.notifier.NotifierType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.notifier.NotifierType.yml\" sourcestartlinenumber=\"1\">Notifier Type Mapping.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.notifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.notifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.notifier",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials.yml\" sourcestartlinenumber=\"1\">This interface represents the basic contract for the credentials to be used with <xref href=\"Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyScheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyScheme.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.proxy.ProxyScheme",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.proxy.ProxyScheme.yml\" sourcestartlinenumber=\"1\">Supported scheme types for <xref href=\"Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.proxy.ProxyServerConfig.yml\" sourcestartlinenumber=\"1\">Encapsulates the proxy server configurations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.UsernamePasswordCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.UsernamePasswordCredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.proxy.UsernamePasswordCredentials",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.config.proxy.UsernamePasswordCredentials.yml\" sourcestartlinenumber=\"1\">Simple <xref href=\"Adobe.PDFServicesSDK.config.proxy.IProxyAuthenticationCredentials\" data-throw-if-not-resolved=\"false\"></xref> implementation based on a username and password.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.proxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.proxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config.proxy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.config.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.config",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.SDKException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.SDKException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.exception.SDKException",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.exception.SDKException.yml\" sourcestartlinenumber=\"1\"><code>SDKException</code> is typically thrown for client-side or network errors.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceApiException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.exception.ServiceApiException",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.exception.ServiceApiException.yml\" sourcestartlinenumber=\"1\"><code>ServiceApiException</code> is thrown when an underlying service API call results in an error.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceUsageException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.ServiceUsageException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.exception.ServiceUsageException",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.exception.ServiceUsageException.yml\" sourcestartlinenumber=\"1\"><code>ServiceUsageException</code> is thrown when either Service usage limit has been reached or credentials quota has been\nexhausted.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.exception.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.exception",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.CloudAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.CloudAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.io.CloudAsset",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.io.CloudAsset.yml\" sourcestartlinenumber=\"1\">This class represents an asset stored in Adobe internal storage.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.ExternalAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.ExternalAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.io.ExternalAsset",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.io.ExternalAsset.yml\" sourcestartlinenumber=\"1\">This class represents an asset stored in an external storage.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.ExternalStorageType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.ExternalStorageType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.io.ExternalStorageType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.io.ExternalStorageType.yml\" sourcestartlinenumber=\"1\">Supported External storage type to be used with <xref href=\"Adobe.PDFServicesSDK.io.ExternalAsset\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.IAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.IAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.io.IAsset",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.io.IAsset.yml\" sourcestartlinenumber=\"1\">This interface represents the basic contract for the assets to be used with <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.StreamAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.StreamAsset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.io.StreamAsset",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.io.StreamAsset.yml\" sourcestartlinenumber=\"1\">This class encapsulates an input stream and the media type of <xref href=\"Adobe.PDFServicesSDK.io.IAsset\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.io.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.io.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.io",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob.yml\" sourcestartlinenumber=\"1\">A job that creates PDF documents with enhanced readability from existing PDF documents.\nAn optional tagging report can also be generated which contains the information\nabout the tags that the tagged output PDF document contains.\nAccessibility tags, used by assistive technology such as screen reader are required to make PDF files compliant.\nHowever, the generated PDF is not guaranteed to comply with accessibility standards such as WCAG and PDF/UA as\nthere could be a need to perform further downstream remediation to meet those standards.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob.yml\" sourcestartlinenumber=\"1\">A job that combines multiple PDF files into a single PDF file. Allows specifying which pages of the source files\nto combine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob.yml\" sourcestartlinenumber=\"1\">A job that reduces the size of a PDF file. Allows specifying <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel\" data-throw-if-not-resolved=\"false\"></xref> for compressing PDF</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob.yml\" sourcestartlinenumber=\"1\">A job that converts a non-PDF file to a PDF file. Some source formats may have associated conversion parameters\nwhich can be set using the <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams\" data-throw-if-not-resolved=\"false\"></xref>.\nAll pages are converted unless a page range is explicitly supplied.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob.yml\" sourcestartlinenumber=\"1\">A job that deletes pages from a PDF file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob.yml\" sourcestartlinenumber=\"1\">A job that enables the clients to produce high fidelity PDF and Word documents with dynamic data inputs.\nThis operation merges the JSON data with the Word template to create dynamic documents for contracts and\nagreements, invoices, proposals, reports, forms, branded marketing documents and more.</p>\n<p>\n    To know more about document generation and document templates, please see the\n    <a href=\"http://www.adobe.com/go/dcdocgen_overview_doc\" target=\"_blank\">documentation</a>\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFFormDataJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFFormDataJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFFormDataJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFFormDataJob.yml\" sourcestartlinenumber=\"1\">A job that exports form data from a PDF and retrieves it in JSON format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob.yml\" sourcestartlinenumber=\"1\">A job which exports a source PDF file to a supported format specified by <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>\n    For example, a PDF can be exported to a DOCX file as follows:\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob.yml\" sourcestartlinenumber=\"1\">A job which exports a source PDF file to a supported format specified by\n<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>\n    The result is a list of images or a list containing a zip of images. For example, a PDF file with 15\n    pages will generate 15 image files. The first file's name ends with \"_0\" and the last file's name ends with\n    \"_14\".\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob.yml\" sourcestartlinenumber=\"1\">A job that extracts PDF elements such as text, images, tables in a structured format from a PDF.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob",
+      "Summary": "<ul sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.yml\" sourcestartlinenumber=\"1\">\n<li sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.yml\" sourcestartlinenumber=\"1\">A job that converts a HTML file to a PDF file. Some source formats may have associated conversion parameters\nwhich can be set using the {<xref href=\"link\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@link\" sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob.yml\" sourcestartlinenumber=\"2\"></xref> HTMLToPDFParams} parameter.</li>\n</ul>\n<p>\n    An HTML input can be provided either as a local zip archive or as a static HTML file with inline CSS.\n    Alternatively, an HTML can also be specified via URL.\n</p>\nWhile creating the corresponding Asset instance, the media type must be:\n<ul>\n    <li>\"application/zip\", if the input is a local zip archive.</li>\n    <li>\"text/html\", if the input is a static HTML file with inline CSS</li>\n</ul>\nIn case the input is a local zip archive, it must have the following structure:\n<ul>\n    <li>The main HTML file must be named \"index.html\".</li>\n    <li>\"index.html\" must exist at the top level of zip archive, not in a folder.</li>\n</ul>\n<p>\n    Sample layout:\n    <pre>\n        html_files.zip\n        |__index.html\n        |__referenced_file_1.css\n        |__referenced_file_2.jpeg\n        |__subfolder_1\n        |_____referenced_file_3.jpeg\n    </pre>\n\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ImportPDFFormDataJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ImportPDFFormDataJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ImportPDFFormDataJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ImportPDFFormDataJob.yml\" sourcestartlinenumber=\"1\">A job that exports form data from a PDF and retrieves it in JSON format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob.yml\" sourcestartlinenumber=\"1\">A job that can be used to insert pages of multiple PDF files into a base PDF file.</p>\n<p>\n    For more complex use cases, refer the <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob.yml\" sourcestartlinenumber=\"1\">A job that converts a PDF file into a linearized (also known as &quot;web optimized&quot;) PDF file. Such PDF files are\noptimized for incremental access in network environments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob.yml\" sourcestartlinenumber=\"1\">A job that convert a PDF file into a searchable PDF file. Allows specifying locale(\n<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale\" data-throw-if-not-resolved=\"false\"></xref>) and\nOCR Type\n(<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType\" data-throw-if-not-resolved=\"false\"></xref>) for performing OCR (Optical Character Recognition)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFAccessibilityCheckerJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFAccessibilityCheckerJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.PDFAccessibilityCheckerJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFAccessibilityCheckerJob.yml\" sourcestartlinenumber=\"1\">A job that that will check PDF file to see if they meet the machine-verifiable requirements of PDF/UA and WCAG 2.0.\nIt will generate a report that summarizes the findings of the accessibility checks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob.yml\" sourcestartlinenumber=\"1\">A job that allows clients to apply an electronic seal onto various PDF documents such as\nagreements, invoices, and more.</p>\n<p>\n    To know more about PDF Electronic Seal, please see the\n    <a href=\"http://www.adobe.com/go/dc_eseal_overview_doc\" target=\"_blank\">documentation</a>.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob.yml\" sourcestartlinenumber=\"1\">A job that is used to fetch properties from an input PDF file. The properties are returned in a POJO.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob.yml\" sourcestartlinenumber=\"1\">This abstract class represents the basic contract for all the PDF Services Jobs.\nIt imposes no restrictions or particular details on the job execution process and leaves the\nspecifics of setting up the jobs to their individual implementations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFToMarkdownJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFToMarkdownJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.PDFToMarkdownJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFWatermarkJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFWatermarkJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.PDFWatermarkJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.PDFWatermarkJob.yml\" sourcestartlinenumber=\"1\">A job that applies a watermark to a PDF using the input and watermark assets.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob.yml\" sourcestartlinenumber=\"1\">A job that is used for securing PDF document with password(s).\nThe password(s) is used for encrypting the PDF document and setting the restriction on certain features\nlike printing, editing and copying in the PDF document.</p>\n<p>\n    The supported algorithm for encrypting the PDF document are listed here. The {@link EncryptionAlgorithm} enum\n    can\n    be used to set the encryption algorithm.\n</p>\n<ul>\n    <li>AES-128</li>\n    <li>AES-256</li>\n</ul>\n<p>\n    For AES-128 encryption the password supports LATIN-I characters only.\n    For AES-256 encryption the password supports Unicode character set.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob.yml\" sourcestartlinenumber=\"1\">A job that allows to remove password security from a PDF document.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob.yml\" sourcestartlinenumber=\"1\">A job that allows to rearrange pages in a PDF file according to the specified order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob.yml\" sourcestartlinenumber=\"1\">A job that allows specific pages in a PDF file to be replaced with pages from multiple PDF files.</p>\n<p>\n    For more complex use cases, refer the <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob.yml\" sourcestartlinenumber=\"1\">A job that allows rotation of specific pages in a PDF file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob.yml\" sourcestartlinenumber=\"1\">A job that splits PDF document into multiple smaller documents by simply specifying either the number of files,\npages per file, or page ranges.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.jobs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.jobs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.IPDFServicesJobParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.IPDFServicesJobParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.IPDFServicesJobParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.IPDFServicesJobParams.yml\" sourcestartlinenumber=\"1\">This interface represents the basic contract for the params to be used in <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.PageRanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.PageRanges.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.PageRanges",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.PageRanges.yml\" sourcestartlinenumber=\"1\">Page ranges of a file, inclusive of start and end page index, where page index starts from 1.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.AutotagPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for creating a tagged PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.autotag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.autotag",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.CombinePDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for creating a tagged PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.combinepdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for reducing file size of a pdf using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.CompressionLevel.yml\" sourcestartlinenumber=\"1\">Supported compression levels for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CompressPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.compresspdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.CreatePDFParams.yml\" sourcestartlinenumber=\"1\">Marker base class for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob\" data-throw-if-not-resolved=\"false\"></xref> params.\nThe factory methods within this class can be used to create instances of params classes corresponding to the source\nmedia type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting Excel to PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.DocumentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.DocumentLanguage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.DocumentLanguage",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.DocumentLanguage.yml\" sourcestartlinenumber=\"1\">Supported locales for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.CreatePDFFromExcelParams\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.excel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.CreatePDFFromMarkdownParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting Markdown to PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.markdown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting PPT to PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.DocumentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.DocumentLanguage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.DocumentLanguage",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.DocumentLanguage.yml\" sourcestartlinenumber=\"1\">Supported locales for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.CreatePDFFromPPTParams\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.ppt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting Word to PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.DocumentLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.DocumentLanguage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.DocumentLanguage",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.DocumentLanguage.yml\" sourcestartlinenumber=\"1\">Supported locales for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.CreatePDFFromWordParams\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.word",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.createpdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.DeletePagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.DeletePagesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.DeletePagesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.DeletePagesParams.yml\" sourcestartlinenumber=\"1\">Parameters for reducing file size of a pdf using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.deletepages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.DocumentMergeParams.yml\" sourcestartlinenumber=\"1\">Parameters for document generation using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.Fragments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.Fragments.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.Fragments",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.Fragments.yml\" sourcestartlinenumber=\"1\">Class for providing support for Fragments. To know more about fragments use-case in document generation and\ndocument templates, please see the <a href=\"http://www.adobe.com/go/dcdocgen_fragments_support\">documentation</a></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.OutputFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.OutputFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.OutputFormat",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.OutputFormat.yml\" sourcestartlinenumber=\"1\">Supported output formats for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.documentmerge",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceItem",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceItem.yml\" sourcestartlinenumber=\"1\">Supported elements to represent electronic seal required for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.AppearanceOptions.yml\" sourcestartlinenumber=\"1\">Parameters specifying set of elements (i.e. appearance items) to represent electronic seal required for\n<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCAuthContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCAuthContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCAuthContext",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCAuthContext.yml\" sourcestartlinenumber=\"1\">Parameters for representing CSC authorization context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential.yml\" sourcestartlinenumber=\"1\">Parameters for representing the CSC Provider based credentials as a subtype for\n<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CertificateCredentials.yml\" sourcestartlinenumber=\"1\">This marker class represents the basic contract for all the credential options to be used for applying\nPDF Electronic Seal by <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.\n<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.CSCCredential\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.DocumentLevelPermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.DocumentLevelPermission.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.DocumentLevelPermission",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.DocumentLevelPermission.yml\" sourcestartlinenumber=\"1\">A mapping of Document Level Permission used in <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldLocation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldLocation",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldLocation.yml\" sourcestartlinenumber=\"1\">Parameters specifying options related to seal field location coordinates required for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.FieldOptions.yml\" sourcestartlinenumber=\"1\">Parameters specifying options related to the seal field required for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams.yml\" sourcestartlinenumber=\"1\">Parameters for electronically seal PDFs using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions.yml\" sourcestartlinenumber=\"1\">Parameters specifying RFC3161 compliant time stamp authority options required for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.SignatureFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.SignatureFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.SignatureFormat",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.SignatureFormat.yml\" sourcestartlinenumber=\"1\">Supported signature formats to create electronic seal required for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSABasicAuthCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSABasicAuthCredentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSABasicAuthCredentials",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSABasicAuthCredentials.yml\" sourcestartlinenumber=\"1\">Parameters specifying options related to the time stamp authority credentials required for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.RFC3161TSAOptions\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSAOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSAOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSAOptions",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.TSAOptions.yml\" sourcestartlinenumber=\"1\">This interface represents the basic contract for the timestamp authority options to be used with\n<xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.PDFElectronicSealParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.electronicseal",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportOCRLocale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportOCRLocale.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportOCRLocale",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportOCRLocale.yml\" sourcestartlinenumber=\"1\">Supported locales for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for exporting a source PDF file to a supported format using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.ExportPDFTargetFormat.yml\" sourcestartlinenumber=\"1\">Supported target formats for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesOutputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesOutputType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesOutputType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesOutputType.yml\" sourcestartlinenumber=\"1\">List of supported outputTypes for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesParams.yml\" sourcestartlinenumber=\"1\">Parameters for exporting a source PDF file to images using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.ExportPDFToImagesTargetFormat.yml\" sourcestartlinenumber=\"1\">Supported target formats for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.exportpdftoimages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractElementType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractElementType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractElementType.yml\" sourcestartlinenumber=\"1\">Supported inputs for Elements to Extract for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters to extract content from PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractRenditionsElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractRenditionsElementType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractRenditionsElementType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.ExtractRenditionsElementType.yml\" sourcestartlinenumber=\"1\">Supported inputs for Renditions To Extract for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TableStructureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TableStructureType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TableStructureType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TableStructureType.yml\" sourcestartlinenumber=\"1\">Supported Formats for exporting Table Data for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TagEncapsulatedTextType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TagEncapsulatedTextType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TagEncapsulatedTextType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.TagEncapsulatedTextType.yml\" sourcestartlinenumber=\"1\">Supported inputs for Tag Encapsulated Text for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.extractpdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.HTMLToPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting HTML to PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.PageLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.PageLayout.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.PageLayout",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.PageLayout.yml\" sourcestartlinenumber=\"1\">Class for specifying the layout of a page.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.htmltopdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.ImportPDFFormDataParams.yml\" sourcestartlinenumber=\"1\">Parameters for Importing JSON Data into PDF <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ImportPDFFormDataJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.importpdfformdata",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.InsertPagesParams.yml\" sourcestartlinenumber=\"1\">Parameters for inserting pages in a PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.insertpages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting PDF to a searchable PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedLocale.yml\" sourcestartlinenumber=\"1\">Supported locales for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.OCRSupportedType.yml\" sourcestartlinenumber=\"1\">Supported OCR types for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.ocr.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.ocr",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.PDFAccessibilityCheckerParams.yml\" sourcestartlinenumber=\"1\">Parameters for checking PDF accessibility using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFAccessibilityCheckerJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfaccessibilitychecker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds an <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams.yml\" sourcestartlinenumber=\"1\">Parameters for getting properties of a PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.PDFPropertiesParams\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfproperties",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.PDFToMarkdownParams.yml\" sourcestartlinenumber=\"1\">Parameters for converting a PDF to Markdown using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFToMarkdownJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdftomarkdown",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.Builder.yml\" sourcestartlinenumber=\"1\">Builder class for PDFWatermarkParams.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.PDFWatermarkParams.yml\" sourcestartlinenumber=\"1\">Parameters for adding a watermark on PDF using PDFWatermarkJob.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.WatermarkAppearance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.WatermarkAppearance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.WatermarkAppearance",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.WatermarkAppearance.yml\" sourcestartlinenumber=\"1\">Represents the appearance of a watermark in a PDF document.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.pdfwatermark",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ContentEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ContentEncryption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ContentEncryption",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ContentEncryption.yml\" sourcestartlinenumber=\"1\">Supported types of content to encrypt for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.EncryptionAlgorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.EncryptionAlgorithm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.EncryptionAlgorithm",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.EncryptionAlgorithm.yml\" sourcestartlinenumber=\"1\">Supported encryption algorithms for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.PasswordProtectParams.yml\" sourcestartlinenumber=\"1\">Parameters for securing PDF file with passwords and document permissions using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permission.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permission",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permission.yml\" sourcestartlinenumber=\"1\">Supported document permission types for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permissions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permissions",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.Permissions.yml\" sourcestartlinenumber=\"1\">Document Permissions for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ProtectPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ProtectPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ProtectPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.ProtectPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for securing PDF file with passwords and document permissions using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.protectpdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.RemoveProtectionParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.RemoveProtectionParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.RemoveProtectionParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.RemoveProtectionParams.yml\" sourcestartlinenumber=\"1\">Parameters for removing protection from PDF using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.removeprotection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.ReorderPagesParams.yml\" sourcestartlinenumber=\"1\">Parameters for reordering a PDF file using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.reorderpages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.ReplacePagesParams.yml\" sourcestartlinenumber=\"1\">Parameters for replacing pages of a pdf using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.replacepages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.Angle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.Angle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.Angle",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.Angle.yml\" sourcestartlinenumber=\"1\">Supported rotation angle values for <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.Builder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.Builder",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.Builder.yml\" sourcestartlinenumber=\"1\">Builds a <xref href=\"Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.RotatePagesParams.yml\" sourcestartlinenumber=\"1\">Parameters to rotate pages of a pdf using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.rotatepages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.SplitPDFParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.SplitPDFParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.SplitPDFParams",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.SplitPDFParams.yml\" sourcestartlinenumber=\"1\">Parameters for splitting a pdf using <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters.splitpdf",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.parameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.parameters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.AutotagPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.AutotagPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.AutotagPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.AutotagPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.AutotagPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CombinePDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CombinePDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.CombinePDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.CombinePDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CombinePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.results.CompressPDFResult\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CreatePDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.CreatePDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.CreatePDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.CreatePDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.CreatePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DeletePagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DeletePagesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.DeletePagesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.DeletePagesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.DeletePagesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DocumentMergeResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.DocumentMergeResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.DocumentMergeResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.DocumentMergeResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.DocumentMergeJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFFormDataResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFFormDataResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFFormDataResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFFormDataResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFFormDataJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFToImagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFToImagesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFToImagesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ExportPDFToImagesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExportPDFToImagesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExtractPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ExtractPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ExtractPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ExtractPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ExtractPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.HTMLToPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.HTMLToPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.HTMLToPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.HTMLToPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.HTMLToPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.IPDFServicesJobResult.yml\" sourcestartlinenumber=\"1\">This is an interface that represents the <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref> result.\nIt will encapsulate the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFServicesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ImportPDFFormDataResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ImportPDFFormDataResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ImportPDFFormDataResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ImportPDFFormDataResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ImportPDFFormDataJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.InsertPagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.InsertPagesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.InsertPagesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.InsertPagesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.InsertPagesPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.LinearizePDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.LinearizePDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.LinearizePDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.LinearizePDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.LinearizePDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.OCRResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.OCRResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.OCRResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.OCRResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.OCRJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFAccessibilityCheckerResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFAccessibilityCheckerResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.PDFAccessibilityCheckerResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.PDFAccessibilityCheckerResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFAccessibilityCheckerJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFElectronicSealResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFElectronicSealResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.PDFElectronicSealResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.PDFElectronicSealResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFElectronicSealJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFPropertiesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFPropertiesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.PDFPropertiesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.PDFPropertiesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFPropertiesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFToMarkdownResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFToMarkdownResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.PDFToMarkdownResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFWatermarkResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.PDFWatermarkResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.PDFWatermarkResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.PDFWatermarkResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.PDFWatermarkJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ProtectPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ProtectPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ProtectPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ProtectPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ProtectPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RemoveProtectionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RemoveProtectionResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.RemoveProtectionResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.RemoveProtectionResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.RemoveProtectionJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReorderPagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReorderPagesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ReorderPagesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ReorderPagesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ReorderPagesPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReplacePagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.ReplacePagesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.ReplacePagesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.ReplacePagesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.ReplacePagesPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RotatePagesResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.RotatePagesResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.RotatePagesResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.RotatePagesResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.RotatePagesJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.SplitPDFResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.SplitPDFResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.SplitPDFResult",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.SplitPDFResult.yml\" sourcestartlinenumber=\"1\">This class encapsulates the result of <xref href=\"Adobe.PDFServicesSDK.pdfjobs.jobs.SplitPDFJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Content.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Content.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Content",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Content.yml\" sourcestartlinenumber=\"1\">This class provides information about the content of the specified PDF file, such as number of images, textual\ncontent etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Document.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Document.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Document",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Document.yml\" sourcestartlinenumber=\"1\">This class provides information about the document level properties of the specified PDF file, such as tags,\nfonts, PDF Version etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.EncryptionSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.EncryptionSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.EncryptionSettings",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.EncryptionSettings.yml\" sourcestartlinenumber=\"1\">This class provides information about the encryption settings of the specified PDF file, such as user and owner\npasswords, encryption algorithm etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Font.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Font.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Font",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Font.yml\" sourcestartlinenumber=\"1\">This class provides information about the font used in the specified PDF file, such as font-name, font-family etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.InfoDict.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.InfoDict.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.InfoDict",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.InfoDict.yml\" sourcestartlinenumber=\"1\">This class provides document authoring related information, such as creation date, creator etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PDFProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PDFProperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PDFProperties",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PDFProperties.yml\" sourcestartlinenumber=\"1\">This class represents the metadata of the specified PDF file, such as document, pages and security level\ninformation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Page.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Page.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Page",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.Page.yml\" sourcestartlinenumber=\"1\">This class provides information about a page of the specified PDF file, such as page number, height, width etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PermissionSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PermissionSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PermissionSettings",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.PermissionSettings.yml\" sourcestartlinenumber=\"1\">This class provides information about the permission settings of the specified PDF file, such as restricting\nprint permissions, edit permissions etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.SecuritySettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.SecuritySettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.SecuritySettings",
+      "Summary": "<p sourcefile=\"api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.SecuritySettings.yml\" sourcestartlinenumber=\"1\">This class provides information about the security settings of the specified PDF file, such as encryption\nand permission settings</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results.pdfproperties",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.pdfjobs.results.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK.pdfjobs.results",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Adobe.PDFServicesSDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Adobe.PDFServicesSDK.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Adobe.PDFServicesSDK",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
